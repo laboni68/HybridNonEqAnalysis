@@ -7,9 +7,9 @@ import xlsxwriter
 
 benchmark = sys.argv[1]
 
-# dir = "/media/laboni/HDD11/PASDA/benchmarks/"
-# dir = "/media/laboni/HDD11/PASDA/EqBench/"
-dir = "/media/laboni/HDD11/PASDA/"+benchmark+"/"
+# dir = "../benchmarks/"
+# dir = "../EqBench/"
+dir = "../"+benchmark+"/"
 
 outFileUniform = dir + "uniformFuzz.xlsx"
 outFileBoundary = dir + "boundaryFuzz.xlsx"

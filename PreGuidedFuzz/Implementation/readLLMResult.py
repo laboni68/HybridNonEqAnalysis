@@ -5,9 +5,9 @@ name=sys.argv[1]
 fileName=sys.argv[2]
 writeExcel=sys.argv[3]
 whichSubFolder=sys.argv[4]
-folderName="/media/laboni/HDD11/PASDA/"+name+"/"
+folderName="../"+name+"/"
 if writeExcel=="1":
-    execlfile="/media/laboni/HDD11/PASDA/"+name+"/"+whichSubFolder+"/"+fileName+".xlsx"
+    execlfile="../"+name+"/"+whichSubFolder+"/"+fileName+".xlsx"
     workbook = xlsxwriter.Workbook(execlfile)
     worksheet = workbook.add_worksheet()
 

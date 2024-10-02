@@ -33,7 +33,7 @@ name=sys.argv[1]
 fileName=sys.argv[2]
 number=sys.argv[3]
 
-folderName="/media/laboni/HDD11/PASDA/"+name+"/"
+folderName="../"+name+"/"
 
 folders=os.listdir(folderName)
 for folder in folders:

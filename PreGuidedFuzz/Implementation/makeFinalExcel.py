@@ -4,9 +4,9 @@ import sys
 name=sys.argv[1]
 fileName=sys.argv[2]
 writeExcel=sys.argv[3]
-folderName="/media/laboni/HDD11/PASDA/"+name+"/"
+folderName="../"+name+"/"
 if writeExcel=="1":
-    execlfile="/media/laboni/HDD11/PASDA/"+name+"/BoundaryArDiff.xlsx"
+    execlfile="../"+name+"/BoundaryArDiff.xlsx"
     workbook = xlsxwriter.Workbook(execlfile)
     worksheet = workbook.add_worksheet()
 

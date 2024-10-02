@@ -5,7 +5,7 @@ import os
 import openpyxl
 import xlsxwriter
 
-dir = "/media/laboni/HDD11/PASDA/"
+dir = "../"
 
 benchmarks = ["benchmarksHumaneval", "QuixBugs"]
 subdirs = ["Eq", "NEq"]

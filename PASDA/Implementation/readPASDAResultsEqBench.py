@@ -5,7 +5,7 @@ name=sys.argv[1]
 fileName=sys.argv[2]
 # number=sys.argv[3]
 
-folderName="/media/laboni/HDD21/PASDAOriginal/"+name+"/"
+folderName="../"+name+"/"
 excelFileName=folderName+fileName+".xlsx"
 
 workbook = xlsxwriter.Workbook(excelFileName)

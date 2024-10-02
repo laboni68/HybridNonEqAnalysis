@@ -6,7 +6,7 @@ fileName=sys.argv[2]
 whichFolder=sys.argv[3]
 # number=sys.argv[3]
 
-folderName="/media/laboni/HDD21/PASDAOriginal/"+name+"/"
+folderName="../"+name+"/"
 excelFileName=folderName+whichFolder+"/"+fileName+".xlsx"
 ignoreNeq=["LARGEST_DIVISOR","IS_SIMPLE_POWER","IS_MULTIPLY_PRIME","ROUNDED_AVG"]
 ignoreEq=["CHOOSE_NUM","IS_MULTIPLY_PRIME","ANY_INT"]

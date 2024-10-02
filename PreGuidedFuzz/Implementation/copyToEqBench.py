@@ -1,7 +1,7 @@
 import os 
 
-copyFrom="/media/laboni/HDD11/PASDA/EqBenchPrev/"
-copyTo="/media/laboni/HDD11/PASDA/EqBench/"
+copyFrom="../EqBenchPrev/"
+copyTo="../EqBench/"
 
 folders=os.listdir(copyFrom)
 foldersCopyTo=os.listdir(copyTo)

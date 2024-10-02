@@ -1,6 +1,6 @@
 import os 
 
-folderName="/media/laboni/HDD11/PASDA/EqBench/"
+folderName="../EqBench/"
 folders=os.listdir(folderName)
 
 for folder in folders:
