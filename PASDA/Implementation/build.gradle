@@ -1,0 +1,63 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+    id 'application'
+    id 'java'
+}
+
+group 'at.aau.serg'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    ant.importBuild 'build-properties.xml'
+
+    def jpfCoreLibs = files(ant.properties['jpf-core.native_classpath'].split(';'))
+    def jpfSymbcLibs = files(ant.properties['jpf-symbc.native_classpath'].split(';'))
+    def extLibs = fileTree(dir: 'target/artifacts', include: ['**/*.jar'], exclude: "Implementation.jar")
+    def libs = extLibs + jpfCoreLibs + jpfSymbcLibs
+
+    implementation libs
+
+    implementation group: 'org.freemarker', name: 'freemarker', version: '2.3.31'
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.9.0'
+    implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.39.3.0'
+    implementation group: 'tools.aqua', name: 'z3-turnkey', version: '4.11.2'
+}
+
+compileJava {
+    dependsOn(':jpf-core:buildJars')
+    dependsOn(':jpf-symbc:buildJars')
+}
+
+application {
+    mainClass = project.hasProperty("mainClass") ? project.getProperty("mainClass") : "Runner.Runner"
+}
+
+jar {
+    destinationDirectory = file("target/artifacts/Implementation_jar")
+    archiveFileName = "Implementation.jar"
+
+    manifest {
+        attributes(
+            'Class-Path': configurations.runtimeClasspath.collect { it.getName() }.join(' '),
+            'Main-Class': "Runner.Runner"
+        )
+    }
+}
+
+shadowJar {
+    def mainClass = project.hasProperty("mainClass") ? project.getProperty("mainClass") : "Runner.Runner"
+
+    archiveBaseName.set(project.name + (mainClass == "Runner.Runner" ? "-base" : "-diff"))
+
+    manifest {
+        attributes(
+            'Main-Class': mainClass
+        )
+    }
+}
+
+defaultTasks "jar"

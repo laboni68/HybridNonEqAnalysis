@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+
+<project name="ARDiff" basedir=".">
+
+  <!-- this is where we get the 'jpf.core', 'jpf.symbc', ... locations from -->
+  <property file="site.properties"/>
+
+  <!-- if there is no site.properties in this project, default to home dir -->
+  <property file="${user.home}/.jpf/site.properties"/>
+
+  <!-- if there is no site.properties in the home dir, default to peer dirs -->
+  <property name="jpf-core" value = "${user.dir}/jpf-git/jpf-core"/>
+  <property name="jpf-symbc" value = "${user.dir}/jpf-git/jpf-symbc"/>
+
+  <!-- get the jpf-core path properties -->
+  <property file="${jpf-core}/jpf.properties"/>
+
+  <!-- get the jpf-symbc path properties -->
+  <property file="${jpf-symbc}/jpf.properties"/>
+
+</project>

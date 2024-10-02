@@ -1,0 +1,261 @@
+#!/bin/bash
+
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+
+DB_PATH="${SCRIPT_DIR}/analysis/results/sqlite.db"
+DB_CREATE_TABLES_PATH="${SCRIPT_DIR}/analysis/create-tables.sql"
+DB_CREATE_MATERIALIZED_VIEWS_PATH="${SCRIPT_DIR}/analysis/create-materialized-views.sql"
+DB_CREATE_TABLES_PAPER_PATH="${SCRIPT_DIR}/analysis/create-tables-paper.sql"
+
+BASE_JAR_PATH="${SCRIPT_DIR}/build/libs/ARDiff-base-1.0-SNAPSHOT-all.jar"
+DIFF_JAR_PATH="${SCRIPT_DIR}/build/libs/ARDiff-diff-1.0-SNAPSHOT-all.jar"
+
+dry_run=false
+
+clean_db=false
+force_build=false
+print_commands=true
+
+depth_limits=(
+  "10"
+)
+
+timeouts=(
+  # "120"
+  # "10"
+ # "20"
+#"30"
+#"80"
+#"90"
+# "120"
+#"240"
+ "120"
+#  "900"
+#  "3600"
+)
+
+runs=1
+
+benchmarks=(
+"REVE/addhorn/Eq" #wok
+"REVE/addhorn/Neq" #wok
+"REVE/limit3/Eq" #wok
+"REVE/limit2/Neq" #wok
+"CLEVER/odd/Eq" #wok
+"bess/bess/Neq" #wok
+"CLEVER/divide/Eq" #wok
+"CLEVER/divide/Neq" #wok
+"CLEVER/getSign2/Eq" #wok
+"CLEVER/getSign2/Neq" #wok
+"CLEVER/is_prime1/Eq" #wok
+"CLEVER/is_prime1/Neq" #wok
+"CLEVER/ltfive/Eq" #wok
+"CLEVER/multiple/Eq" #wok
+"CLEVER/odd/Neq" #wok
+"CLEVER/oneBound/Eq" #wok
+"CLEVER/oneN2/Eq" #wok
+"CLEVER/oneN2/Neq" #wok
+"CLEVER/pos/Neq" #wok
+"optimization/theta/Eq" #wok
+"optimization/theta/Neq" #wok
+"ran/ranone/Eq" #wok
+"ran/ranone/Neq" #wok
+"ran/ranthree/Neq" #wok
+"ran/ranwo/Eq" #wok
+"ran/ranwo/Neq" #wok
+"REVE/average/Eq" #wok
+"REVE/barthe/Eq" #wok
+ "REVE/barthe/Neq" #wok
+"REVE/barthe2/Eq" #wok
+"REVE/barthe2big/Eq" #wok
+"REVE/barthe2big2/Eq" #wok
+"REVE/bug15/Eq" #wok
+"REVE/inlining/Eq" #wok
+"REVE/inlining/Neq" #wok
+"REVE/limit1/Eq" #wok
+"REVE/limit1/Neq" #wok
+"REVE/limit2/Eq" #wok
+"REVE/loop/Eq" #wok
+"REVE/loop2/Eq" #wok
+"REVE/loop3/Eq" #wok
+"REVE/loop5/Eq" #wok
+"REVE/loop5/Neq" #wok
+"REVE/mccarthy91/Eq" #wok
+"REVE/nestedwhile/Eq" #wok
+"REVE/nestedwhile/Neq" #wok
+"REVE/simpleloop/Eq" #wok
+"tcas/tcas/Neq" #wok
+"tsafe/tsafe/Eq" #wok
+"tsafe/tsafe/Neq" #wok
+)
+
+tools=(
+ "PASDA-base"
+ "PASDA-diff"   # PASDA
+)
+
+newline=$'\n'
+runs_settings=()
+for depth_limit in "${depth_limits[@]}"; do
+  for timeout in "${timeouts[@]}"; do
+    for ((count = 1; count <= runs; count++)); do
+      for benchmark in "${benchmarks[@]}"; do
+        for tool in "${tools[@]}"; do
+          runs_settings+=("${benchmark},${tool},${timeout},${depth_limit}${newline}")
+        done
+      done
+    done
+  done
+done
+
+# To execute a specific set of benchmark:tool:timeout:depth-limit combinations,
+# uncomment the following lines and add the corresponding configuration settings.
+# This simply overwrites the 'run_settings' variable, so everything above can remain unchanged.
+#IFS=$'\n' read -r -d '' -a runs_settings <<< "Ell/brent/Eq,ARDiff-base,30,10
+#Ell/brent/Eq,ARDiff-base,90,10
+#Ell/brent/Eq,ARDiff-base,90,10"
+
+#(IFS=""; echo -e  "${runs_settings[*]}" > "runs_settings.txt")
+
+calculate_time() {
+    local start_time=$1
+    local elapsed_seconds=$((SECONDS - start_time))
+    local days=$((elapsed_seconds / (60 * 60 * 24)))
+    local hours=$((elapsed_seconds / (60 * 60) % 24))
+    local minutes=$((elapsed_seconds / 60 % 60))
+    local seconds=$((elapsed_seconds % 60))
+
+    local total_runs=$2
+    local current_run=$3
+
+    local total_seconds=$((elapsed_seconds * total_runs / current_run))
+    local remaining_seconds=$((total_seconds - elapsed_seconds))
+
+    local remaining_days=$((remaining_seconds / (60 * 60 * 24)))
+    local remaining_hours=$((remaining_seconds / (60 * 60) % 24))
+    local remaining_minutes=$((remaining_seconds / 60 % 60))
+    local remaining_seconds=$((remaining_seconds % 60))
+
+    printf "Elapsed time:             %02d days %02d hours %02d minutes %02d seconds\n" "$days" "$hours" "$minutes" "$seconds"
+    printf "Estimated remaining time: %02d days %02d hours %02d minutes %02d seconds\n" "$remaining_days" "$remaining_hours" "$remaining_minutes" "$remaining_seconds"
+}
+
+# Set up the database
+
+if [ "$clean_db" = true ] ; then
+  rm "${DB_PATH}"
+fi
+
+if [ ! -f "${DB_PATH}" ]; then
+  touch "${DB_PATH}"
+  sqlite3 "${DB_PATH}" < "${DB_CREATE_TABLES_PATH}" > /dev/null
+fi
+
+# Build the application JAR files
+
+if [ "$force_build" = true ]  || [ ! -f "$BASE_JAR_PATH" ] ; then
+  printf "Building base JAR file ..."
+
+  # Build base JAR
+  command="./gradlew -PmainClass=Runner.Runner shadowJar"
+
+  if [ "$print_commands" = true ] ; then
+    printf "\n%s" "${command}"
+  fi
+
+  if [ "$dry_run" = false ] ; then
+    eval "${command}"
+  fi
+
+  printf "\n"
+fi
+
+if [ "$force_build" = true ]  || [ ! -f "$DIFF_JAR_PATH" ] ; then
+  printf "Building diff JAR file ..."
+
+  # Build diff JAR
+  command="./gradlew -PmainClass=differencing.DifferencingRunner shadowJar"
+
+  if [ "$print_commands" = true ] ; then
+    printf "\n%s" "${command}"
+  fi
+
+  if [ "$dry_run" = false ] ; then
+    eval "${command}"
+  fi
+
+  printf "\n"
+fi
+
+# Process the benchmark programs
+
+seconds_at_start=$SECONDS
+
+current_run=1
+total_runs=${#runs_settings[@]}
+
+for run_settings in "${runs_settings[@]}"; do
+  IFS=',' read -r benchmark tool timeout depth_limit <<< "$run_settings"
+  echo "[$(date +"%Y-%m-%d %T")] Run $((current_run++)) of ${total_runs} - Benchmark: ${benchmark}, Tool: ${tool}, Timeout: ${timeout}, Depth-Limit: ${depth_limit}"
+
+  directory="../EqBench/${benchmark}"
+  if [ ! -d "${directory}" ]; then
+    echo "ERROR: The directory '${directory}' does not exist."
+    continue
+  fi
+
+  oldV="${directory}/oldV.java"
+  if [ ! -f "${oldV}" ]; then
+    echo "ERROR: The file '${oldV}' does not exist."
+    continue
+  fi
+
+  newV="${directory}/newV.java"
+  if [ ! -f "${newV}" ]; then
+    echo "ERROR: The file '${newV}' does not exist."
+    continue
+  fi
+
+  command=""
+case $tool in
+      "PASDA-base")
+          command="timeout --verbose --foreground ${timeout}s java -jar '${BASE_JAR_PATH}' --path1 ${oldV} --path2 ${newV} --tool P --s coral --b ${depth_limit} --t ${timeout} > ${directory}/ResultPASDA120base.txt"
+          ;;
+      "PASDA-diff")
+          command="timeout --verbose --foreground ${timeout}s java -jar '${DIFF_JAR_PATH}' ${directory} PASDA ${timeout} ${depth_limit} > ${directory}/ResultPASDA120.txt"
+          ;;
+      *)
+          echo "ERROR: Unknown tool '$tool'."
+          continue
+          ;;
+  esac
+
+  if [ "$print_commands" = true ]; then
+    echo "${command}"
+  fi
+
+  if [ "$dry_run" = false ]; then
+    echo ""
+    mkdir -p "${directory}/instrumented"
+    eval "${command}"
+
+    # Kill any leftover z3 / RunJPF.jar processes
+    # that were started by the base tools.
+    # This is necessary in case a base tool was
+    # stopped by the timeout and the child processes
+    # were, therefore, not correctly terminated.
+    pkill z3
+    pkill -f RunJPF.jar
+  fi
+
+  calculate_time "$seconds_at_start" "$total_runs" "$current_run"
+  printf "\n\n"
+done
+
+# Create "materialized views"
+
+# printf "Creating materialized views ... "
+# sqlite3 "${DB_PATH}" < "${DB_CREATE_MATERIALIZED_VIEWS_PATH}" > /dev/null
+# sqlite3 "${DB_PATH}" < "${DB_CREATE_TABLES_PAPER_PATH}" > /dev/null
+
+printf "done!\n"

@@ -1,0 +1,65 @@
+####### Ant #######
+/build/
+
+####### Gradle #######
+.gradle/
+reports/
+
+####### Covers JetBrains IDE: IntelliJ #######
+*.iml
+*.ipr
+
+# User-specific stuff:
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+.idea/ant.xml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/compiler.xml
+.idea/modules.xml
+
+# Sensitive or high-churn files:
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+
+# Gradle:
+.idea/**/gradle.xml
+.idea/**/libraries
+
+## File-based project format:
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+out/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+/.idea/
+/test.bat
+
+####### ARDiff #######
+
+/target/artifacts/Implementation_jar/Implementation.jar
+
+!target/classes/
+/target/classes/*
+!/target/classes/equiv/
+/target/classes/equiv/*
+!/target/classes/equiv/checking/
+/target/classes/equiv/checking/*
+!target/classes/equiv/checking/symbex
+/target/generated-sources
+.idea
+pom.xml
+
+.version
+build.properties
+
+analysis/results/*.db
