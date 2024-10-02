@@ -1,0 +1,45 @@
+Classifications for PC solver queries:
+
+UIF = f && PC = t => REACHABLE
+UIF = f && PC = f => UNREACHABLE
+UIF = f && PC = u => MAYBE_REACHABLE
+
+UIF = t && PC = t => MAYBE_REACHABLE
+UIF = t && PC = f => UNREACHABLE
+UIF = t && PC = u => MAYBE_REACHABLE
+
+Classifications for NEQ/EQ solver queries:
+
+UIF = f && NEQ = t && EQ = t => NEQ
+UIF = f && NEQ = t && EQ = f => NEQ
+UIF = f && NEQ = t && EQ = u => NEQ
+UIF = f && NEQ = f && EQ = t => EQ
+UIF = f && NEQ = f && EQ = f => EQ
+UIF = f && NEQ = f && EQ = u => EQ
+UIF = f && NEQ = u && EQ = t => MAYBE_EQ
+UIF = f && NEQ = u && EQ = f => NEQ
+UIF = f && NEQ = u && EQ = u => UNKNOWN
+
+UIF = t && NEQ = t && EQ = t => MAYBE_NEQ
+UIF = t && NEQ = t && EQ = f => NEQ
+UIF = t && NEQ = t && EQ = u => MAYBE_NEQ
+UIF = t && NEQ = f && EQ = t => EQ
+UIF = t && NEQ = f && EQ = f => EQ
+UIF = t && NEQ = f && EQ = u => EQ
+UIF = t && NEQ = u && EQ = t => MAYBE_EQ
+UIF = t && NEQ = u && EQ = f => NEQ
+UIF = t && NEQ = u && EQ = u => UNKNOWN
+
+Overall classifications for PC and NEQ/EQ solver queries:
+
+UNREACHABLE     && <ANY>     = UNREACHABLE
+REACHABLE       && EQ        = EQ
+REACHABLE       && NEQ       = NEQ
+REACHABLE       && MAYBE_EQ  = MAYBE_EQ  (or maybe NEQ)
+REACHABLE       && MAYBE_NEQ = MAYBE_NEQ (or maybe EQ)
+REACHABLE       && UNKNOWN   = UNKNOWN
+MAYBE_REACHABLE && EQ        = EQ
+MAYBE_REACHABLE && NEQ       = MAYBE_NEQ (or maybe UNREACHABLE)
+MAYBE_REACHABLE && MAYBE_EQ  = MAYBE_EQ  (or maybe UNREACHABLE or maybe NEQ)
+MAYBE_REACHABLE && MAYBE_NEQ = MAYBE_NEQ (or maybe UNREACHABLE or maybe EQ)
+MAYBE_REACHABLE && UNKNOWN   = UNKNOWN

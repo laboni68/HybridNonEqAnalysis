@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+
+<project name="jpf-symbc" basedir=".">
+
+	<!--
+	local props have to come first, because Ant properties are immutable
+	NOTE: this file is local - it is never in the repository!
+  -->
+  <property file="local.properties"/>
+  <property environment="env"/>
+
+  <!-- this is where we get the 'jpf.core' locations from -->
+  <property file="site.properties"/>
+
+  <!-- if there is no site.properties in this project, default to home dir -->
+  <property file="${user.home}/.jpf/site.properties"/>
+
+  <!-- if there is no site.properties in the home dir, default to peer dirs -->
+  <property name="jpf-core" value = "../jpf-core"/>
+
+  <!-- get the jpf-core path properties -->
+  <property file="${jpf-core}/jpf.properties"/>
+
+</project>
