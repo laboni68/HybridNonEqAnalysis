@@ -106,10 +106,7 @@ public class DifferencingRunner {
         DifferencingParameters parameters = parameterFactory.load(parameterFilePath.toFile());
 
         Arrays.stream(parameters.getGeneratedFiles()).forEach(file -> new File(file).delete());
-        // System.out.println("Test 1 2 3 4 ...");
-        //Added by Laboni for testing
-        // File javaFile = this.createDifferencingDriverClass(parameters);
-        // this.compile(ProjectPaths.classpath, javaFile);
+       
          File configFile = this.createDifferencingJpfConfiguration(parameters, solverTimeout, depthLimit);
         //================================================================================================
         StopWatches.start("run");

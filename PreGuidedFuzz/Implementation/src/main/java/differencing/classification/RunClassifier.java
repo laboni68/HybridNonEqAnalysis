@@ -30,7 +30,7 @@ public class RunClassifier implements Classifier {
         // System.out.println("Iteration count: " + iterationCount);
 
         if (!lastIteration.hasTimedOut || iterationCount == 1) { 
-        // if (!lastIteration.hasTimedOut || iterationCount == 2) { //change made by Laboni: if the first iteration is blocked, then the classification should be based on the second iteration
+        // if (!lastIteration.hasTimedOut || iterationCount == 2) { //change made : if the first iteration is blocked, then the classification should be based on the second iteration
             //System.out.println("Run did not time out or only has one iteration.");
             this.classification = lastIteration.result;
             this.classificationIteration = lastIteration;

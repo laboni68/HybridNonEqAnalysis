@@ -227,7 +227,7 @@ public class DifferencingListener extends PropertyListenerAdapter implements Aut
                 System.out.println("The two versions are not equivalent");
                 fuzzingNeq=true;
                 this.partitionClassification = Classification.NEQ;
-                search.terminate(); //Added by Laboni
+                search.terminate(); //
                 // System.out.println("The two versions are not equivalent");
                 // System.out.println(parameters.getTargetDirectory() + " -> " +"NEQ");
                 // return;

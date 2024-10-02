@@ -47,7 +47,7 @@ public class ExecutionListener extends PropertyListenerAdapter {
     protected boolean isInMethodToCover = false;
 
     protected int partitionNr =  1;
-    protected Boolean propertyViolated = false; //Added by Laboni
+    protected Boolean propertyViolated = false; //
 
     public ExecutionListener(Iteration iteration, DifferencingParameters parameters) {
         // System.out.println("Starting symbolic execution for iteration " + iteration.iteration);
@@ -109,8 +109,8 @@ public class ExecutionListener extends PropertyListenerAdapter {
             return;
         }
        // System.out.println("Property violated.....starting next partition");
-        //this.propertyViolated = true; //Added by Laboni
-        this.startNextPartition();        //Commented by Laboni
+        //this.propertyViolated = true; //
+        this.startNextPartition();        
     }
 
     @Override

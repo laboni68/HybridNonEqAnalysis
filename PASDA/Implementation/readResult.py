@@ -2,8 +2,8 @@ import os
 import xlsxwriter
 
 
-folderName="/media/laboni/HDD1/PASDA/benchmarks/"
-execlfile="/media/laboni/HDD1/PASDA/benchmarks/Error.xlsx"
+folderName="../benchmarks/"
+execlfile="../benchmarks/Error.xlsx"
 workbook = xlsxwriter.Workbook(execlfile)
 worksheet = workbook.add_worksheet()
 
