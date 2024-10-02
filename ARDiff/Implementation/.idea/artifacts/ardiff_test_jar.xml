@@ -1,0 +1,53 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="ardiff-test:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/ardiff_test_jar</output-path>
+    <root id="archive" name="ardiff-test.jar">
+      <element id="module-output" name="ardiff-test" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/ow2/asm/asm-analysis/6.0/asm-analysis-6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/javaparser/javaparser-core/3.15.2/javaparser-core-3.15.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/target/artifacts/Implementation_jar/org.eclipse.equinox.registry-3.8.800.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/ow2/asm/asm/6.0/asm-6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/eclipse/platform/org.eclipse.core.expressions/3.9.100/org.eclipse.core.expressions-3.9.100.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/target/artifacts/Implementation_jar/org.eclipse.core.resources-3.13.700.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/ow2/asm/asm-tree/6.0/asm-tree-6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/eclipse/platform/org.eclipse.core.commands/3.11.100/org.eclipse.core.commands-3.11.100.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/eclipse/platform/org.eclipse.core.resources/3.19.100/org.eclipse.core.resources-3.19.100.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/checkerframework/checker-qual/2.10.0/checker-qual-2.10.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/gumtreediff/core/2.1.2/core-2.1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/target/artifacts/Implementation_jar/org.eclipse.equinox.app-1.4.500.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jgrapht/jgrapht-core/1.0.1/jgrapht-core-1.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/gumtreediff/gen.jdt/2.1.2/gen.jdt-2.1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/target/artifacts/Implementation_jar/org.eclipse.core.runtime-3.18.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/eclipse/platform/org.eclipse.core.runtime/3.29.0/org.eclipse.core.runtime-3.29.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/target/artifacts/Implementation_jar/org.eclipse.core.contenttype-3.7.700.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/eclipse/platform/org.eclipse.core.jobs/3.15.0/org.eclipse.core.jobs-3.15.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/eclipse/platform/org.eclipse.core.contenttype/3.9.100/org.eclipse.core.contenttype-3.9.100.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/apache/commons/commons-collections4/4.4/commons-collections4-4.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/atteo/classindex/classindex/3.4/classindex-3.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/net/sf/trove4j/trove4j/3.0.3/trove4j-3.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/eclipse/platform/org.eclipse.core.filesystem/1.10.100/org.eclipse.core.filesystem-1.10.100.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/target/artifacts/Implementation_jar/jfxrt.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/br/usp/each/saeg/saeg-commons/0.0.5/saeg-commons-0.0.5.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/eclipse/jdt/org.eclipse.jdt.core/3.26.0/org.eclipse.jdt.core-3.26.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/mpkorstanje/simmetrics-core/3.2.3/simmetrics-core-3.2.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/br/usp/each/saeg/asm-defuse/0.0.6/asm-defuse-0.0.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/target/artifacts/Implementation_jar/org.eclipse.equinox.preferences-3.8.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/eclipse/platform/org.eclipse.text/3.13.100/org.eclipse.text-3.13.100.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/target/artifacts/Implementation_jar/org.eclipse.core.commands-3.9.700.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/target/artifacts/Implementation_jar/com.microsoft.z3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.10/commons-codec-1.10.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/github/gumtreediff/client/2.1.2/client-2.1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/google/guava/guava/28.2-jre/guava-28.2-jre.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/target/artifacts/Implementation_jar/org.eclipse.equinox.common-3.12.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/eclipse/platform/org.eclipse.osgi/3.18.500/org.eclipse.osgi-3.18.500.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/target/artifacts/Implementation_jar/org.eclipse.core.jobs-3.10.800.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
