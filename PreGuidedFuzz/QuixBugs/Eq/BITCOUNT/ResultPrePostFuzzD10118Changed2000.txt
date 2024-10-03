@@ -1,0 +1,406 @@
+getInputValues: 1
+-107
+125
+49
+99
+31
+99
+115
+-63
+74
+-40
+81
+-32
+1667850270
+2078773233
+1994772173
+1204840671
+1199747738
+1438300160
+1369588786
+1082843865
+1748880892
+1925442705
+2104322782
+1292364414
+-1711384669
+-1588841466
+-1104908314
+-1343876465
+-1092354259
+-1249919227
+-1948606451
+-1802399676
+-1373605413
+-1825027523
+-1431929471
+-1589670183
+1160695179
+-857324175
+874122103
+-663370863
+-1111627414
+967534639
+307435517
+-1232982665
+-1367513404
+515446608
+-547634900
+-163579046
+-1363977841
+-525246316
+-1636870405
+1123538686
+-1908100029
+257365169
+-964983987
+-856165056
+1582859712
+-2099644058
+-1291873161
+524904518
+928428398
+2079033550
+708275199
+-416554761
+1196918181
+1720701433
+1514149286
+1275564974
+-2054433713
+-1295823176
+222317225
+Fuzzing time limit exceeded
+Fuzzing time limit exceeded : 71
+symbolic.min_int=-100
+symbolic.min_long=-100
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=100
+symbolic.max_long=100
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-100.0
+symbolic.max_double=100.0
+symbolic.min_int=-100
+symbolic.min_long=-100
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=100
+symbolic.max_long=100
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-100.0
+symbolic.max_double=100.0
+JavaPathfinder core system v8.0 (rev ecdb30ddaab26d2773e7741b09fd902efb7999c7) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.main()
+
+====================================================== search started: 9/29/24 4:51 AM
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IoldVPASDA2.bitcount(IoldVPASDA2.java:14)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.InewVPASDA2.bitcount(InewVPASDA2.java:14)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.InewVPASDA2.bitcount(InewVPASDA2.java:18)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.InewVPASDA2.bitcount(InewVPASDA2.java:14)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.InewVPASDA2.bitcount(InewVPASDA2.java:18)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.InewVPASDA2.bitcount(InewVPASDA2.java:14)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.InewVPASDA2.bitcount(InewVPASDA2.java:18)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.InewVPASDA2.bitcount(InewVPASDA2.java:14)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.InewVPASDA2.bitcount(InewVPASDA2.java:18)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.InewVPASDA2.bitcount(InewVPASDA2.java:14)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.InewVPASDA2.bitcount(InewVPASDA2.java:18)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(((((UF_count_1_SYMINT() + CONST_1) + CONST_1) + CONST_1) + CONST_1))]).concat(CONST_ ).concat(.valueof[(((((UF_count_1_SYMINT() + CONST_1) + CONST_1) + CONST_1) + CONST_1))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 10
+72: ((((UF_count_1_SYMINT() + CONST_1) + CONST_1) + CONST_1) + CONST_1) = ((((UF_count_1_SYMINT() + CONST_1) + CONST_1) + CONST_1) + CONST_1) &&
+14: UF_n_2_SYMINT(UF_n_2_SYMINT(UF_n_2_SYMINT(UF_n_2_SYMINT(n_1_SYMINT[-100])))) = CONST_0 &&
+14: UF_n_2_SYMINT(UF_n_2_SYMINT(UF_n_2_SYMINT(n_1_SYMINT[-100]))) != CONST_0 &&
+14: UF_n_2_SYMINT(UF_n_2_SYMINT(n_1_SYMINT[-100])) != CONST_0 &&
+14: UF_n_2_SYMINT(n_1_SYMINT[-100]) != CONST_0 &&
+14: UF_n_2_SYMINT(UF_n_2_SYMINT(UF_n_2_SYMINT(UF_n_2_SYMINT(n_1_SYMINT[-100])))) = CONST_0 &&
+14: UF_n_2_SYMINT(UF_n_2_SYMINT(UF_n_2_SYMINT(n_1_SYMINT[-100]))) != CONST_0 &&
+14: UF_n_2_SYMINT(UF_n_2_SYMINT(n_1_SYMINT[-100])) != CONST_0 &&
+14: UF_n_2_SYMINT(n_1_SYMINT[-100]) != CONST_0 &&
+14: n_1_SYMINT[-100] != CONST_0
+133: Ret_0_SYMINT = ((((UF_count_1_SYMINT() + CONST_1) + CONST_1) + CONST_1) + CONST_1)
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[((((UF_count_1_SYMINT() + CONST_1) + CONST_1) + CONST_1))]).concat(CONST_ ).concat(.valueof[((((UF_count_1_SYMINT() + CONST_1) + CONST_1) + CONST_1))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 8
+72: (((UF_count_1_SYMINT() + CONST_1) + CONST_1) + CONST_1) = (((UF_count_1_SYMINT() + CONST_1) + CONST_1) + CONST_1) &&
+14: UF_n_2_SYMINT(UF_n_2_SYMINT(UF_n_2_SYMINT(n_1_SYMINT[100]))) = CONST_0 &&
+14: UF_n_2_SYMINT(UF_n_2_SYMINT(n_1_SYMINT[100])) != CONST_0 &&
+14: UF_n_2_SYMINT(n_1_SYMINT[100]) != CONST_0 &&
+14: UF_n_2_SYMINT(UF_n_2_SYMINT(UF_n_2_SYMINT(n_1_SYMINT[100]))) = CONST_0 &&
+14: UF_n_2_SYMINT(UF_n_2_SYMINT(n_1_SYMINT[100])) != CONST_0 &&
+14: UF_n_2_SYMINT(n_1_SYMINT[100]) != CONST_0 &&
+14: n_1_SYMINT[100] != CONST_0
+133: Ret_0_SYMINT = (((UF_count_1_SYMINT() + CONST_1) + CONST_1) + CONST_1)
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(((UF_count_1_SYMINT() + CONST_1) + CONST_1))]).concat(CONST_ ).concat(.valueof[(((UF_count_1_SYMINT() + CONST_1) + CONST_1))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 6
+72: ((UF_count_1_SYMINT() + CONST_1) + CONST_1) = ((UF_count_1_SYMINT() + CONST_1) + CONST_1) &&
+14: UF_n_2_SYMINT(UF_n_2_SYMINT(n_1_SYMINT[-48])) = CONST_0 &&
+14: UF_n_2_SYMINT(n_1_SYMINT[-48]) != CONST_0 &&
+14: UF_n_2_SYMINT(UF_n_2_SYMINT(n_1_SYMINT[-48])) = CONST_0 &&
+14: UF_n_2_SYMINT(n_1_SYMINT[-48]) != CONST_0 &&
+14: n_1_SYMINT[-48] != CONST_0
+133: Ret_0_SYMINT = ((UF_count_1_SYMINT() + CONST_1) + CONST_1)
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[((UF_count_1_SYMINT() + CONST_1))]).concat(CONST_ ).concat(.valueof[((UF_count_1_SYMINT() + CONST_1))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 4
+72: (UF_count_1_SYMINT() + CONST_1) = (UF_count_1_SYMINT() + CONST_1) &&
+14: UF_n_2_SYMINT(n_1_SYMINT[-100]) = CONST_0 &&
+14: UF_n_2_SYMINT(n_1_SYMINT[-100]) = CONST_0 &&
+14: n_1_SYMINT[-100] != CONST_0
+133: Ret_0_SYMINT = (UF_count_1_SYMINT() + CONST_1)
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(UF_count_1_SYMINT())]).concat(CONST_ ).concat(.valueof[(UF_count_1_SYMINT())])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 2
+72: UF_count_1_SYMINT() = UF_count_1_SYMINT() &&
+14: n_1_SYMINT[0] = CONST_0
+133: Ret_0_SYMINT = UF_count_1_SYMINT()
+***********************************
+
+====================================================== Method Summaries
+Inputs: n_1_SYMINT
+
+demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.run(-100)  --> Return Value: 5
+demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.run(100)  --> Return Value: 4
+demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.run(-48)  --> Return Value: 3
+demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.run(-100)  --> Return Value: 2
+demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.run(0)  --> Return Value: 1
+
+====================================================== Method Summaries (HTML)
+<h1>Test Cases Generated by Symbolic JavaPath Finder for demo.QuixBugs.Eq.BITCOUNT.instrumented.IDiffPASDA2.run (Path Coverage) </h1>
+<table border=1>
+<tr><td>n_1_SYMINT</td><td>RETURN</td></tr>
+<tr><td>-100</td><td>Return Value: 5</td></tr>
+<tr><td>100</td><td>Return Value: 4</td></tr>
+<tr><td>-48</td><td>Return Value: 3</td></tr>
+<tr><td>-100</td><td>Return Value: 2</td></tr>
+<tr><td>0</td><td>Return Value: 1</td></tr>
+</table>
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:01
+states:             new=92,visited=0,backtracked=92,end=5
+search:             maxDepth=10,constraints=11
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=46
+heap:               new=614,released=152,maxLive=370,gcCycles=11
+instructions:       4371
+max memory:         2230MB
+loaded code:        classes=64,methods=1450
+
+====================================================== search finished: 9/29/24 4:51 AM
+Iteration 2 partitionCount 11 ../QuixBugs/Eq/BITCOUNT/instrumented -> EQ
+Maybe count 0
+Execution time in milliseconds: 4275 ms, fuzztime 2000 ms

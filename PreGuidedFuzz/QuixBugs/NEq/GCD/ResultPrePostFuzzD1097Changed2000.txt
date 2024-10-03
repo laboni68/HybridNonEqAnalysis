@@ -1,0 +1,189 @@
+getInputValues: 2
+-118
+76
+34
+76
+-97
+-105
+82
+27
+-29
+-116
+-41
+-52
+75
+-53
+-31
+-77
+-16
+-38
+97
+17
+90
+21
+-26
+-100
+1305452280
+1888737428
+1486156749
+1884140040
+1873045499
+1149559659
+1427546706
+1624659504
+1849688938
+1509093359
+1355191605
+1315043916
+1087248305
+1684568284
+1385582764
+2122071691
+1189173714
+1906680405
+1249523124
+1558169047
+1439662914
+1207266650
+1113242324
+1184332559
+-2113278927
+-1115017520
+-1146583148
+-2133370341
+-2115810890
+-2130326865
+-1383336695
+-1585890173
+-1799155747
+-1151192347
+-1372032606
+-1877333139
+-1990789216
+-1786860876
+-1434695212
+-1176194001
+-1897715303
+-1079620142
+-1456123024
+-1759198863
+-1319007405
+-1619764371
+-1260192144
+-1194231643
+-691877818
+-412654373
+36377789
+-160892421
+-1871109216
+1832378031
+-182031557
+-702806322
+176939547
+364279855
+981338851
+-1939586425
+1765825342
+609256308
+440116926
+-995307107
+1966662887
+-409986352
+-304832072
+796472450
+-231097745
+-540220638
+1702118496
+939279384
+-365776372
+1534467947
+93129451
+1790837091
+-328965001
+2125588897
+-1373483138
+765602944
+347974350
+729195715
+-863251284
+-934488362
+-638019910
+-1006568403
+1686697020
+-1845402486
+-540260140
+-858127315
+-292456912
+-353652424
+-1074050748
+1522946005
+-340896766
+-376812577
+794576555
+1697648658
+1392831536
+82574875
+2104844098
+1143705597
+-1226610181
+-1595796838
+-64989117
+592880240
+1187341674
+225185480
+Fuzzing time limit exceeded
+Fuzzing time limit exceeded : 66
+symbolic.min_int=-100
+symbolic.min_long=-100
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=100
+symbolic.max_long=100
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-100.0
+symbolic.max_double=100.0
+symbolic.min_int=-100
+symbolic.min_long=-100
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=100
+symbolic.max_long=100
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-100.0
+symbolic.max_double=100.0
+JavaPathfinder core system v8.0 (rev ecdb30ddaab26d2773e7741b09fd902efb7999c7) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+demo.QuixFix.NEq.GCD.instrumented.IDiffPASDA2.main()
+
+====================================================== search started: 9/29/24 8:00 PM
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(a_1_SYMINT)]).concat(CONST_ ).concat(.valueof[(a_1_SYMINT)])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 2
+72: a_1_SYMINT[0] = a_1_SYMINT[0] &&
+14: b_2_SYMINT[0] = CONST_0
+133: Ret_0_SYMINT = a_1_SYMINT[0]
+***********************************
+TIMEOUT: 1 ../QuixBugs/NEq/GCD/instrumented -> null

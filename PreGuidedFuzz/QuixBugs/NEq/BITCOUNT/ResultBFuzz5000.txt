@@ -1,0 +1,8 @@
+getInputValues: 1
+13
+96
+-75
+-43
+1
+../QuixBugs/NEq/BITCOUNT/instrumented [1] 5 -> NEQ
+Execution time in milliseconds: 389 ms, fuzztime 5000 ms

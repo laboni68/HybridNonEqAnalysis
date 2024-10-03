@@ -1,0 +1,1761 @@
+getInputValues: 2
+symbolic.min_int=-100
+symbolic.min_long=-100
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=100
+symbolic.max_long=100
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-100.0
+symbolic.max_double=100.0
+symbolic.min_int=-100
+symbolic.min_long=-100
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=100
+symbolic.max_long=100
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-100.0
+symbolic.max_double=100.0
+JavaPathfinder core system v8.0 (rev ecdb30ddaab26d2773e7741b09fd902efb7999c7) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main()
+
+====================================================== search started: 9/29/24 8:17 PM
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(UF_approx_1_SYMREAL(x_1_SYMREAL))]).concat(CONST_ ).concat(.valueof[(UF_approx_1_SYMREAL(x_1_SYMREAL))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 5
+77: UF_approx_1_SYMREAL(x_1_SYMREAL[-93.9863109929]) = UF_approx_1_SYMREAL(x_1_SYMREAL[-93.9863109929]) &&
+15: (CONST_0.0 - (x_1_SYMREAL[-93.9863109929] - (UF_approx_1_SYMREAL(x_1_SYMREAL[-93.9863109929]) * CONST_1.0))) < epsilon_2_SYMREAL[85.561193516] &&
+44: (x_1_SYMREAL[-93.9863109929] - (UF_approx_1_SYMREAL(x_1_SYMREAL[-93.9863109929]) * CONST_1.0)) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-93.9863109929] - UF_approx_1_SYMREAL(x_1_SYMREAL[-93.9863109929]))) < epsilon_2_SYMREAL[85.561193516] &&
+44: (x_1_SYMREAL[-93.9863109929] - UF_approx_1_SYMREAL(x_1_SYMREAL[-93.9863109929])) < CONST_0.0
+133: Ret_0_SYMREAL = UF_approx_1_SYMREAL(x_1_SYMREAL[-93.9863109929])
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(UF_approx_1_SYMREAL(x_1_SYMREAL))]).concat(CONST_ ).concat(.valueof[(UF_approx_1_SYMREAL(x_1_SYMREAL))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 5
+77: UF_approx_1_SYMREAL(x_1_SYMREAL[51.9067185409]) = UF_approx_1_SYMREAL(x_1_SYMREAL[51.9067185409]) &&
+15: epsilon_2_SYMREAL[41.0861395699] = (CONST_0.0 - (x_1_SYMREAL[51.9067185409] - (UF_approx_1_SYMREAL(x_1_SYMREAL[51.9067185409]) * CONST_1.0))) &&
+44: (x_1_SYMREAL[51.9067185409] - (UF_approx_1_SYMREAL(x_1_SYMREAL[51.9067185409]) * CONST_1.0)) < CONST_0.0 &&
+15: epsilon_2_SYMREAL[41.0861395699] = (CONST_0.0 - (x_1_SYMREAL[51.9067185409] - UF_approx_1_SYMREAL(x_1_SYMREAL[51.9067185409]))) &&
+44: (x_1_SYMREAL[51.9067185409] - UF_approx_1_SYMREAL(x_1_SYMREAL[51.9067185409])) < CONST_0.0
+133: Ret_0_SYMREAL = UF_approx_1_SYMREAL(x_1_SYMREAL[51.9067185409])
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_1_SYMREAL(x_1_SYMREAL)))]).concat(CONST_ ).concat(.valueof[(UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_1_SYMREAL(x_1_SYMREAL)))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 9
+77: UF_approx_2_SYMREAL(x_1_SYMREAL[-70.3145444228704],UF_approx_1_SYMREAL(x_1_SYMREAL[-70.3145444228704])) = UF_approx_2_SYMREAL(x_1_SYMREAL[-70.3145444228704],UF_approx_1_SYMREAL(x_1_SYMREAL[-70.3145444228704])) &&
+15: (CONST_0.0 - (x_1_SYMREAL[-70.3145444228704] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-70.3145444228704],UF_approx_1_SYMREAL(x_1_SYMREAL[-70.3145444228704])) * CONST_1.0))) < epsilon_2_SYMREAL[38.411442420196224] &&
+44: (x_1_SYMREAL[-70.3145444228704] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-70.3145444228704],UF_approx_1_SYMREAL(x_1_SYMREAL[-70.3145444228704])) * CONST_1.0)) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-70.3145444228704] - (UF_approx_1_SYMREAL(x_1_SYMREAL[-70.3145444228704]) * CONST_1.0))) > epsilon_2_SYMREAL[38.411442420196224] &&
+44: (x_1_SYMREAL[-70.3145444228704] - (UF_approx_1_SYMREAL(x_1_SYMREAL[-70.3145444228704]) * CONST_1.0)) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-70.3145444228704] - UF_approx_2_SYMREAL(x_1_SYMREAL[-70.3145444228704],UF_approx_1_SYMREAL(x_1_SYMREAL[-70.3145444228704])))) < epsilon_2_SYMREAL[38.411442420196224] &&
+44: (x_1_SYMREAL[-70.3145444228704] - UF_approx_2_SYMREAL(x_1_SYMREAL[-70.3145444228704],UF_approx_1_SYMREAL(x_1_SYMREAL[-70.3145444228704]))) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-70.3145444228704] - UF_approx_1_SYMREAL(x_1_SYMREAL[-70.3145444228704]))) > epsilon_2_SYMREAL[38.411442420196224] &&
+44: (x_1_SYMREAL[-70.3145444228704] - UF_approx_1_SYMREAL(x_1_SYMREAL[-70.3145444228704])) < CONST_0.0
+133: Ret_0_SYMREAL = UF_approx_2_SYMREAL(x_1_SYMREAL[-70.3145444228704],UF_approx_1_SYMREAL(x_1_SYMREAL[-70.3145444228704]))
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_1_SYMREAL(x_1_SYMREAL)))]).concat(CONST_ ).concat(.valueof[(UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_1_SYMREAL(x_1_SYMREAL)))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 9
+77: UF_approx_2_SYMREAL(x_1_SYMREAL[-9.3912836046],UF_approx_1_SYMREAL(x_1_SYMREAL[-9.3912836046])) = UF_approx_2_SYMREAL(x_1_SYMREAL[-9.3912836046],UF_approx_1_SYMREAL(x_1_SYMREAL[-9.3912836046])) &&
+15: epsilon_2_SYMREAL[7.8378778923] = (CONST_0.0 - (x_1_SYMREAL[-9.3912836046] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-9.3912836046],UF_approx_1_SYMREAL(x_1_SYMREAL[-9.3912836046])) * CONST_1.0))) &&
+44: (x_1_SYMREAL[-9.3912836046] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-9.3912836046],UF_approx_1_SYMREAL(x_1_SYMREAL[-9.3912836046])) * CONST_1.0)) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-9.3912836046] - (UF_approx_1_SYMREAL(x_1_SYMREAL[-9.3912836046]) * CONST_1.0))) > epsilon_2_SYMREAL[7.8378778923] &&
+44: (x_1_SYMREAL[-9.3912836046] - (UF_approx_1_SYMREAL(x_1_SYMREAL[-9.3912836046]) * CONST_1.0)) < CONST_0.0 &&
+15: epsilon_2_SYMREAL[7.8378778923] = (CONST_0.0 - (x_1_SYMREAL[-9.3912836046] - UF_approx_2_SYMREAL(x_1_SYMREAL[-9.3912836046],UF_approx_1_SYMREAL(x_1_SYMREAL[-9.3912836046])))) &&
+44: (x_1_SYMREAL[-9.3912836046] - UF_approx_2_SYMREAL(x_1_SYMREAL[-9.3912836046],UF_approx_1_SYMREAL(x_1_SYMREAL[-9.3912836046]))) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-9.3912836046] - UF_approx_1_SYMREAL(x_1_SYMREAL[-9.3912836046]))) > epsilon_2_SYMREAL[7.8378778923] &&
+44: (x_1_SYMREAL[-9.3912836046] - UF_approx_1_SYMREAL(x_1_SYMREAL[-9.3912836046])) < CONST_0.0
+133: Ret_0_SYMREAL = UF_approx_2_SYMREAL(x_1_SYMREAL[-9.3912836046],UF_approx_1_SYMREAL(x_1_SYMREAL[-9.3912836046]))
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.areResultsEquivalent(IDiffPASDA2.java:77)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:122)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_1_SYMREAL(x_1_SYMREAL))))]).concat(CONST_ ).concat(.valueof[(UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_1_SYMREAL(x_1_SYMREAL))))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 13
+77: UF_approx_2_SYMREAL(x_1_SYMREAL[-100.0],UF_approx_2_SYMREAL(x_1_SYMREAL[-100.0],UF_approx_1_SYMREAL(x_1_SYMREAL[-100.0]))) = UF_approx_2_SYMREAL(x_1_SYMREAL[-100.0],UF_approx_2_SYMREAL(x_1_SYMREAL[-100.0],UF_approx_1_SYMREAL(x_1_SYMREAL[-100.0]))) &&
+15: (CONST_0.0 - (x_1_SYMREAL[-100.0] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-100.0],UF_approx_2_SYMREAL(x_1_SYMREAL[-100.0],UF_approx_1_SYMREAL(x_1_SYMREAL[-100.0]))) * CONST_1.0))) < epsilon_2_SYMREAL[20.598734847995743] &&
+44: (x_1_SYMREAL[-100.0] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-100.0],UF_approx_2_SYMREAL(x_1_SYMREAL[-100.0],UF_approx_1_SYMREAL(x_1_SYMREAL[-100.0]))) * CONST_1.0)) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-100.0] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-100.0],UF_approx_1_SYMREAL(x_1_SYMREAL[-100.0])) * CONST_1.0))) > epsilon_2_SYMREAL[20.598734847995743] &&
+44: (x_1_SYMREAL[-100.0] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-100.0],UF_approx_1_SYMREAL(x_1_SYMREAL[-100.0])) * CONST_1.0)) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-100.0] - (UF_approx_1_SYMREAL(x_1_SYMREAL[-100.0]) * CONST_1.0))) > epsilon_2_SYMREAL[20.598734847995743] &&
+44: (x_1_SYMREAL[-100.0] - (UF_approx_1_SYMREAL(x_1_SYMREAL[-100.0]) * CONST_1.0)) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-100.0] - UF_approx_2_SYMREAL(x_1_SYMREAL[-100.0],UF_approx_2_SYMREAL(x_1_SYMREAL[-100.0],UF_approx_1_SYMREAL(x_1_SYMREAL[-100.0]))))) < epsilon_2_SYMREAL[20.598734847995743] &&
+44: (x_1_SYMREAL[-100.0] - UF_approx_2_SYMREAL(x_1_SYMREAL[-100.0],UF_approx_2_SYMREAL(x_1_SYMREAL[-100.0],UF_approx_1_SYMREAL(x_1_SYMREAL[-100.0])))) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-100.0] - UF_approx_2_SYMREAL(x_1_SYMREAL[-100.0],UF_approx_1_SYMREAL(x_1_SYMREAL[-100.0])))) > epsilon_2_SYMREAL[20.598734847995743] &&
+44: (x_1_SYMREAL[-100.0] - UF_approx_2_SYMREAL(x_1_SYMREAL[-100.0],UF_approx_1_SYMREAL(x_1_SYMREAL[-100.0]))) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-100.0] - UF_approx_1_SYMREAL(x_1_SYMREAL[-100.0]))) > epsilon_2_SYMREAL[20.598734847995743] &&
+44: (x_1_SYMREAL[-100.0] - UF_approx_1_SYMREAL(x_1_SYMREAL[-100.0])) < CONST_0.0
+133: Ret_0_SYMREAL = UF_approx_2_SYMREAL(x_1_SYMREAL[-100.0],UF_approx_2_SYMREAL(x_1_SYMREAL[-100.0],UF_approx_1_SYMREAL(x_1_SYMREAL[-100.0])))
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_1_SYMREAL(x_1_SYMREAL))))]).concat(CONST_ ).concat(.valueof[(UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_1_SYMREAL(x_1_SYMREAL))))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 13
+77: UF_approx_2_SYMREAL(x_1_SYMREAL[-71.463802294],UF_approx_2_SYMREAL(x_1_SYMREAL[-71.463802294],UF_approx_1_SYMREAL(x_1_SYMREAL[-71.463802294]))) = UF_approx_2_SYMREAL(x_1_SYMREAL[-71.463802294],UF_approx_2_SYMREAL(x_1_SYMREAL[-71.463802294],UF_approx_1_SYMREAL(x_1_SYMREAL[-71.463802294]))) &&
+15: epsilon_2_SYMREAL[23.406959924600002] = (CONST_0.0 - (x_1_SYMREAL[-71.463802294] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-71.463802294],UF_approx_2_SYMREAL(x_1_SYMREAL[-71.463802294],UF_approx_1_SYMREAL(x_1_SYMREAL[-71.463802294]))) * CONST_1.0))) &&
+44: (x_1_SYMREAL[-71.463802294] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-71.463802294],UF_approx_2_SYMREAL(x_1_SYMREAL[-71.463802294],UF_approx_1_SYMREAL(x_1_SYMREAL[-71.463802294]))) * CONST_1.0)) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-71.463802294] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-71.463802294],UF_approx_1_SYMREAL(x_1_SYMREAL[-71.463802294])) * CONST_1.0))) > epsilon_2_SYMREAL[23.406959924600002] &&
+44: (x_1_SYMREAL[-71.463802294] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-71.463802294],UF_approx_1_SYMREAL(x_1_SYMREAL[-71.463802294])) * CONST_1.0)) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-71.463802294] - (UF_approx_1_SYMREAL(x_1_SYMREAL[-71.463802294]) * CONST_1.0))) > epsilon_2_SYMREAL[23.406959924600002] &&
+44: (x_1_SYMREAL[-71.463802294] - (UF_approx_1_SYMREAL(x_1_SYMREAL[-71.463802294]) * CONST_1.0)) < CONST_0.0 &&
+15: epsilon_2_SYMREAL[23.406959924600002] = (CONST_0.0 - (x_1_SYMREAL[-71.463802294] - UF_approx_2_SYMREAL(x_1_SYMREAL[-71.463802294],UF_approx_2_SYMREAL(x_1_SYMREAL[-71.463802294],UF_approx_1_SYMREAL(x_1_SYMREAL[-71.463802294]))))) &&
+44: (x_1_SYMREAL[-71.463802294] - UF_approx_2_SYMREAL(x_1_SYMREAL[-71.463802294],UF_approx_2_SYMREAL(x_1_SYMREAL[-71.463802294],UF_approx_1_SYMREAL(x_1_SYMREAL[-71.463802294])))) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-71.463802294] - UF_approx_2_SYMREAL(x_1_SYMREAL[-71.463802294],UF_approx_1_SYMREAL(x_1_SYMREAL[-71.463802294])))) > epsilon_2_SYMREAL[23.406959924600002] &&
+44: (x_1_SYMREAL[-71.463802294] - UF_approx_2_SYMREAL(x_1_SYMREAL[-71.463802294],UF_approx_1_SYMREAL(x_1_SYMREAL[-71.463802294]))) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-71.463802294] - UF_approx_1_SYMREAL(x_1_SYMREAL[-71.463802294]))) > epsilon_2_SYMREAL[23.406959924600002] &&
+44: (x_1_SYMREAL[-71.463802294] - UF_approx_1_SYMREAL(x_1_SYMREAL[-71.463802294])) < CONST_0.0
+133: Ret_0_SYMREAL = UF_approx_2_SYMREAL(x_1_SYMREAL[-71.463802294],UF_approx_2_SYMREAL(x_1_SYMREAL[-71.463802294],UF_approx_1_SYMREAL(x_1_SYMREAL[-71.463802294])))
+***********************************
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_1_SYMREAL(x_1_SYMREAL)))))]).concat(CONST_ ).concat(.valueof[(UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_1_SYMREAL(x_1_SYMREAL)))))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 17
+77: UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592])))) = UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592])))) &&
+15: epsilon_2_SYMREAL[23.1511344727] = (CONST_0.0 - (x_1_SYMREAL[-79.8500464592] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592])))) * CONST_1.0))) &&
+44: (x_1_SYMREAL[-79.8500464592] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592])))) * CONST_1.0)) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-79.8500464592] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592]))) * CONST_1.0))) > epsilon_2_SYMREAL[23.1511344727] &&
+44: (x_1_SYMREAL[-79.8500464592] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592]))) * CONST_1.0)) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-79.8500464592] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592])) * CONST_1.0))) > epsilon_2_SYMREAL[23.1511344727] &&
+44: (x_1_SYMREAL[-79.8500464592] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592])) * CONST_1.0)) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-79.8500464592] - (UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592]) * CONST_1.0))) > epsilon_2_SYMREAL[23.1511344727] &&
+44: (x_1_SYMREAL[-79.8500464592] - (UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592]) * CONST_1.0)) < CONST_0.0 &&
+15: epsilon_2_SYMREAL[23.1511344727] = (CONST_0.0 - (x_1_SYMREAL[-79.8500464592] - UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592])))))) &&
+44: (x_1_SYMREAL[-79.8500464592] - UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592]))))) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-79.8500464592] - UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592]))))) > epsilon_2_SYMREAL[23.1511344727] &&
+44: (x_1_SYMREAL[-79.8500464592] - UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592])))) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-79.8500464592] - UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592])))) > epsilon_2_SYMREAL[23.1511344727] &&
+44: (x_1_SYMREAL[-79.8500464592] - UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592]))) < CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-79.8500464592] - UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592]))) > epsilon_2_SYMREAL[23.1511344727] &&
+44: (x_1_SYMREAL[-79.8500464592] - UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592])) < CONST_0.0
+133: Ret_0_SYMREAL = UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_2_SYMREAL(x_1_SYMREAL[-79.8500464592],UF_approx_1_SYMREAL(x_1_SYMREAL[-79.8500464592]))))
+***********************************
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_1_SYMREAL(x_1_SYMREAL)))]).concat(CONST_ ).concat(.valueof[(UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_1_SYMREAL(x_1_SYMREAL)))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 9
+77: UF_approx_2_SYMREAL(x_1_SYMREAL[-77.7117774144],UF_approx_1_SYMREAL(x_1_SYMREAL[-77.7117774144])) = UF_approx_2_SYMREAL(x_1_SYMREAL[-77.7117774144],UF_approx_1_SYMREAL(x_1_SYMREAL[-77.7117774144])) &&
+15: (x_1_SYMREAL[-77.7117774144] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-77.7117774144],UF_approx_1_SYMREAL(x_1_SYMREAL[-77.7117774144])) * CONST_1.0)) < epsilon_2_SYMREAL[86.0118599847] &&
+44: CONST_0.0 = (x_1_SYMREAL[-77.7117774144] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-77.7117774144],UF_approx_1_SYMREAL(x_1_SYMREAL[-77.7117774144])) * CONST_1.0)) &&
+15: (CONST_0.0 - (x_1_SYMREAL[-77.7117774144] - (UF_approx_1_SYMREAL(x_1_SYMREAL[-77.7117774144]) * CONST_1.0))) > epsilon_2_SYMREAL[86.0118599847] &&
+44: (x_1_SYMREAL[-77.7117774144] - (UF_approx_1_SYMREAL(x_1_SYMREAL[-77.7117774144]) * CONST_1.0)) < CONST_0.0 &&
+15: (x_1_SYMREAL[-77.7117774144] - UF_approx_2_SYMREAL(x_1_SYMREAL[-77.7117774144],UF_approx_1_SYMREAL(x_1_SYMREAL[-77.7117774144]))) < epsilon_2_SYMREAL[86.0118599847] &&
+44: CONST_0.0 = (x_1_SYMREAL[-77.7117774144] - UF_approx_2_SYMREAL(x_1_SYMREAL[-77.7117774144],UF_approx_1_SYMREAL(x_1_SYMREAL[-77.7117774144]))) &&
+15: (CONST_0.0 - (x_1_SYMREAL[-77.7117774144] - UF_approx_1_SYMREAL(x_1_SYMREAL[-77.7117774144]))) > epsilon_2_SYMREAL[86.0118599847] &&
+44: (x_1_SYMREAL[-77.7117774144] - UF_approx_1_SYMREAL(x_1_SYMREAL[-77.7117774144])) < CONST_0.0
+133: Ret_0_SYMREAL = UF_approx_2_SYMREAL(x_1_SYMREAL[-77.7117774144],UF_approx_1_SYMREAL(x_1_SYMREAL[-77.7117774144]))
+***********************************
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_1_SYMREAL(x_1_SYMREAL)))]).concat(CONST_ ).concat(.valueof[(UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_1_SYMREAL(x_1_SYMREAL)))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 9
+77: UF_approx_2_SYMREAL(x_1_SYMREAL[-22.6488870145],UF_approx_1_SYMREAL(x_1_SYMREAL[-22.6488870145])) = UF_approx_2_SYMREAL(x_1_SYMREAL[-22.6488870145],UF_approx_1_SYMREAL(x_1_SYMREAL[-22.6488870145])) &&
+15: (x_1_SYMREAL[-22.6488870145] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-22.6488870145],UF_approx_1_SYMREAL(x_1_SYMREAL[-22.6488870145])) * CONST_1.0)) < epsilon_2_SYMREAL[60.098867414] &&
+44: (x_1_SYMREAL[-22.6488870145] - (UF_approx_2_SYMREAL(x_1_SYMREAL[-22.6488870145],UF_approx_1_SYMREAL(x_1_SYMREAL[-22.6488870145])) * CONST_1.0)) > CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-22.6488870145] - (UF_approx_1_SYMREAL(x_1_SYMREAL[-22.6488870145]) * CONST_1.0))) > epsilon_2_SYMREAL[60.098867414] &&
+44: (x_1_SYMREAL[-22.6488870145] - (UF_approx_1_SYMREAL(x_1_SYMREAL[-22.6488870145]) * CONST_1.0)) < CONST_0.0 &&
+15: (x_1_SYMREAL[-22.6488870145] - UF_approx_2_SYMREAL(x_1_SYMREAL[-22.6488870145],UF_approx_1_SYMREAL(x_1_SYMREAL[-22.6488870145]))) < epsilon_2_SYMREAL[60.098867414] &&
+44: (x_1_SYMREAL[-22.6488870145] - UF_approx_2_SYMREAL(x_1_SYMREAL[-22.6488870145],UF_approx_1_SYMREAL(x_1_SYMREAL[-22.6488870145]))) > CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[-22.6488870145] - UF_approx_1_SYMREAL(x_1_SYMREAL[-22.6488870145]))) > epsilon_2_SYMREAL[60.098867414] &&
+44: (x_1_SYMREAL[-22.6488870145] - UF_approx_1_SYMREAL(x_1_SYMREAL[-22.6488870145])) < CONST_0.0
+133: Ret_0_SYMREAL = UF_approx_2_SYMREAL(x_1_SYMREAL[-22.6488870145],UF_approx_1_SYMREAL(x_1_SYMREAL[-22.6488870145]))
+***********************************
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_1_SYMREAL(x_1_SYMREAL)))]).concat(CONST_ ).concat(.valueof[(UF_approx_2_SYMREAL(x_1_SYMREAL,UF_approx_1_SYMREAL(x_1_SYMREAL)))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 9
+77: UF_approx_2_SYMREAL(x_1_SYMREAL[13.3367289065],UF_approx_1_SYMREAL(x_1_SYMREAL[13.3367289065])) = UF_approx_2_SYMREAL(x_1_SYMREAL[13.3367289065],UF_approx_1_SYMREAL(x_1_SYMREAL[13.3367289065])) &&
+15: epsilon_2_SYMREAL[43.1422614704] = (x_1_SYMREAL[13.3367289065] - (UF_approx_2_SYMREAL(x_1_SYMREAL[13.3367289065],UF_approx_1_SYMREAL(x_1_SYMREAL[13.3367289065])) * CONST_1.0)) &&
+44: (x_1_SYMREAL[13.3367289065] - (UF_approx_2_SYMREAL(x_1_SYMREAL[13.3367289065],UF_approx_1_SYMREAL(x_1_SYMREAL[13.3367289065])) * CONST_1.0)) > CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[13.3367289065] - (UF_approx_1_SYMREAL(x_1_SYMREAL[13.3367289065]) * CONST_1.0))) > epsilon_2_SYMREAL[43.1422614704] &&
+44: (x_1_SYMREAL[13.3367289065] - (UF_approx_1_SYMREAL(x_1_SYMREAL[13.3367289065]) * CONST_1.0)) < CONST_0.0 &&
+15: epsilon_2_SYMREAL[43.1422614704] = (x_1_SYMREAL[13.3367289065] - UF_approx_2_SYMREAL(x_1_SYMREAL[13.3367289065],UF_approx_1_SYMREAL(x_1_SYMREAL[13.3367289065]))) &&
+44: (x_1_SYMREAL[13.3367289065] - UF_approx_2_SYMREAL(x_1_SYMREAL[13.3367289065],UF_approx_1_SYMREAL(x_1_SYMREAL[13.3367289065]))) > CONST_0.0 &&
+15: (CONST_0.0 - (x_1_SYMREAL[13.3367289065] - UF_approx_1_SYMREAL(x_1_SYMREAL[13.3367289065]))) > epsilon_2_SYMREAL[43.1422614704] &&
+44: (x_1_SYMREAL[13.3367289065] - UF_approx_1_SYMREAL(x_1_SYMREAL[13.3367289065])) < CONST_0.0
+133: Ret_0_SYMREAL = UF_approx_2_SYMREAL(x_1_SYMREAL[13.3367289065],UF_approx_1_SYMREAL(x_1_SYMREAL[13.3367289065]))
+***********************************
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.InewVPASDA2.sqrt(InewVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(UF_approx_1_SYMREAL(x_1_SYMREAL))]).concat(CONST_ ).concat(.valueof[(UF_approx_1_SYMREAL(x_1_SYMREAL))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 5
+77: UF_approx_1_SYMREAL(x_1_SYMREAL[-77.7117774144]) = UF_approx_1_SYMREAL(x_1_SYMREAL[-77.7117774144]) &&
+15: (x_1_SYMREAL[-77.7117774144] - (UF_approx_1_SYMREAL(x_1_SYMREAL[-77.7117774144]) * CONST_1.0)) < epsilon_2_SYMREAL[86.0118599847] &&
+44: CONST_0.0 = (x_1_SYMREAL[-77.7117774144] - (UF_approx_1_SYMREAL(x_1_SYMREAL[-77.7117774144]) * CONST_1.0)) &&
+15: (x_1_SYMREAL[-77.7117774144] - UF_approx_1_SYMREAL(x_1_SYMREAL[-77.7117774144])) < epsilon_2_SYMREAL[86.0118599847] &&
+44: CONST_0.0 = (x_1_SYMREAL[-77.7117774144] - UF_approx_1_SYMREAL(x_1_SYMREAL[-77.7117774144]))
+133: Ret_0_SYMREAL = UF_approx_1_SYMREAL(x_1_SYMREAL[-77.7117774144])
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(UF_approx_1_SYMREAL(x_1_SYMREAL))]).concat(CONST_ ).concat(.valueof[(UF_approx_1_SYMREAL(x_1_SYMREAL))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 5
+77: UF_approx_1_SYMREAL(x_1_SYMREAL[0.0]) = UF_approx_1_SYMREAL(x_1_SYMREAL[0.0]) &&
+15: epsilon_2_SYMREAL[0.0] = (x_1_SYMREAL[0.0] - (UF_approx_1_SYMREAL(x_1_SYMREAL[0.0]) * CONST_1.0)) &&
+44: CONST_0.0 = (x_1_SYMREAL[0.0] - (UF_approx_1_SYMREAL(x_1_SYMREAL[0.0]) * CONST_1.0)) &&
+15: epsilon_2_SYMREAL[0.0] = (x_1_SYMREAL[0.0] - UF_approx_1_SYMREAL(x_1_SYMREAL[0.0])) &&
+44: CONST_0.0 = (x_1_SYMREAL[0.0] - UF_approx_1_SYMREAL(x_1_SYMREAL[0.0]))
+133: Ret_0_SYMREAL = UF_approx_1_SYMREAL(x_1_SYMREAL[0.0])
+***********************************
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(UF_approx_1_SYMREAL(x_1_SYMREAL))]).concat(CONST_ ).concat(.valueof[(UF_approx_1_SYMREAL(x_1_SYMREAL))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 5
+77: UF_approx_1_SYMREAL(x_1_SYMREAL[60.895597614]) = UF_approx_1_SYMREAL(x_1_SYMREAL[60.895597614]) &&
+15: (x_1_SYMREAL[60.895597614] - (UF_approx_1_SYMREAL(x_1_SYMREAL[60.895597614]) * CONST_1.0)) < epsilon_2_SYMREAL[95.136410975] &&
+44: (x_1_SYMREAL[60.895597614] - (UF_approx_1_SYMREAL(x_1_SYMREAL[60.895597614]) * CONST_1.0)) > CONST_0.0 &&
+15: (x_1_SYMREAL[60.895597614] - UF_approx_1_SYMREAL(x_1_SYMREAL[60.895597614])) < epsilon_2_SYMREAL[95.136410975] &&
+44: (x_1_SYMREAL[60.895597614] - UF_approx_1_SYMREAL(x_1_SYMREAL[60.895597614])) > CONST_0.0
+133: Ret_0_SYMREAL = UF_approx_1_SYMREAL(x_1_SYMREAL[60.895597614])
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(UF_approx_1_SYMREAL(x_1_SYMREAL))]).concat(CONST_ ).concat(.valueof[(UF_approx_1_SYMREAL(x_1_SYMREAL))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 5
+77: UF_approx_1_SYMREAL(x_1_SYMREAL[8.300082570299992]) = UF_approx_1_SYMREAL(x_1_SYMREAL[8.300082570299992]) &&
+15: epsilon_2_SYMREAL[86.0118599847] = (x_1_SYMREAL[8.300082570299992] - (UF_approx_1_SYMREAL(x_1_SYMREAL[8.300082570299992]) * CONST_1.0)) &&
+44: (x_1_SYMREAL[8.300082570299992] - (UF_approx_1_SYMREAL(x_1_SYMREAL[8.300082570299992]) * CONST_1.0)) > CONST_0.0 &&
+15: epsilon_2_SYMREAL[86.0118599847] = (x_1_SYMREAL[8.300082570299992] - UF_approx_1_SYMREAL(x_1_SYMREAL[8.300082570299992])) &&
+44: (x_1_SYMREAL[8.300082570299992] - UF_approx_1_SYMREAL(x_1_SYMREAL[8.300082570299992])) > CONST_0.0
+133: Ret_0_SYMREAL = UF_approx_1_SYMREAL(x_1_SYMREAL[8.300082570299992])
+***********************************
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at java.lang.Math.abs(Math.java:44)
+	at demo.QuixFix.Eq.SQRT.instrumented.IoldVPASDA2.sqrt(IoldVPASDA2.java:15)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== Method Summaries
+Inputs: x_1_SYMREAL,epsilon_2_SYMREAL
+
+demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(-93.9863109929,85.561193516)  --> Return Value: 1.0
+demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(51.9067185409,41.0861395699)  --> Return Value: 1.0
+demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(-70.3145444228704,38.411442420196224)  --> Return Value: 1.0
+demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(-9.3912836046,7.8378778923)  --> Return Value: 1.0
+demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(-100.0,20.598734847995743)  --> Return Value: 1.0
+demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(-71.463802294,23.406959924600002)  --> Return Value: 1.0
+demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(-79.8500464592,23.1511344727)  --> Return Value: 1.0
+demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(-77.7117774144,86.0118599847)  --> Return Value: 1.0
+demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(-22.6488870145,60.098867414)  --> Return Value: 1.0
+demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(13.3367289065,43.1422614704)  --> Return Value: 1.0
+demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(0.0,0.0)  --> Return Value: 1.0
+demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(60.895597614,95.136410975)  --> Return Value: 1.0
+demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run(8.300082570299992,86.0118599847)  --> Return Value: 1.0
+
+====================================================== Method Summaries (HTML)
+<h1>Test Cases Generated by Symbolic JavaPath Finder for demo.QuixFix.Eq.SQRT.instrumented.IDiffPASDA2.run (Path Coverage) </h1>
+<table border=1>
+<tr><td>x_1_SYMREAL</td><td>epsilon_2_SYMREAL</td><td>RETURN</td></tr>
+<tr><td>-93.9863109929</td><td>85.561193516</td><td>Return Value: 1.0</td></tr>
+<tr><td>51.9067185409</td><td>41.0861395699</td><td>Return Value: 1.0</td></tr>
+<tr><td>-70.3145444228704</td><td>38.411442420196224</td><td>Return Value: 1.0</td></tr>
+<tr><td>-9.3912836046</td><td>7.8378778923</td><td>Return Value: 1.0</td></tr>
+<tr><td>-100.0</td><td>20.598734847995743</td><td>Return Value: 1.0</td></tr>
+<tr><td>-71.463802294</td><td>23.406959924600002</td><td>Return Value: 1.0</td></tr>
+<tr><td>-79.8500464592</td><td>23.1511344727</td><td>Return Value: 1.0</td></tr>
+<tr><td>-77.7117774144</td><td>86.0118599847</td><td>Return Value: 1.0</td></tr>
+<tr><td>-22.6488870145</td><td>60.098867414</td><td>Return Value: 1.0</td></tr>
+<tr><td>13.3367289065</td><td>43.1422614704</td><td>Return Value: 1.0</td></tr>
+<tr><td>0.0</td><td>0.0</td><td>Return Value: 1.0</td></tr>
+<tr><td>60.895597614</td><td>95.136410975</td><td>Return Value: 1.0</td></tr>
+<tr><td>8.300082570299992</td><td>86.0118599847</td><td>Return Value: 1.0</td></tr>
+</table>
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:08
+states:             new=533,visited=0,backtracked=533,end=14
+search:             maxDepth=10,constraints=100
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=178
+heap:               new=1133,released=422,maxLive=370,gcCycles=29
+instructions:       8400
+max memory:         3175MB
+loaded code:        classes=64,methods=1450
+
+====================================================== search finished: 9/29/24 8:17 PM
+Iteration 2 partitionCount 65 ../QuixBugs/Eq/SQRT/instrumented -> EQ
+Maybe count 0
+Execution time in milliseconds: 9693 ms, fuzztime 1 ms

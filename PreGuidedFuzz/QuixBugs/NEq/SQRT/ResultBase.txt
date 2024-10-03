@@ -1,0 +1,27 @@
+Arguments:
+--path1 path/to/the/first/method --path2 path/to/the/second/method --tool ToolName --s SMTSolverName --t timeout --b bound --minint minInt --maxint maxInt --mindouble minDouble --maxdouble maxDouble
+*****************
+--tool ToolName: to choose the tool to run (Default is ARDiff):
+--tool D: Run DSE
+--tool I: Run IMP-S
+--tool A: Run ARDiff
+--t timeout: to choose the timeout for constraint solving in millisecond (Default is 300000 MS):
+*****************
+--b bound: to choose the loop bound (Default is 5)
+*****************
+--minint: the minimum value of integers in the program (Default is -100):
+*****************
+--maxint: the maximum value of integers in the program (Default is 100):
+*****************
+--mindouble: the minimum value of doubles in the program (Default is -100.0):
+*****************
+--maxdouble: the maximum value of doubles in the program (Default is 100.0):
+*****************
+--H: the heuristics for ARDiff (R,H3 or H123)
+*****************
+benchmark info../QuixBugs/NEq EQ
+[32m[NOTE] If you want to have a complete summary (exercise all behaviors), make sure your bound is big enough.[0m
+*****************************************************************************
+------------------------------------PASDA-----------------------------------
+*****************************************************************************
+Creating differencing parameters... sqrt
