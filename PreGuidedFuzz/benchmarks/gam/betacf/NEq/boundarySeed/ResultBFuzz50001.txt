@@ -1,0 +1,6 @@
+getInputValues: 3
+-23.155398858270196
+106.63569266829103
+-60.29409040579205
+../benchmarks/gam/betacf/NEq/instrumented [-23.155398858270196, 106.63569266829103, -60.29409040579205] 1 -> NEQ
+Execution time in milliseconds: 385 ms, fuzztime 5000 ms

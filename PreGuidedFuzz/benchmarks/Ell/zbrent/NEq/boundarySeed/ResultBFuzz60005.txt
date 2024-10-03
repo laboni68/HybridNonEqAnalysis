@@ -1,0 +1,4 @@
+Ell/zbrent/NEq
+0 PASDA-diff 120 120 24
+Error: '../benchmarks/Ell/zbrent/NEq/instrumented/IDiffPASDA-Parameters.txt' does not exist.
+Execution time in milliseconds: 69 ms, fuzztime 6000 ms

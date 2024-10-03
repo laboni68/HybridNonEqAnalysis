@@ -1,0 +1,6 @@
+getInputValues: 3
+-36
+110
+106.63569266829103
+../benchmarks/Ell/plgndr/NEq/instrumented [-36, 110, 106.63569266829103] 1 -> NEQ
+Execution time in milliseconds: 288 ms, fuzztime 5000 ms

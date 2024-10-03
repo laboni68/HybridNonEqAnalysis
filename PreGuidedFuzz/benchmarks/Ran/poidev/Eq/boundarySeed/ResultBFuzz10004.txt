@@ -1,0 +1,14 @@
+getInputValues: 3
+-23.155398858270196
+85
+-45
+-60.29409040579205
+-14
+35
+20.258117541785893
+113
+-112
+Process was terminated due to timeout.
+Fuzzing time limit exceeded
+Fuzzing time limit exceeded : 3
+Execution time in milliseconds: 3395 ms, fuzztime 1000 ms

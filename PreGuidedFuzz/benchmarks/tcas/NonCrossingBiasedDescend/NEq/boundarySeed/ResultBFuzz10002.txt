@@ -1,0 +1,17 @@
+getInputValues: 14
+-36
+110
+85
+-45
+-68
+-39
+-14
+35
+-88
+68
+113
+-112
+79
+-6
+../benchmarks/tcas/NonCrossingBiasedDescend/NEq/instrumented [-36, 110, 85, -45, -68, -39, -14, 35, -88, 68, 113, -112, 79, -6] 1 -> NEQ
+Execution time in milliseconds: 358 ms, fuzztime 1000 ms

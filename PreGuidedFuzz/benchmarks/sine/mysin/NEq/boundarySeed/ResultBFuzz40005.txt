@@ -1,0 +1,4 @@
+getInputValues: 1
+-23.155398858270196
+../benchmarks/sine/mysin/NEq/instrumented [-23.155398858270196] 1 -> NEQ
+Execution time in milliseconds: 269 ms, fuzztime 4000 ms

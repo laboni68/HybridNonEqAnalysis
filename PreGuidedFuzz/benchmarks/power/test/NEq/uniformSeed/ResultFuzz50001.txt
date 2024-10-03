@@ -1,0 +1,5 @@
+getInputValues: 2
+1553932502
+-2090749135
+../benchmarks/power/test/NEq/instrumented [1553932502, -2090749135] 1 -> NEQ
+Execution time in milliseconds: 353 ms, fuzztime 5000 ms

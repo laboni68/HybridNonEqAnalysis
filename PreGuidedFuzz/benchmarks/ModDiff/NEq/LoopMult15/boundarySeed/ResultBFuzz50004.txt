@@ -1,0 +1,23 @@
+getInputValues: 1
+-36
+110
+85
+-45
+-68
+-39
+-14
+35
+-88
+68
+113
+-112
+79
+-6
+-43
+49
+106
+-39
+-105
+14
+../benchmarks/ModDiff/NEq/LoopMult15/instrumented [14] 20 -> NEQ
+Execution time in milliseconds: 841 ms, fuzztime 5000 ms

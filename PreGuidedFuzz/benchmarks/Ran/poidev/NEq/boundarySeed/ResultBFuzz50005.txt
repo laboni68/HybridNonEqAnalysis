@@ -1,0 +1,6 @@
+getInputValues: 3
+-23.155398858270196
+85
+-45
+../benchmarks/Ran/poidev/NEq/instrumented [-23.155398858270196, 85, -45] 1 -> NEQ
+Execution time in milliseconds: 266 ms, fuzztime 5000 ms

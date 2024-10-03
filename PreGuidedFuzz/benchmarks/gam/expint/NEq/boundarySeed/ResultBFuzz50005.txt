@@ -1,0 +1,5 @@
+getInputValues: 2
+-36
+1.865986970577082
+../benchmarks/gam/expint/NEq/instrumented [-36, 1.865986970577082] 1 -> NEQ
+Execution time in milliseconds: 337 ms, fuzztime 5000 ms

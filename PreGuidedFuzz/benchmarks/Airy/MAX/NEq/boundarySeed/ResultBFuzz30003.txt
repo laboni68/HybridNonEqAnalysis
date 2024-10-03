@@ -1,0 +1,5 @@
+getInputValues: 2
+-23.155398858270196
+106.63569266829103
+../benchmarks/Airy/MAX/NEq/instrumented [-23.155398858270196, 106.63569266829103] 1 -> NEQ
+Execution time in milliseconds: 430 ms, fuzztime 3000 ms

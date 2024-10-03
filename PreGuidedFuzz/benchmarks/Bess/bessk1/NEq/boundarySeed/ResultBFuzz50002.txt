@@ -1,0 +1,5 @@
+getInputValues: 1
+-23.155398858270196
+106.63569266829103
+../benchmarks/Bess/bessk1/NEq/instrumented [106.63569266829103] 2 -> NEQ
+Execution time in milliseconds: 385 ms, fuzztime 5000 ms
