@@ -32,7 +32,7 @@ java version "1.8.0_202"
 
 ### Post-Fuzz and Pre-Post-Fuzz thresholding
 </br> Implemented in the Post-Threshold folder
-</br> Threshold based symbolic execution will be computed while
+</br> Threshold-based symbolic execution will be computed for post and pre-post fuzzing
 
 
 
