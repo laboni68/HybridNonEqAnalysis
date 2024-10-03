@@ -1,0 +1,19 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Runner" type="Application" factoryName="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="/usr/lib/jvm/jdk1.8.0_202" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+    <option name="MAIN_CLASS_NAME" value="Runner.Runner" />
+    <module name="ardiff-test" />
+    <option name="PROGRAM_PARAMETERS" value="--path1 ../benchmarks/Bess/bessk/NEq/oldV.java --path2 ../benchmarks/Bess/bessk/NEq/newV.java --tool D --s coral --b 3 --H H123" />
+    <option name="VM_PARAMETERS" value="-Djava.library.path=$PROJECT_DIR$/jpf-git/jpf-symbc/lib" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="Runner.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
