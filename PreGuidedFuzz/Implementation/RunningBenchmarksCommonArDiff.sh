@@ -47,8 +47,8 @@ timeouts=(
 runs=1
 
 benchmarks=(
-"Airy/MAX/Eq"
-# "Airy/MAX/NEq"
+# "Airy/MAX/Eq"
+"Airy/MAX/NEq"
 # "Airy/Sign/Eq"
 # "Airy/Sign/NEq"
 # "Bess/bessi/Eq"
