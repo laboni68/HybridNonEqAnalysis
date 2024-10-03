@@ -30,6 +30,9 @@ java version "1.8.0_202"
 - Abstraction of the compared methods: ``` timeout --verbose --foreground 115s java -jar '../Implementation/build/libs/ARDiff-base-1.0-SNAPSHOT-all.jar' --path1 ../benchmarks/Airy/MAX/Eq/oldV.java --path2 ../benchmarks/Airy/MAX/Eq/newV.java --tool H --s coral --b 10 --t 115 ```
 - Product program generation, run pre-fuzz and guided-fuzz:  ``` timeout --verbose --foreground 115s java -jar '../Implementation/build/libs/ARDiff-diff-1.0-SNAPSHOT-all.jar' ../benchmarks/Airy/MAX/Eq Hybrid 115 10 2000 boundary ```
 
+### Sample Result Format
+<img src="SampleResultImage/eqPre-G-F.png" width="500" /> <img src="SampleResultImage/neqPre-G-F.png" width="600" />
+
 ### Post-Fuzz and Pre-Post-Fuzz thresholding
 - Implemented in the Post-Threshold folder
 - Threshold-based symbolic execution will be computed for post and pre-post fuzzing
