@@ -1,0 +1,247 @@
+getInputValues: 2
+-96
+-71
+30
+56
+126
+23
+-57
+7
+-4
+-86
+-111
+-54
+123
+-38
+-117
+30
+19
+82
+82
+22
+-25
+-64
+-21
+109
+1276956207
+1697734845
+1874593219
+1294947835
+1974539153
+1559777765
+2059345457
+1340261413
+1292736612
+1167547574
+1479253525
+1853175147
+1881238021
+2008264240
+1347345709
+1330650467
+1496096814
+1123452249
+1395980546
+1597411267
+1372716267
+1552490560
+1287673692
+1174331207
+-1083150140
+-1158337188
+-2078061651
+-1678442213
+-1940061438
+-1913241594
+-1688444433
+-1699073157
+-1675256374
+-1780954514
+-2031760293
+-1702467194
+-1516945932
+-2062345690
+-1151830620
+-1262487119
+-1144911987
+-1881876095
+-1772931302
+-1628565162
+-1073889860
+-1738959715
+-1316572467
+-1122341984
+-1539015843
+-1931952667
+258673131
+-1991372410
+1767458356
+1182524177
+588985219
+1019785250
+48927566
+1480900867
+-868792030
+2129054763
+1480299759
+1683621646
+-424999647
+-40432260
+-1142643676
+-1494180317
+1756033355
+1356194287
+-1458717911
+-1638425246
+2113438179
+648189459
+-1930710518
+2029417459
+505306347
+224445723
+1237459340
+1898142743
+1083396515
+-1228123112
+-1738141619
+-1903858823
+Fuzzing time limit exceeded
+Fuzzing time limit exceeded : 53
+symbolic.min_int=-100
+symbolic.min_long=-100
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=100
+symbolic.max_long=100
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-100.0
+symbolic.max_double=100.0
+symbolic.min_int=-100
+symbolic.min_long=-100
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=100
+symbolic.max_long=100
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-100.0
+symbolic.max_double=100.0
+JavaPathfinder core system v8.0 (rev ecdb30ddaab26d2773e7741b09fd902efb7999c7) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffPASDA2.main()
+
+====================================================== search started: 9/29/24 5:03 AM
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IoldVPASDA2.modp(IoldVPASDA2.java:19)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVPASDA2.modp(InewVPASDA2.java:17)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVPASDA2.modp(InewVPASDA2.java:19)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVPASDA2.modp(InewVPASDA2.java:21)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVPASDA2.modp(InewVPASDA2.java:17)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVPASDA2.modp(InewVPASDA2.java:19)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVPASDA2.modp(InewVPASDA2.java:17)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVPASDA2.modp(InewVPASDA2.java:19)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Iteration 2 partitionCount 4 - ERROR: 
+../benchmarksHumaneval/Eq/MODP/instrumented -> ERROR
+Maybe count 0
+Execution time in milliseconds: 3947 ms, fuzztime 2000 ms

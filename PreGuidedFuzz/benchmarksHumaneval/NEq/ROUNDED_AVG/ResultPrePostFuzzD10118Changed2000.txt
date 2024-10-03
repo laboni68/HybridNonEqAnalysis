@@ -1,0 +1,7 @@
+getInputValues: 2
+61
+-61
+-101
+-86
+../benchmarksHumaneval/NEq/ROUNDED_AVG/instrumented [-101, -86] 2 -> NEQ
+Execution time in milliseconds: 295 ms, fuzztime 2000 ms

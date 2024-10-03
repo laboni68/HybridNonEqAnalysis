@@ -1,0 +1,436 @@
+getInputValues: 1
+-116
+-17
+-48
+-65
+53
+15
+-9
+73
+-37
+-22
+-75
+107
+1275237218
+2111223516
+1672467661
+1890738732
+1726683690
+1116892910
+1792026718
+1474778925
+1662892989
+1620234742
+1258544479
+1153290706
+-1598349131
+-1927039059
+-1237748550
+-1437618406
+-1495857089
+-1325172561
+-1757377480
+-1542572005
+-1770261975
+-1248974296
+-2066115745
+-2143193042
+955643656
+870764620
+1038268154
+919943913
+1278070740
+-566693027
+-1023240188
+-1161117874
+-672140720
+-964121008
+-955755694
+1554825518
+136756068
+1742521624
+29918860
+1815517559
+825156397
+1951364526
+1195860355
+-1170412508
+-485117643
+560032310
+-37349498
+1101553930
+Fuzzing time limit exceeded
+Fuzzing time limit exceeded : 60
+symbolic.min_int=-100
+symbolic.min_long=-100
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=100
+symbolic.max_long=100
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-100.0
+symbolic.max_double=100.0
+symbolic.min_int=-100
+symbolic.min_long=-100
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=100
+symbolic.max_long=100
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-100.0
+symbolic.max_double=100.0
+JavaPathfinder core system v8.0 (rev ecdb30ddaab26d2773e7741b09fd902efb7999c7) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main()
+
+====================================================== search started: 9/29/24 5:03 AM
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IoldVPASDA2.is_multiply_prime(IoldVPASDA2.java:12)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IoldVPASDA2.is_multiply_prime(IoldVPASDA2.java:11)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IoldVPASDA2.is_multiply_prime(IoldVPASDA2.java:12)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IoldVPASDA2.is_multiply_prime(IoldVPASDA2.java:20)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IoldVPASDA2.is_multiply_prime(IoldVPASDA2.java:12)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IoldVPASDA2.is_multiply_prime(IoldVPASDA2.java:11)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IoldVPASDA2.is_multiply_prime(IoldVPASDA2.java:12)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IoldVPASDA2.is_multiply_prime(IoldVPASDA2.java:11)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IoldVPASDA2.is_multiply_prime(IoldVPASDA2.java:12)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IoldVPASDA2.is_multiply_prime(IoldVPASDA2.java:11)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IoldVPASDA2.is_multiply_prime(IoldVPASDA2.java:12)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IoldVPASDA2.is_multiply_prime(IoldVPASDA2.java:11)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IoldVPASDA2.is_multiply_prime(IoldVPASDA2.java:12)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IoldVPASDA2.is_multiply_prime(IoldVPASDA2.java:11)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.InewVPASDA2.is_multiply_prime(InewVPASDA2.java:13)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.InewVPASDA2.is_multiply_prime(InewVPASDA2.java:11)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.InewVPASDA2.is_multiply_prime(InewVPASDA2.java:15)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.InewVPASDA2.is_multiply_prime(InewVPASDA2.java:12)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.InewVPASDA2.is_multiply_prime(InewVPASDA2.java:16)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.InewVPASDA2.is_multiply_prime(InewVPASDA2.java:14)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+  - Equivalent: true 0 0
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 3
+13: AF_is_prime_SYMINT(CONST_2) = CONST_0 &&
+12: CONST_3 >= a_1_SYMINT[3] &&
+11: CONST_2 < a_1_SYMINT[3]
+133: Ret_0_SYMINT = CONST_0
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+  - Equivalent: true 0 0
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 4
+15: CONST_8 != a_1_SYMINT[3] &&
+13: AF_is_prime_SYMINT(CONST_2) != CONST_0 &&
+12: CONST_3 >= a_1_SYMINT[3] &&
+11: CONST_2 < a_1_SYMINT[3]
+133: Ret_0_SYMINT = CONST_0
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+  - Equivalent: true 0 0
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 1
+11: CONST_2 >= a_1_SYMINT[0]
+133: Ret_0_SYMINT = CONST_0
+***********************************
+
+====================================================== Method Summaries
+Inputs: a_1_SYMINT
+
+demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(3)  --> Return Value: 0
+demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run(0)  --> Return Value: 0
+
+====================================================== Method Summaries (HTML)
+<h1>Test Cases Generated by Symbolic JavaPath Finder for demo.benchmarksHumaneval.NEq.IS_MULTIPLY_PRIME.instrumented.IDiffPASDA2.run (Path Coverage) </h1>
+<table border=1>
+<tr><td>a_1_SYMINT</td><td>RETURN</td></tr>
+<tr><td>3</td><td>Return Value: 0</td></tr>
+<tr><td>0</td><td>Return Value: 0</td></tr>
+</table>
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:02
+states:             new=124,visited=0,backtracked=124,end=3
+search:             maxDepth=9,constraints=20
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=62
+heap:               new=496,released=89,maxLive=367,gcCycles=4
+instructions:       4121
+max memory:         2860MB
+loaded code:        classes=64,methods=1448
+
+====================================================== search finished: 9/29/24 5:03 AM
+Iteration 2 partitionCount 14 ../benchmarksHumaneval/Eq/IS_MULTIPLY_PRIME/instrumented -> EQ
+Maybe count 0
+Execution time in milliseconds: 5264 ms, fuzztime 2000 ms

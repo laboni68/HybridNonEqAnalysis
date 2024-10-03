@@ -1,0 +1,5 @@
+getInputValues: 2
+-23
+-70
+../benchmarksHumaneval/NEq/CHOOSE_NUM/instrumented [-23, -70] 1 -> NEQ
+Execution time in milliseconds: 268 ms, fuzztime 2000 ms

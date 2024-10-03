@@ -1,0 +1,6 @@
+getInputValues: 3
+-75
+-39
+-82
+../benchmarksHumaneval/NEq/RIGHT_ANGLE_TRIANGLE/instrumented [-75, -39, -82] 1 -> NEQ
+Execution time in milliseconds: 259 ms, fuzztime 2000 ms

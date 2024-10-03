@@ -1,0 +1,4 @@
+getInputValues: 1
+-3.417609277193037
+../benchmarksHumaneval/NEq/TRUNCATE_NUMBER/instrumented [-3.417609277193037] 1 -> NEQ
+Execution time in milliseconds: 298 ms, fuzztime 5000 ms

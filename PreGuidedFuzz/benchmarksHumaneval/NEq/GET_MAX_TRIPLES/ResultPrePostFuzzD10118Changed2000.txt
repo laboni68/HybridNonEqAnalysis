@@ -1,0 +1,6 @@
+getInputValues: 1
+-59
+-13
+96
+../benchmarksHumaneval/NEq/GET_MAX_TRIPLES/instrumented [96] 3 -> NEQ
+Execution time in milliseconds: 339 ms, fuzztime 2000 ms

@@ -1,0 +1,173 @@
+benchmarksHumaneval
+NEq
+STRING_SEQUENCE
+getInputValues: 1
+symbolic.min_int=-100
+symbolic.min_long=-100
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=100
+symbolic.max_long=100
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-100.0
+symbolic.max_double=100.0
+Reporter set demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.main()
+JavaPathfinder core system v8.0 (rev ecdb30ddaab26d2773e7741b09fd902efb7999c7) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test:
+demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.main()
+
+====================================================== search started: 7/30/24 11:25 PM
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+Partition classification is null
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IoldVPASDA1.string_sequence(IoldVPASDA1.java:6)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.run(IDiffPASDA1.java:89)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.main(IDiffPASDA1.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+Partition classification is null
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.InewVPASDA1.string_sequence(InewVPASDA1.java:6)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.run(IDiffPASDA1.java:95)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.main(IDiffPASDA1.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.InewVPASDA1.string_sequence(InewVPASDA1.java:9)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.run(IDiffPASDA1.java:95)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.main(IDiffPASDA1.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+Partition classification is null
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.InewVPASDA1.string_sequence(InewVPASDA1.java:6)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.run(IDiffPASDA1.java:95)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.main(IDiffPASDA1.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.InewVPASDA1.string_sequence(InewVPASDA1.java:9)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.run(IDiffPASDA1.java:95)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.main(IDiffPASDA1.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+Partition classification is null
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.InewVPASDA1.string_sequence(InewVPASDA1.java:6)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.run(IDiffPASDA1.java:95)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.main(IDiffPASDA1.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.InewVPASDA1.string_sequence(InewVPASDA1.java:9)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.run(IDiffPASDA1.java:95)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.main(IDiffPASDA1.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+Partition classification is null
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.InewVPASDA1.string_sequence(InewVPASDA1.java:6)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.run(IDiffPASDA1.java:95)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.main(IDiffPASDA1.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.InewVPASDA1.string_sequence(InewVPASDA1.java:9)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.run(IDiffPASDA1.java:95)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.main(IDiffPASDA1.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+Partition classification is null
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.InewVPASDA1.string_sequence(InewVPASDA1.java:6)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.run(IDiffPASDA1.java:95)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.main(IDiffPASDA1.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.InewVPASDA1.string_sequence(InewVPASDA1.java:9)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.run(IDiffPASDA1.java:95)
+	at demo.benchmarksHumaneval.NEq.STRING_SEQUENCE.instrumented.IDiffPASDA1.main(IDiffPASDA1.java:137)
+
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+Maybe count 0
+Execution time in milliseconds: 1935 ms

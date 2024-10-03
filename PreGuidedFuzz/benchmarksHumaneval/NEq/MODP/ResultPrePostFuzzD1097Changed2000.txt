@@ -1,0 +1,5 @@
+getInputValues: 2
+38
+15
+../benchmarksHumaneval/NEq/MODP/instrumented [38, 15] 1 -> NEQ
+Execution time in milliseconds: 267 ms, fuzztime 2000 ms

@@ -1,0 +1,9 @@
+getInputValues: 2
+120
+38
+-40
+33
+-37
+111
+../benchmarksHumaneval/NEq/MULTIPLY/instrumented [-37, 111] 3 -> NEQ
+Execution time in milliseconds: 339 ms, fuzztime 5000 ms

@@ -1,0 +1,714 @@
+getInputValues: 2
+-70
+-107
+-67
+-24
+73
+100
+27
+-119
+75
+-103
+44
+-76
+-43
+-124
+-50
+-51
+14
+-49
+-7
+102
+107
+-25
+36
+29
+1381432628
+1170553600
+1591440754
+1670596688
+2012925824
+1208299210
+2000528032
+1549499553
+1537107056
+1846763516
+1878656997
+1621690076
+1374378812
+1822306759
+1502842474
+1499203808
+1542446042
+1950831971
+1153620654
+1846497273
+1314362693
+1307657505
+1359809636
+1886282011
+-1606787251
+-1948974278
+-1809423612
+-1441527108
+-1190068000
+-1633378990
+-1975958101
+-1140983459
+-2031052240
+-1844513957
+-1178980599
+-1548627666
+-1178783040
+-1710669116
+-1308557846
+-1321186641
+-1248597100
+-1303185992
+-1972360937
+-2107452327
+-1505929931
+-1682426382
+-2004723829
+-1308608714
+1545709507
+280690361
+-90238675
+-1794180923
+1453027689
+457682898
+1641218499
+2075347021
+939175903
+1418632523
+-1560130117
+2055310695
+-912892668
+-127455455
+-534136671
+2132990327
+-1681416799
+1759702747
+-332489487
+2128567213
+1800069510
+1958252254
+141984474
+1447930486
+701522418
+176657151
+-1030037692
+1009299508
+1672192567
+22376026
+300629780
+525020976
+2036848286
+-2090980767
+-1496292690
+1414205647
+805393799
+-1755321545
+239537595
+-2011302909
+-1008568620
+254403902
+1909559084
+1439936260
+-473660024
+1840027630
+883639677
+1695201344
+Fuzzing time limit exceeded
+Fuzzing time limit exceeded : 60
+symbolic.min_int=-100
+symbolic.min_long=-100
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=100
+symbolic.max_long=100
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-100.0
+symbolic.max_double=100.0
+symbolic.min_int=-100
+symbolic.min_long=-100
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=100
+symbolic.max_long=100
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-100.0
+symbolic.max_double=100.0
+JavaPathfinder core system v8.0 (rev ecdb30ddaab26d2773e7741b09fd902efb7999c7) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main()
+
+====================================================== search started: 9/29/24 5:02 AM
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+  - Equivalent: true 1 1
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 2
+16: x_1_SYMINT[1] = CONST_1 &&
+15: n_2_SYMINT[1] = CONST_1
+133: Ret_0_SYMINT = CONST_1
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+  - Equivalent: true 0 0
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 2
+16: x_1_SYMINT[0] != CONST_1 &&
+15: n_2_SYMINT[1] = CONST_1
+133: Ret_0_SYMINT = CONST_0
+***********************************
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IoldVPASDA2.is_simple_power(IoldVPASDA2.java:18)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IoldVPASDA2.is_simple_power(IoldVPASDA2.java:21)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:89)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:18)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:21)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:18)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:21)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:18)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:21)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:18)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:21)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:18)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:21)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:18)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:21)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:18)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:21)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:18)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:21)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:18)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:21)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:18)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:21)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:18)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:21)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:18)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:21)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:18)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:21)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:18)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:21)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:19)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+  - Equivalent: true 1 1
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 4
+21: n_2_SYMINT[12] = x_1_SYMINT[12] &&
+18: n_2_SYMINT[12] >= x_1_SYMINT[12] &&
+18: CONST_1 < x_1_SYMINT[12] &&
+15: n_2_SYMINT[12] != CONST_1
+133: Ret_0_SYMINT = CONST_1
+***********************************
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.InewVPASDA2.is_simple_power(InewVPASDA2.java:19)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(IDiffPASDA2.java:95)
+	at demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.main(IDiffPASDA2.java:137)
+
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+  - Equivalent: true 0 0
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 4
+21: n_2_SYMINT[92] != x_1_SYMINT[76] &&
+18: n_2_SYMINT[92] >= x_1_SYMINT[76] &&
+18: CONST_1 < x_1_SYMINT[76] &&
+15: n_2_SYMINT[92] != CONST_1
+133: Ret_0_SYMINT = CONST_0
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+  - Equivalent: true 1 1
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 3
+21: CONST_1 = x_1_SYMINT[1] &&
+18: CONST_1 >= x_1_SYMINT[1] &&
+15: n_2_SYMINT[0] != CONST_1
+133: Ret_0_SYMINT = CONST_1
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+  - Equivalent: true 0 0
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 3
+21: CONST_1 != x_1_SYMINT[0] &&
+18: CONST_1 >= x_1_SYMINT[0] &&
+15: n_2_SYMINT[0] != CONST_1
+133: Ret_0_SYMINT = CONST_0
+***********************************
+
+====================================================== Method Summaries
+Inputs: x_1_SYMINT,n_2_SYMINT
+
+demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(1,1)  --> Return Value: 1
+demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(0,1)  --> Return Value: 0
+demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(12,12)  --> Return Value: 1
+demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(76,92)  --> Return Value: 0
+demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(1,0)  --> Return Value: 1
+demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run(0,0)  --> Return Value: 0
+
+====================================================== Method Summaries (HTML)
+<h1>Test Cases Generated by Symbolic JavaPath Finder for demo.benchmarksHumaneval.NEq.IS_SIMPLE_POWER.instrumented.IDiffPASDA2.run (Path Coverage) </h1>
+<table border=1>
+<tr><td>x_1_SYMINT</td><td>n_2_SYMINT</td><td>RETURN</td></tr>
+<tr><td>1</td><td>1</td><td>Return Value: 1</td></tr>
+<tr><td>0</td><td>1</td><td>Return Value: 0</td></tr>
+<tr><td>12</td><td>12</td><td>Return Value: 1</td></tr>
+<tr><td>76</td><td>92</td><td>Return Value: 0</td></tr>
+<tr><td>1</td><td>0</td><td>Return Value: 1</td></tr>
+<tr><td>0</td><td>0</td><td>Return Value: 0</td></tr>
+</table>
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:04
+states:             new=150,visited=0,backtracked=150,end=6
+search:             maxDepth=10,constraints=32
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=75
+heap:               new=685,released=176,maxLive=367,gcCycles=7
+instructions:       4893
+max memory:         3191MB
+loaded code:        classes=64,methods=1446
+
+====================================================== search finished: 9/29/24 5:02 AM
+Iteration 2 partitionCount 21 ../benchmarksHumaneval/Eq/IS_SIMPLE_POWER/instrumented -> EQ
+Maybe count 0
+Execution time in milliseconds: 7007 ms, fuzztime 2000 ms

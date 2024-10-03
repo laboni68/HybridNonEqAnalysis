@@ -1,0 +1,281 @@
+getInputValues: 2
+77
+52
+34
+75
+-100
+29
+-36
+58
+-41
+-128
+25
+-55
+-1
+23
+-121
+88
+49
+67
+-90
+119
+-13
+88
+-123
+104
+1863546380
+1308644856
+1668394349
+1868259480
+1899447604
+1945261488
+1513990353
+1649437896
+1102855390
+1991119300
+1658365228
+1731916481
+1592634413
+1788525848
+1131924505
+1336275704
+1139108665
+1754124930
+1538845787
+2010699770
+1586217990
+1591538320
+1671681161
+1475679968
+-1996529721
+-1740544535
+-1374686583
+-1545882798
+-1579042903
+-1684159716
+-1254967717
+-1384962163
+-1575712163
+-1455015653
+-1674888856
+-1485426553
+-1551575871
+-1644430066
+-1502631511
+-1820066217
+-1280323678
+-1453564739
+-1374619486
+-1799731244
+-2053214135
+-1928072073
+-1680257355
+-1867398324
+-2003847475
+-1281319011
+249177302
+306435122
+1097271344
+27070572
+-317323213
+1359803650
+1223632913
+370986519
+-424666225
+1185541125
+741295978
+1544612119
+2021049351
+-965561913
+-1177584285
+-1895615428
+-1060337314
+-474587879
+-1293117997
+713018080
+-1910967776
+-1497287059
+-42220538
+903104095
+-936870390
+-1310708635
+-772784704
+-595044666
+-1834523991
+1414430117
+-1200553342
+972731081
+-881267136
+-1166824464
+705516299
+-976710918
+Fuzzing time limit exceeded
+Fuzzing time limit exceeded : 55
+symbolic.min_int=-100
+symbolic.min_long=-100
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=100
+symbolic.max_long=100
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-100.0
+symbolic.max_double=100.0
+symbolic.min_int=-100
+symbolic.min_long=-100
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=100
+symbolic.max_long=100
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-100.0
+symbolic.max_double=100.0
+JavaPathfinder core system v8.0 (rev ecdb30ddaab26d2773e7741b09fd902efb7999c7) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+demo.benchmarksHumaneval.NEq.ROUNDED_AVG.instrumented.IDiffPASDA2.main()
+
+====================================================== search started: 9/30/24 3:28 PM
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+  - Equivalent: true -1 -1
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 1
+15: m_2_SYMINT[-77] < n_1_SYMINT[86]
+133: Ret_0_SYMINT = CONST_-1
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(UF_avg_rounded_2_SYMINT(UF_avg_1_SYMREAL(m_2_SYMINT,n_1_SYMINT,UF_summation_1_SYMINT(m_2_SYMINT,n_1_SYMINT))))]).concat(CONST_ ).concat(.valueof[(UF_avg_rounded_2_SYMINT(UF_avg_1_SYMREAL(m_2_SYMINT,n_1_SYMINT,UF_summation_1_SYMINT(m_2_SYMINT,n_1_SYMINT))))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 9
+72: UF_avg_rounded_2_SYMINT(UF_avg_1_SYMREAL(m_2_SYMINT[0],n_1_SYMINT[0],UF_summation_1_SYMINT(m_2_SYMINT[0],n_1_SYMINT[0]))) = UF_avg_rounded_2_SYMINT(UF_avg_1_SYMREAL(m_2_SYMINT[0],n_1_SYMINT[0],UF_summation_1_SYMINT(m_2_SYMINT[0],n_1_SYMINT[0]))) &&
+22: REAL_15[0.0] = INT_16[0] &&
+139: REAL_15[0.0] = INT_13[0] &&
+137: UF_avg_1_SYMREAL(m_2_SYMINT[0],n_1_SYMINT[0],UF_summation_1_SYMINT(m_2_SYMINT[0],n_1_SYMINT[0])) = REAL_14[0.0] &&
+137: REAL_14[0.0] = INT_13[0] &&
+136: UF_avg_1_SYMREAL(m_2_SYMINT[0],n_1_SYMINT[0],UF_summation_1_SYMINT(m_2_SYMINT[0],n_1_SYMINT[0])) = INT_13[0] &&
+21: UF_rem_1_SYMREAL(UF_avg_1_SYMREAL(m_2_SYMINT[0],n_1_SYMINT[0],UF_summation_1_SYMINT(m_2_SYMINT[0],n_1_SYMINT[0]))) < CONST_0.5 &&
+21: UF_rem_1_SYMREAL(UF_avg_1_SYMREAL(m_2_SYMINT[0],n_1_SYMINT[0],UF_summation_1_SYMINT(m_2_SYMINT[0],n_1_SYMINT[0]))) < CONST_0.5 &&
+15: m_2_SYMINT[0] >= n_1_SYMINT[0]
+133: Ret_0_SYMINT = UF_avg_rounded_2_SYMINT(UF_avg_1_SYMREAL(m_2_SYMINT[0],n_1_SYMINT[0],UF_summation_1_SYMINT(m_2_SYMINT[0],n_1_SYMINT[0])))
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(UF_avg_rounded_2_SYMINT(UF_avg_1_SYMREAL(m_2_SYMINT,n_1_SYMINT,UF_summation_1_SYMINT(m_2_SYMINT,n_1_SYMINT))))]).concat(CONST_ ).concat(.valueof[(UF_avg_rounded_2_SYMINT(UF_avg_1_SYMREAL(m_2_SYMINT,n_1_SYMINT,UF_summation_1_SYMINT(m_2_SYMINT,n_1_SYMINT))))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 9
+72: UF_avg_rounded_2_SYMINT(UF_avg_1_SYMREAL(m_2_SYMINT[0],n_1_SYMINT[0],UF_summation_1_SYMINT(m_2_SYMINT[0],n_1_SYMINT[0]))) = UF_avg_rounded_2_SYMINT(UF_avg_1_SYMREAL(m_2_SYMINT[0],n_1_SYMINT[0],UF_summation_1_SYMINT(m_2_SYMINT[0],n_1_SYMINT[0]))) &&
+22: REAL_26[0.0] = INT_27[0] &&
+139: REAL_26[0.0] = INT_24[0] &&
+137: UF_avg_1_SYMREAL(m_2_SYMINT[0],n_1_SYMINT[0],UF_summation_1_SYMINT(m_2_SYMINT[0],n_1_SYMINT[0])) = REAL_25[0.0] &&
+137: REAL_25[0.0] = INT_24[0] &&
+136: UF_avg_1_SYMREAL(m_2_SYMINT[0],n_1_SYMINT[0],UF_summation_1_SYMINT(m_2_SYMINT[0],n_1_SYMINT[0])) = INT_24[0] &&
+21: CONST_0.5 = UF_rem_1_SYMREAL(UF_avg_1_SYMREAL(m_2_SYMINT[0],n_1_SYMINT[0],UF_summation_1_SYMINT(m_2_SYMINT[0],n_1_SYMINT[0]))) &&
+21: CONST_0.5 = UF_rem_1_SYMREAL(UF_avg_1_SYMREAL(m_2_SYMINT[0],n_1_SYMINT[0],UF_summation_1_SYMINT(m_2_SYMINT[0],n_1_SYMINT[0]))) &&
+15: m_2_SYMINT[0] >= n_1_SYMINT[0]
+133: Ret_0_SYMINT = UF_avg_rounded_2_SYMINT(UF_avg_1_SYMREAL(m_2_SYMINT[0],n_1_SYMINT[0],UF_summation_1_SYMINT(m_2_SYMINT[0],n_1_SYMINT[0])))
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+Symbolic Exp 1[ CONST_  - Equivalent: true .concat(.valueof[(UF_avg_rounded_3_SYMINT(UF_avg_1_SYMREAL(m_2_SYMINT,n_1_SYMINT,UF_summation_1_SYMINT(m_2_SYMINT,n_1_SYMINT))))]).concat(CONST_ ).concat(.valueof[(UF_avg_rounded_3_SYMINT(UF_avg_1_SYMREAL(m_2_SYMINT,n_1_SYMINT,UF_summation_1_SYMINT(m_2_SYMINT,n_1_SYMINT))))])]
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 4
+72: UF_avg_rounded_3_SYMINT(UF_avg_1_SYMREAL(m_2_SYMINT[51],n_1_SYMINT[-43],UF_summation_1_SYMINT(m_2_SYMINT[51],n_1_SYMINT[-43]))) = UF_avg_rounded_3_SYMINT(UF_avg_1_SYMREAL(m_2_SYMINT[51],n_1_SYMINT[-43],UF_summation_1_SYMINT(m_2_SYMINT[51],n_1_SYMINT[-43]))) &&
+21: UF_rem_1_SYMREAL(UF_avg_1_SYMREAL(m_2_SYMINT[51],n_1_SYMINT[-43],UF_summation_1_SYMINT(m_2_SYMINT[51],n_1_SYMINT[-43]))) > CONST_0.5 &&
+21: UF_rem_1_SYMREAL(UF_avg_1_SYMREAL(m_2_SYMINT[51],n_1_SYMINT[-43],UF_summation_1_SYMINT(m_2_SYMINT[51],n_1_SYMINT[-43]))) > CONST_0.5 &&
+15: m_2_SYMINT[51] >= n_1_SYMINT[-43]
+133: Ret_0_SYMINT = UF_avg_rounded_3_SYMINT(UF_avg_1_SYMREAL(m_2_SYMINT[51],n_1_SYMINT[-43],UF_summation_1_SYMINT(m_2_SYMINT[51],n_1_SYMINT[-43])))
+***********************************
+
+====================================================== Method Summaries
+Inputs: n_1_SYMINT,m_2_SYMINT
+
+demo.benchmarksHumaneval.NEq.ROUNDED_AVG.instrumented.IDiffPASDA2.run(86,-77)  --> Return Value: -1
+demo.benchmarksHumaneval.NEq.ROUNDED_AVG.instrumented.IDiffPASDA2.run(0,0)  --> Return Value: 1
+demo.benchmarksHumaneval.NEq.ROUNDED_AVG.instrumented.IDiffPASDA2.run(-43,51)  --> Return Value: 1
+
+====================================================== Method Summaries (HTML)
+<h1>Test Cases Generated by Symbolic JavaPath Finder for demo.benchmarksHumaneval.NEq.ROUNDED_AVG.instrumented.IDiffPASDA2.run (Path Coverage) </h1>
+<table border=1>
+<tr><td>n_1_SYMINT</td><td>m_2_SYMINT</td><td>RETURN</td></tr>
+<tr><td>86</td><td>-77</td><td>Return Value: -1</td></tr>
+<tr><td>0</td><td>0</td><td>Return Value: 1</td></tr>
+<tr><td>-43</td><td>51</td><td>Return Value: 1</td></tr>
+</table>
+
+====================================================== results
+no errors detected
+
+====================================================== statistics
+elapsed time:       00:00:01
+states:             new=44,visited=0,backtracked=44,end=4
+search:             maxDepth=0,constraints=0
+choice generators:  thread=1 (signal=0,lock=1,sharedRef=0,threadApi=0,reschedule=0), data=23
+heap:               new=548,released=121,maxLive=370,gcCycles=8
+instructions:       3987
+max memory:         2271MB
+loaded code:        classes=64,methods=1460
+
+====================================================== search finished: 9/30/24 3:28 PM
+Iteration 2 partitionCount 4 ../benchmarksHumaneval/Eq/ROUNDED_AVG/instrumented -> EQ
+Maybe count 0
+Execution time in milliseconds: 4503 ms, fuzztime 2000 ms

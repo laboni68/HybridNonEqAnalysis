@@ -1,0 +1,4 @@
+getInputValues: 1
+84
+../benchmarksHumaneval/NEq/IS_MULTIPLY_PRIME/instrumented [84] 1 -> NEQ
+Execution time in milliseconds: 366 ms, fuzztime 2000 ms

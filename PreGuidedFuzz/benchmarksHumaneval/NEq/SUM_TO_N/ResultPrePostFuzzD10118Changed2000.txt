@@ -1,0 +1,8 @@
+getInputValues: 1
+6
+102
+10
+18
+-55
+../benchmarksHumaneval/NEq/SUM_TO_N/instrumented [-55] 5 -> NEQ
+Execution time in milliseconds: 400 ms, fuzztime 2000 ms

@@ -1,0 +1,3 @@
+getInputValues: 1
+../benchmarksHumaneval/NEq/FACTORIAL/instrumented [-1598790002, 1] 1 -> NEQ
+Execution time in milliseconds: 331 ms

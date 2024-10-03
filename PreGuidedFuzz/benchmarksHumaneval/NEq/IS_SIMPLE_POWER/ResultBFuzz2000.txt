@@ -1,0 +1,5 @@
+getInputValues: 2
+41
+-42
+../benchmarksHumaneval/NEq/IS_SIMPLE_POWER/instrumented [41, -42] 1 -> NEQ
+Execution time in milliseconds: 343 ms, fuzztime 2000 ms

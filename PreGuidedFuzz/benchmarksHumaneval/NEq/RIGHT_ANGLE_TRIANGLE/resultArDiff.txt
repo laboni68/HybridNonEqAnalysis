@@ -1,0 +1,3 @@
+getInputValues: 3
+../benchmarksHumaneval/NEq/RIGHT_ANGLE_TRIANGLE/instrumented [662803145, 1, 442244381, 1, -2097727194, 1] 1 -> NEQ
+Execution time in milliseconds: 257 ms

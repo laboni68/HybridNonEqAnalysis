@@ -1,0 +1,367 @@
+getInputValues: 2
+Process was terminated due to timeout.
+Process was terminated due to timeout.
+Fuzzing time limit exceeded
+Fuzzing time limit exceeded : 7
+symbolic.min_int=-100
+symbolic.min_long=-100
+symbolic.min_short=-32768
+symbolic.min_byte=-128
+symbolic.min_char=0
+symbolic.max_int=100
+symbolic.max_long=100
+symbolic.max_short=32767
+symbolic.max_byte=127
+symbolic.max_char=65535
+symbolic.min_double=-100.0
+symbolic.max_double=100.0
+JavaPathfinder core system v8.0 (rev ecdb30ddaab26d2773e7741b09fd902efb7999c7) - (C) 2005-2014 United States Government. All rights reserved.
+
+
+====================================================== system under test
+demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.main()
+
+====================================================== search started: 8/11/24 3:47 PM
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+Partition classification is null
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IoldVARDiff1.modp(IoldVARDiff1.java:17)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.run(IDiffARDiff1.java:89)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.main(IDiffARDiff1.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+Partition classification is null
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVARDiff1.modp(InewVARDiff1.java:17)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.run(IDiffARDiff1.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.main(IDiffARDiff1.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVARDiff1.modp(InewVARDiff1.java:18)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.run(IDiffARDiff1.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.main(IDiffARDiff1.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVARDiff1.modp(InewVARDiff1.java:20)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.run(IDiffARDiff1.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.main(IDiffARDiff1.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+Partition classification is null
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVARDiff1.modp(InewVARDiff1.java:17)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.run(IDiffARDiff1.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.main(IDiffARDiff1.java:137)
+
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+Partition classification is null
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVARDiff1.modp(InewVARDiff1.java:18)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.run(IDiffARDiff1.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.main(IDiffARDiff1.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVARDiff1.modp(InewVARDiff1.java:20)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.run(IDiffARDiff1.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.main(IDiffARDiff1.java:137)
+
+e == e1
+Error equivalence spec
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: java.lang.ArithmeticException: rem by 0
+  - New: java.lang.ArithmeticException: rem by 0
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+  - Equivalent: true 0 0
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 10
+8: p_2_SYMINT[0] = CONST_0 &&
+17: CONST_8 >= n_1_SYMINT[8] &&
+17: CONST_7 < n_1_SYMINT[8] &&
+17: CONST_6 < n_1_SYMINT[8] &&
+17: CONST_5 < n_1_SYMINT[8] &&
+17: CONST_4 < n_1_SYMINT[8] &&
+17: CONST_3 < n_1_SYMINT[8] &&
+17: CONST_2 < n_1_SYMINT[8] &&
+17: CONST_1 < n_1_SYMINT[8] &&
+17: CONST_0 < n_1_SYMINT[8]
+133: Ret_0_SYMINT = CONST_0
+***********************************
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+Partition classification is null
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVARDiff1.modp(InewVARDiff1.java:17)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.run(IDiffARDiff1.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.main(IDiffARDiff1.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVARDiff1.modp(InewVARDiff1.java:18)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.run(IDiffARDiff1.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.main(IDiffARDiff1.java:137)
+
+e == e1
+Error equivalence spec
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: java.lang.ArithmeticException: rem by 0
+  - New: java.lang.ArithmeticException: rem by 0
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+  - Equivalent: true 0 0
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 9
+8: p_2_SYMINT[0] = CONST_0 &&
+17: CONST_7 >= n_1_SYMINT[7] &&
+17: CONST_6 < n_1_SYMINT[7] &&
+17: CONST_5 < n_1_SYMINT[7] &&
+17: CONST_4 < n_1_SYMINT[7] &&
+17: CONST_3 < n_1_SYMINT[7] &&
+17: CONST_2 < n_1_SYMINT[7] &&
+17: CONST_1 < n_1_SYMINT[7] &&
+17: CONST_0 < n_1_SYMINT[7]
+133: Ret_0_SYMINT = CONST_0
+***********************************
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+Partition classification is null
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVARDiff1.modp(InewVARDiff1.java:18)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.run(IDiffARDiff1.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.main(IDiffARDiff1.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVARDiff1.modp(InewVARDiff1.java:20)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.run(IDiffARDiff1.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.main(IDiffARDiff1.java:137)
+
+e == e1
+Error equivalence spec
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: java.lang.ArithmeticException: rem by 0
+  - New: java.lang.ArithmeticException: rem by 0
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+  - Equivalent: true 0 0
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 8
+8: p_2_SYMINT[0] = CONST_0 &&
+17: CONST_6 >= n_1_SYMINT[6] &&
+17: CONST_5 < n_1_SYMINT[6] &&
+17: CONST_4 < n_1_SYMINT[6] &&
+17: CONST_3 < n_1_SYMINT[6] &&
+17: CONST_2 < n_1_SYMINT[6] &&
+17: CONST_1 < n_1_SYMINT[6] &&
+17: CONST_0 < n_1_SYMINT[6]
+133: Ret_0_SYMINT = CONST_0
+***********************************
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+Partition classification is null
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVARDiff1.modp(InewVARDiff1.java:17)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.run(IDiffARDiff1.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.main(IDiffARDiff1.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVARDiff1.modp(InewVARDiff1.java:18)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.run(IDiffARDiff1.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.main(IDiffARDiff1.java:137)
+
+e == e1
+Error equivalence spec
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: java.lang.ArithmeticException: rem by 0
+  - New: java.lang.ArithmeticException: rem by 0
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+  - Equivalent: true 0 0
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 7
+8: p_2_SYMINT[0] = CONST_0 &&
+17: CONST_5 >= n_1_SYMINT[5] &&
+17: CONST_4 < n_1_SYMINT[5] &&
+17: CONST_3 < n_1_SYMINT[5] &&
+17: CONST_2 < n_1_SYMINT[5] &&
+17: CONST_1 < n_1_SYMINT[5] &&
+17: CONST_0 < n_1_SYMINT[5]
+133: Ret_0_SYMINT = CONST_0
+***********************************
+Call from searchConstraintHit
+Start next partition function in DifferencingListener
+Partition classification is null
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVARDiff1.modp(InewVARDiff1.java:18)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.run(IDiffARDiff1.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.main(IDiffARDiff1.java:137)
+
+
+====================================================== search constraint
+depth limit reached: 10
+
+====================================================== snapshot 
+thread java.lang.Thread:{id:0,name:main,status:RUNNING,priority:5,isDaemon:false,lockCount:0,suspendCount:0}
+  call stack:
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.InewVARDiff1.modp(InewVARDiff1.java:20)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.run(IDiffARDiff1.java:95)
+	at demo.benchmarksHumaneval.NEq.MODP.instrumented.IDiffARDiff1.main(IDiffARDiff1.java:137)
+
+e == e1
+Error equivalence spec
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: java.lang.ArithmeticException: rem by 0
+  - New: java.lang.ArithmeticException: rem by 0
+  - Error Equivalent: true
+Output equivalence spec
+partitionNeqResult: UNSATISFIABLE
+partitionEqResult: SATISFIABLE
+  Results:
+  - Equivalent: true 0 0
+Call from executeInstruction
+Partition is eq...
+Partition classification: done 
+Start next partition function in DifferencingListener
+*************Summary***************
+PC is:constraint # = 6
+8: p_2_SYMINT[0] = CONST_0 &&
+17: CONST_4 >= n_1_SYMINT[4] &&
+17: CONST_3 < n_1_SYMINT[4] &&
+17: CONST_2 < n_1_SYMINT[4] &&
+17: CONST_1 < n_1_SYMINT[4] &&
+17: CONST_0 < n_1_SYMINT[4]
+133: Ret_0_SYMINT = CONST_0
+***********************************
+e == e1
+Error equivalence spec
+Differencing Driver Output:
+  Errors:
+  - Old: null
+  - New: null
+  - Error Equivalent: true
+Maybe count 0
+Execution time in milliseconds: 9473 ms

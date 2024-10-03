@@ -1,0 +1,3 @@
+getInputValues: 1
+../benchmarksHumaneval/NEq/GET_ODD_COLLATZ/instrumented [-1421117009, 1] 1 -> NEQ
+Execution time in milliseconds: 354 ms
