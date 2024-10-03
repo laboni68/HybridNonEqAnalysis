@@ -1,0 +1,585 @@
+-------------------The Z3 formula for the old method (z3 smt format) -------------------------
+(let ((a!1 (UF_idum_5 1
+                      UF_NTAB_2
+                      UF_IM_1
+                      16807
+                      127773
+                      UF_IR_2
+                      (UF_j_5 UF_NTAB_2 UF_j_3)
+                      (UF_k_5 1 UF_NTAB_2 127773 (UF_j_5 UF_NTAB_2 UF_j_3))))
+      (a!18 (and (< (* (UF_AM_2 UF_IM_1) REAL_4) REAL_4)
+                 (= REAL_4 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))))
+      (a!19 (UF_idum_5 (UF_idum_4 idum)
+                       UF_NTAB_2
+                       UF_IM_1
+                       16807
+                       127773
+                       UF_IR_2
+                       (UF_j_5 UF_NTAB_2 UF_j_3)
+                       (UF_k_5 (UF_idum_4 idum)
+                               UF_NTAB_2
+                               127773
+                               (UF_j_5 UF_NTAB_2 UF_j_3))))
+      (a!23 (and (= REAL_4 (* (UF_AM_2 UF_IM_1) REAL_4))
+                 (= REAL_4 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))))
+      (a!25 (and (> (* (UF_AM_2 UF_IM_1) REAL_4) REAL_4)
+                 (= REAL_4 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1))))))
+(let ((a!2 (UF_iy_7 (UF_iv0_5 a!1 UF_NTAB_2 (UF_j_5 UF_NTAB_2 UF_j_3))
+                    (+ UF_IM_1
+                       (UF_idum_6 a!1 16807 127773 UF_IR_2 (div a!1 127773)))))
+      (a!3 (< (UF_idum_6 a!1 16807 127773 UF_IR_2 (div a!1 127773)) 0))
+      (a!7 (to_real (UF_iy_7 (UF_iv0_5 a!1 UF_NTAB_2 (UF_j_5 UF_NTAB_2 UF_j_3))
+                             (UF_idum_6 a!1
+                                        16807
+                                        127773
+                                        UF_IR_2
+                                        (div a!1 127773)))))
+      (a!8 (>= (UF_idum_6 a!1 16807 127773 UF_IR_2 (div a!1 127773)) 0))
+      (a!20 (UF_iy_7 (UF_iv0_5 a!19 UF_NTAB_2 (UF_j_5 UF_NTAB_2 UF_j_3))
+                     (+ UF_IM_1
+                        (UF_idum_6 a!19 16807 127773 UF_IR_2 (div a!19 127773)))))
+      (a!21 (< (UF_idum_6 a!19 16807 127773 UF_IR_2 (div a!19 127773)) 0))
+      (a!26 (to_real (UF_iy_7 (UF_iv0_5 a!19
+                                        UF_NTAB_2
+                                        (UF_j_5 UF_NTAB_2 UF_j_3))
+                              (UF_idum_6 a!19
+                                         16807
+                                         127773
+                                         UF_IR_2
+                                         (div a!19 127773)))))
+      (a!27 (>= (UF_idum_6 a!19 16807 127773 UF_IR_2 (div a!19 127773)) 0)))
+(let ((a!4 (and (< (* (UF_AM_2 UF_IM_1) REAL_1) REAL_1)
+                (= REAL_1 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                (= REAL_1 (to_real a!2))
+                a!3
+                (< (- 0 idum) 1)
+                (> idum 0)
+                (= Ret (* (UF_AM_2 UF_IM_1) REAL_1))))
+      (a!5 (and (= REAL_1 (* (UF_AM_2 UF_IM_1) REAL_1))
+                (= REAL_1 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                (= REAL_1 (to_real a!2))
+                a!3
+                (< (- 0 idum) 1)
+                (> idum 0)
+                (= Ret (* (UF_AM_2 UF_IM_1) REAL_1))))
+      (a!6 (and (> (* (UF_AM_2 UF_IM_1) REAL_1) REAL_1)
+                (= REAL_1 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                (= REAL_1 (to_real a!2))
+                a!3
+                (< (- 0 idum) 1)
+                (> idum 0)
+                (= Ret (UF_RNMX_2 UF_EPS_2))))
+      (a!9 (and (< (* (UF_AM_2 UF_IM_1) REAL_2) REAL_2)
+                (= REAL_2 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                (= REAL_2 a!7)
+                a!8
+                (< (- 0 idum) 1)
+                (> idum 0)
+                (= Ret (* (UF_AM_2 UF_IM_1) REAL_2))))
+      (a!10 (and (= REAL_2 (* (UF_AM_2 UF_IM_1) REAL_2))
+                 (= REAL_2 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_2 a!7)
+                 a!8
+                 (< (- 0 idum) 1)
+                 (> idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_2))))
+      (a!11 (and (> (* (UF_AM_2 UF_IM_1) REAL_2) REAL_2)
+                 (= REAL_2 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_2 a!7)
+                 a!8
+                 (< (- 0 idum) 1)
+                 (> idum 0)
+                 (= Ret (UF_RNMX_2 UF_EPS_2))))
+      (a!12 (and (< (* (UF_AM_2 UF_IM_1) REAL_2) REAL_3)
+                 (= REAL_3 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_2 (to_real a!2))
+                 a!3
+                 (< (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_2))))
+      (a!13 (and (= REAL_3 (* (UF_AM_2 UF_IM_1) REAL_2))
+                 (= REAL_3 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_2 (to_real a!2))
+                 a!3
+                 (< (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_2))))
+      (a!14 (and (> (* (UF_AM_2 UF_IM_1) REAL_2) REAL_3)
+                 (= REAL_3 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_2 (to_real a!2))
+                 a!3
+                 (< (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (UF_RNMX_2 UF_EPS_2))))
+      (a!15 (and (< (* (UF_AM_2 UF_IM_1) REAL_3) REAL_3)
+                 (= REAL_3 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_3 a!7)
+                 a!8
+                 (< (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_3))))
+      (a!16 (and (= REAL_3 (* (UF_AM_2 UF_IM_1) REAL_3))
+                 (= REAL_3 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_3 a!7)
+                 a!8
+                 (< (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_3))))
+      (a!17 (and (> (* (UF_AM_2 UF_IM_1) REAL_3) REAL_3)
+                 (= REAL_3 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_3 a!7)
+                 a!8
+                 (< (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (UF_RNMX_2 UF_EPS_2))))
+      (a!22 (and a!18
+                 (= REAL_4 (to_real a!20))
+                 a!21
+                 (>= (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_4))))
+      (a!24 (and a!23
+                 (= REAL_4 (to_real a!20))
+                 a!21
+                 (>= (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_4))))
+      (a!28 (and a!18
+                 (= REAL_4 a!26)
+                 a!27
+                 (>= (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_4))))
+      (a!29 (and a!23
+                 (= REAL_4 a!26)
+                 a!27
+                 (>= (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_4)))))
+  (or a!4
+      a!5
+      a!6
+      a!9
+      a!10
+      a!11
+      a!12
+      a!13
+      a!14
+      a!15
+      a!16
+      a!17
+      a!22
+      a!24
+      (and a!25
+           (= REAL_4 (to_real a!20))
+           a!21
+           (>= (- 0 idum) 1)
+           (<= idum 0)
+           (= Ret (UF_RNMX_2 UF_EPS_2)))
+      a!28
+      a!29
+      (and a!25
+           (= REAL_4 a!26)
+           a!27
+           (>= (- 0 idum) 1)
+           (<= idum 0)
+           (= Ret (UF_RNMX_2 UF_EPS_2)))))))
+-----------------------------------------------------------------------------------------------
+
+-------------------The Z3 formula for the new method ------------------------------------------
+(let ((a!1 (UF_idum_5 1
+                      UF_NTAB_2
+                      UF_IM_1
+                      16807
+                      127773
+                      UF_IR_2
+                      (UF_j_5 UF_NTAB_2 UF_j_3)
+                      (UF_k_5 1 UF_NTAB_2 127773 (UF_j_5 UF_NTAB_2 UF_j_3))))
+      (a!18 (and (< (* (UF_AM_2 UF_IM_1) REAL_4) REAL_4)
+                 (= REAL_4 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))))
+      (a!19 (UF_idum_5 (UF_idum_4 idum)
+                       UF_NTAB_2
+                       UF_IM_1
+                       16807
+                       127773
+                       UF_IR_2
+                       (UF_j_5 UF_NTAB_2 UF_j_3)
+                       (UF_k_5 (UF_idum_4 idum)
+                               UF_NTAB_2
+                               127773
+                               (UF_j_5 UF_NTAB_2 UF_j_3))))
+      (a!23 (and (= REAL_4 (* (UF_AM_2 UF_IM_1) REAL_4))
+                 (= REAL_4 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))))
+      (a!25 (and (> (* (UF_AM_2 UF_IM_1) REAL_4) REAL_4)
+                 (= REAL_4 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1))))))
+(let ((a!2 (UF_iy_7 (UF_iv0_5 a!1 UF_NTAB_2 (UF_j_5 UF_NTAB_2 UF_j_3))
+                    (+ UF_IM_1
+                       (UF_idum_6 a!1 16807 127773 UF_IR_2 (div a!1 127773)))))
+      (a!3 (< (UF_idum_6 a!1 16807 127773 UF_IR_2 (div a!1 127773)) 0))
+      (a!7 (to_real (UF_iy_7 (UF_iv0_5 a!1 UF_NTAB_2 (UF_j_5 UF_NTAB_2 UF_j_3))
+                             (UF_idum_6 a!1
+                                        16807
+                                        127773
+                                        UF_IR_2
+                                        (div a!1 127773)))))
+      (a!8 (>= (UF_idum_6 a!1 16807 127773 UF_IR_2 (div a!1 127773)) 0))
+      (a!20 (UF_iy_7 (UF_iv0_5 a!19 UF_NTAB_2 (UF_j_5 UF_NTAB_2 UF_j_3))
+                     (+ UF_IM_1
+                        (UF_idum_6 a!19 16807 127773 UF_IR_2 (div a!19 127773)))))
+      (a!21 (< (UF_idum_6 a!19 16807 127773 UF_IR_2 (div a!19 127773)) 0))
+      (a!26 (to_real (UF_iy_7 (UF_iv0_5 a!19
+                                        UF_NTAB_2
+                                        (UF_j_5 UF_NTAB_2 UF_j_3))
+                              (UF_idum_6 a!19
+                                         16807
+                                         127773
+                                         UF_IR_2
+                                         (div a!19 127773)))))
+      (a!27 (>= (UF_idum_6 a!19 16807 127773 UF_IR_2 (div a!19 127773)) 0)))
+(let ((a!4 (and (< (* (UF_AM_2 UF_IM_1) REAL_1) REAL_1)
+                (= REAL_1 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                (= REAL_1 (to_real a!2))
+                a!3
+                (< (- 0 idum) 1)
+                (> idum 0)
+                (= Ret (* (UF_AM_2 UF_IM_1) REAL_1))))
+      (a!5 (and (= REAL_1 (* (UF_AM_2 UF_IM_1) REAL_1))
+                (= REAL_1 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                (= REAL_1 (to_real a!2))
+                a!3
+                (< (- 0 idum) 1)
+                (> idum 0)
+                (= Ret (* (UF_AM_2 UF_IM_1) REAL_1))))
+      (a!6 (and (> (* (UF_AM_2 UF_IM_1) REAL_1) REAL_1)
+                (= REAL_1 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                (= REAL_1 (to_real a!2))
+                a!3
+                (< (- 0 idum) 1)
+                (> idum 0)
+                (= Ret (UF_RNMX_2 UF_EPS_2))))
+      (a!9 (and (< (* (UF_AM_2 UF_IM_1) REAL_2) REAL_2)
+                (= REAL_2 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                (= REAL_2 a!7)
+                a!8
+                (< (- 0 idum) 1)
+                (> idum 0)
+                (= Ret (* (UF_AM_2 UF_IM_1) REAL_2))))
+      (a!10 (and (= REAL_2 (* (UF_AM_2 UF_IM_1) REAL_2))
+                 (= REAL_2 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_2 a!7)
+                 a!8
+                 (< (- 0 idum) 1)
+                 (> idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_2))))
+      (a!11 (and (> (* (UF_AM_2 UF_IM_1) REAL_2) REAL_2)
+                 (= REAL_2 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_2 a!7)
+                 a!8
+                 (< (- 0 idum) 1)
+                 (> idum 0)
+                 (= Ret (UF_RNMX_2 UF_EPS_2))))
+      (a!12 (and (< (* (UF_AM_2 UF_IM_1) REAL_2) REAL_3)
+                 (= REAL_3 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_2 (to_real a!2))
+                 a!3
+                 (< (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_2))))
+      (a!13 (and (= REAL_3 (* (UF_AM_2 UF_IM_1) REAL_2))
+                 (= REAL_3 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_2 (to_real a!2))
+                 a!3
+                 (< (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_2))))
+      (a!14 (and (> (* (UF_AM_2 UF_IM_1) REAL_2) REAL_3)
+                 (= REAL_3 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_2 (to_real a!2))
+                 a!3
+                 (< (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (UF_RNMX_2 UF_EPS_2))))
+      (a!15 (and (< (* (UF_AM_2 UF_IM_1) REAL_3) REAL_3)
+                 (= REAL_3 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_3 a!7)
+                 a!8
+                 (< (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_3))))
+      (a!16 (and (= REAL_3 (* (UF_AM_2 UF_IM_1) REAL_3))
+                 (= REAL_3 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_3 a!7)
+                 a!8
+                 (< (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_3))))
+      (a!17 (and (> (* (UF_AM_2 UF_IM_1) REAL_3) REAL_3)
+                 (= REAL_3 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_3 a!7)
+                 a!8
+                 (< (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (UF_RNMX_2 UF_EPS_2))))
+      (a!22 (and a!18
+                 (= REAL_4 (to_real a!20))
+                 a!21
+                 (>= (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_4))))
+      (a!24 (and a!23
+                 (= REAL_4 (to_real a!20))
+                 a!21
+                 (>= (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_4))))
+      (a!28 (and a!18
+                 (= REAL_4 a!26)
+                 a!27
+                 (>= (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_4))))
+      (a!29 (and a!23
+                 (= REAL_4 a!26)
+                 a!27
+                 (>= (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_4)))))
+  (or a!4
+      a!5
+      a!6
+      a!9
+      a!10
+      a!11
+      a!12
+      a!13
+      a!14
+      a!15
+      a!16
+      a!17
+      a!22
+      a!24
+      (and a!25
+           (= REAL_4 (to_real a!20))
+           a!21
+           (>= (- 0 idum) 1)
+           (<= idum 0)
+           (= Ret (UF_RNMX_2 UF_EPS_2)))
+      a!28
+      a!29
+      (and a!25
+           (= REAL_4 a!26)
+           a!27
+           (>= (- 0 idum) 1)
+           (<= idum 0)
+           (= Ret (UF_RNMX_2 UF_EPS_2)))))))
+-----------------------------------------------------------------------------------------------
+
+-------------------The final Z3 formula for constraint solving -------------------------
+(declare-fun UF_IM_1 () Int)
+(declare-fun UF_AM_2 (Int ) Real)
+(declare-fun REAL_1 () Real)
+(declare-fun UF_NTAB_2 () Int)
+(declare-fun UF_NDIV_2 (Int Int ) Int)
+(declare-fun UF_IR_2 () Int)
+(declare-fun UF_j_3 () Int)
+(declare-fun UF_j_5 (Int Int ) Int)
+(declare-fun UF_k_5 (Int Int Int Int ) Int)
+(declare-fun UF_idum_5 (Int Int Int Int Int Int Int Int ) Int)
+(declare-fun UF_iv0_5 (Int Int Int ) Int)
+(declare-fun UF_idum_6 (Int Int Int Int Int ) Int)
+(declare-fun UF_iy_7 (Int Int ) Int)
+(declare-fun idum () Int)
+(declare-fun Ret () Real)
+(declare-fun UF_EPS_2 () Real)
+(declare-fun UF_RNMX_2 (Real ) Real)
+(declare-fun REAL_2 () Real)
+(declare-fun REAL_3 () Real)
+(declare-fun REAL_4 () Real)
+(declare-fun UF_idum_4 (Int ) Int)
+(let ((a!1 (UF_idum_5 1
+                      UF_NTAB_2
+                      UF_IM_1
+                      16807
+                      127773
+                      UF_IR_2
+                      (UF_j_5 UF_NTAB_2 UF_j_3)
+                      (UF_k_5 1 UF_NTAB_2 127773 (UF_j_5 UF_NTAB_2 UF_j_3))))
+      (a!18 (and (< (* (UF_AM_2 UF_IM_1) REAL_4) REAL_4)
+                 (= REAL_4 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))))
+      (a!19 (UF_idum_5 (UF_idum_4 idum)
+                       UF_NTAB_2
+                       UF_IM_1
+                       16807
+                       127773
+                       UF_IR_2
+                       (UF_j_5 UF_NTAB_2 UF_j_3)
+                       (UF_k_5 (UF_idum_4 idum)
+                               UF_NTAB_2
+                               127773
+                               (UF_j_5 UF_NTAB_2 UF_j_3))))
+      (a!23 (and (= REAL_4 (* (UF_AM_2 UF_IM_1) REAL_4))
+                 (= REAL_4 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))))
+      (a!25 (and (> (* (UF_AM_2 UF_IM_1) REAL_4) REAL_4)
+                 (= REAL_4 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1))))))
+(let ((a!2 (UF_iy_7 (UF_iv0_5 a!1 UF_NTAB_2 (UF_j_5 UF_NTAB_2 UF_j_3))
+                    (+ UF_IM_1
+                       (UF_idum_6 a!1 16807 127773 UF_IR_2 (div a!1 127773)))))
+      (a!3 (< (UF_idum_6 a!1 16807 127773 UF_IR_2 (div a!1 127773)) 0))
+      (a!7 (to_real (UF_iy_7 (UF_iv0_5 a!1 UF_NTAB_2 (UF_j_5 UF_NTAB_2 UF_j_3))
+                             (UF_idum_6 a!1
+                                        16807
+                                        127773
+                                        UF_IR_2
+                                        (div a!1 127773)))))
+      (a!8 (>= (UF_idum_6 a!1 16807 127773 UF_IR_2 (div a!1 127773)) 0))
+      (a!20 (UF_iy_7 (UF_iv0_5 a!19 UF_NTAB_2 (UF_j_5 UF_NTAB_2 UF_j_3))
+                     (+ UF_IM_1
+                        (UF_idum_6 a!19 16807 127773 UF_IR_2 (div a!19 127773)))))
+      (a!21 (< (UF_idum_6 a!19 16807 127773 UF_IR_2 (div a!19 127773)) 0))
+      (a!26 (to_real (UF_iy_7 (UF_iv0_5 a!19
+                                        UF_NTAB_2
+                                        (UF_j_5 UF_NTAB_2 UF_j_3))
+                              (UF_idum_6 a!19
+                                         16807
+                                         127773
+                                         UF_IR_2
+                                         (div a!19 127773)))))
+      (a!27 (>= (UF_idum_6 a!19 16807 127773 UF_IR_2 (div a!19 127773)) 0)))
+(let ((a!4 (and (< (* (UF_AM_2 UF_IM_1) REAL_1) REAL_1)
+                (= REAL_1 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                (= REAL_1 (to_real a!2))
+                a!3
+                (< (- 0 idum) 1)
+                (> idum 0)
+                (= Ret (* (UF_AM_2 UF_IM_1) REAL_1))))
+      (a!5 (and (= REAL_1 (* (UF_AM_2 UF_IM_1) REAL_1))
+                (= REAL_1 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                (= REAL_1 (to_real a!2))
+                a!3
+                (< (- 0 idum) 1)
+                (> idum 0)
+                (= Ret (* (UF_AM_2 UF_IM_1) REAL_1))))
+      (a!6 (and (> (* (UF_AM_2 UF_IM_1) REAL_1) REAL_1)
+                (= REAL_1 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                (= REAL_1 (to_real a!2))
+                a!3
+                (< (- 0 idum) 1)
+                (> idum 0)
+                (= Ret (UF_RNMX_2 UF_EPS_2))))
+      (a!9 (and (< (* (UF_AM_2 UF_IM_1) REAL_2) REAL_2)
+                (= REAL_2 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                (= REAL_2 a!7)
+                a!8
+                (< (- 0 idum) 1)
+                (> idum 0)
+                (= Ret (* (UF_AM_2 UF_IM_1) REAL_2))))
+      (a!10 (and (= REAL_2 (* (UF_AM_2 UF_IM_1) REAL_2))
+                 (= REAL_2 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_2 a!7)
+                 a!8
+                 (< (- 0 idum) 1)
+                 (> idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_2))))
+      (a!11 (and (> (* (UF_AM_2 UF_IM_1) REAL_2) REAL_2)
+                 (= REAL_2 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_2 a!7)
+                 a!8
+                 (< (- 0 idum) 1)
+                 (> idum 0)
+                 (= Ret (UF_RNMX_2 UF_EPS_2))))
+      (a!12 (and (< (* (UF_AM_2 UF_IM_1) REAL_2) REAL_3)
+                 (= REAL_3 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_2 (to_real a!2))
+                 a!3
+                 (< (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_2))))
+      (a!13 (and (= REAL_3 (* (UF_AM_2 UF_IM_1) REAL_2))
+                 (= REAL_3 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_2 (to_real a!2))
+                 a!3
+                 (< (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_2))))
+      (a!14 (and (> (* (UF_AM_2 UF_IM_1) REAL_2) REAL_3)
+                 (= REAL_3 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_2 (to_real a!2))
+                 a!3
+                 (< (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (UF_RNMX_2 UF_EPS_2))))
+      (a!15 (and (< (* (UF_AM_2 UF_IM_1) REAL_3) REAL_3)
+                 (= REAL_3 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_3 a!7)
+                 a!8
+                 (< (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_3))))
+      (a!16 (and (= REAL_3 (* (UF_AM_2 UF_IM_1) REAL_3))
+                 (= REAL_3 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_3 a!7)
+                 a!8
+                 (< (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_3))))
+      (a!17 (and (> (* (UF_AM_2 UF_IM_1) REAL_3) REAL_3)
+                 (= REAL_3 (to_real (UF_NDIV_2 UF_NTAB_2 UF_IM_1)))
+                 (= REAL_3 a!7)
+                 a!8
+                 (< (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (UF_RNMX_2 UF_EPS_2))))
+      (a!22 (and a!18
+                 (= REAL_4 (to_real a!20))
+                 a!21
+                 (>= (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_4))))
+      (a!24 (and a!23
+                 (= REAL_4 (to_real a!20))
+                 a!21
+                 (>= (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_4))))
+      (a!28 (and a!18
+                 (= REAL_4 a!26)
+                 a!27
+                 (>= (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_4))))
+      (a!29 (and a!23
+                 (= REAL_4 a!26)
+                 a!27
+                 (>= (- 0 idum) 1)
+                 (<= idum 0)
+                 (= Ret (* (UF_AM_2 UF_IM_1) REAL_4)))))
+(let ((a!30 (or a!4
+                a!5
+                a!6
+                a!9
+                a!10
+                a!11
+                a!12
+                a!13
+                a!14
+                a!15
+                a!16
+                a!17
+                a!22
+                a!24
+                (and a!25
+                     (= REAL_4 (to_real a!20))
+                     a!21
+                     (>= (- 0 idum) 1)
+                     (<= idum 0)
+                     (= Ret (UF_RNMX_2 UF_EPS_2)))
+                a!28
+                a!29
+                (and a!25
+                     (= REAL_4 a!26)
+                     a!27
+                     (>= (- 0 idum) 1)
+                     (<= idum 0)
+                     (= Ret (UF_RNMX_2 UF_EPS_2))))))
+  (not (= a!30 a!30))))))
+-----------------------------------------------------------------------------------------------

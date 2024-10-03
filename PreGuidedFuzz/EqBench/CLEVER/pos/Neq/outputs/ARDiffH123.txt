@@ -1,0 +1,34 @@
+-----------------------Iteration : 0 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 17.485188 ms
+  -Def-use and uninterpreted functions : 725.953764 ms
+  -Symbolic execution  : 2251.099935 ms
+  -Creating Z3 expressions  : 55.254478 ms
+  -Constraint solving : 0.828631 ms
+Output : NOT EQUIVALENT
+
+------------------------------To be continued (REFINING)----------------------------------------
+-----------------------Iteration : 1 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 0.290733 ms
+  -Def-use and uninterpreted functions : 181.355921 ms
+  -Symbolic execution  : 3288.184443 ms
+  -Creating Z3 expressions  : 39.457857 ms
+  -Constraint solving : 15.212981 ms
+Output : NOT EQUIVALENT
+
+------------------------------To be continued (REFINING)----------------------------------------
+-----------------------Iteration : 2 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 0.364098 ms
+  -Def-use and uninterpreted functions : 232.047821 ms
+  -Symbolic execution  : 3309.052572 ms
+  -Creating Z3 expressions  : 18.192105 ms
+  -Constraint solving : 0.465102 ms
+Output : NOT EQUIVALENT
+
+------------------------------NOTHING To REFINE---------------------------------------
+
+------------------------------END Of REFINEMENT----------------------------------------
+
+------------------------------END----------------------------------------

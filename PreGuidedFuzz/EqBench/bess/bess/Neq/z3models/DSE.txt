@@ -1,0 +1,74 @@
+
+
+----------------------------------------------------Model (the counterexample in z3 smt2 format): ---------------------------------
+(model 
+  (define-fun UF_j_1 () Real
+    4.0)
+  (define-fun Ret () Real
+    9.0)
+  (define-fun UF_bkm_1 () Real
+    0.0)
+  (define-fun n () Real
+    3.0)
+  (define-fun UF_bk_1 () Real
+    1.0)
+  (define-fun x () Real
+    6.0)
+  (define-fun UF_bkp_2 ((x!0 Real) (x!1 Real) (x!2 Real) (x!3 Real) (x!4 Real)) Real
+    8.0)
+  (define-fun UF_tox_2 ((x!0 Real)) Real
+    7.0)
+  (define-fun UF_j_2 ((x!0 Real) (x!1 Real)) Real
+    5.0)
+  (define-fun UF_bk_2 ((x!0 Real) (x!1 Real) (x!2 Real) (x!3 Real)) Real
+    9.0)
+  (define-fun log ((x!0 Real)) Real
+    0.0)
+)
+
+-----------------------------------------------------------------------------------------------
+-------------------The Z3 formula for the old method (z3 smt format) -------------------------
+(let ((a!1 (= Ret
+              (UF_bk_2 (UF_bkp_2 UF_bkm_1
+                                 UF_bk_1
+                                 (UF_j_2 UF_j_1 n)
+                                 (UF_tox_2 x)
+                                 n)
+                       (UF_j_2 UF_j_1 n)
+                       (UF_tox_2 x)
+                       n))))
+  (or (and (< n 2.0) (= Ret (- 1000.0)))
+      (and (= 2.0 n) a!1)
+      (and (> n 2.0) a!1)))
+-----------------------------------------------------------------------------------------------
+
+-------------------The Z3 formula for the new method ------------------------------------------
+(= Ret (- 1.0))
+-----------------------------------------------------------------------------------------------
+
+-------------------The final Z3 formula for constraint solving -------------------------
+(declare-fun n () Real)
+(declare-fun Ret () Real)
+(declare-fun UF_bkm_1 () Real)
+(declare-fun UF_bk_1 () Real)
+(declare-fun UF_j_1 () Real)
+(declare-fun UF_j_2 (Real Real ) Real)
+(declare-fun x () Real)
+(declare-fun UF_tox_2 (Real ) Real)
+(declare-fun UF_bkp_2 (Real Real Real Real Real ) Real)
+(declare-fun UF_bk_2 (Real Real Real Real ) Real)
+(let ((a!1 (= Ret
+              (UF_bk_2 (UF_bkp_2 UF_bkm_1
+                                 UF_bk_1
+                                 (UF_j_2 UF_j_1 n)
+                                 (UF_tox_2 x)
+                                 n)
+                       (UF_j_2 UF_j_1 n)
+                       (UF_tox_2 x)
+                       n))))
+(let ((a!2 (= (or (and (< n 2.0) (= Ret (- 1000.0)))
+                  (and (= 2.0 n) a!1)
+                  (and (> n 2.0) a!1))
+              (= Ret (- 1.0)))))
+  (not a!2)))
+-----------------------------------------------------------------------------------------------

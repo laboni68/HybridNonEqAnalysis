@@ -1,0 +1,91 @@
+-------------------The Z3 formula for the old method (z3 smt format) -------------------------
+(let ((a!1 (and (> UF_i_3 n)
+                (> 2 n)
+                (<= 1 n)
+                (<= 0 n)
+                (= Ret (+ (UF_x_2 1 UF_i_1 n) 1))))
+      (a!2 (and (and (> (UF_i_4 UF_i_3) n) (<= UF_i_3 n))
+                (> 1 n)
+                (<= 0 n)
+                (= Ret (* (UF_x_2 1 UF_i_1 n) 2))))
+      (a!3 (= Ret (* (* (UF_x_2 1 UF_i_1 n) 2) 2)))
+      (a!5 (and (and (> (UF_i_4 UF_i_3) n) (<= UF_i_3 n))
+                (> 0 n)
+                (= Ret (* (UF_x_2 1 UF_i_1 n) 2)))))
+(let ((a!4 (and (> (UF_i_4 (UF_i_4 UF_i_3)) n)
+                (<= (UF_i_4 UF_i_3) n)
+                (<= UF_i_3 n)
+                (> 0 n)
+                a!3)))
+  (or a!1
+      a!2
+      (and (> UF_i_3 n) (> 1 n) (<= 0 n) (= Ret (UF_x_2 1 UF_i_1 n)))
+      a!4
+      a!5
+      (and (> UF_i_3 n) (> 0 n) (= Ret (UF_x_2 1 UF_i_1 n))))))
+-----------------------------------------------------------------------------------------------
+
+-------------------The Z3 formula for the new method ------------------------------------------
+(let ((a!1 (= Ret (+ (+ (UF_x_2 1 UF_i_1 n) 1) 2)))
+      (a!2 (= Ret (* (+ (UF_x_2 1 UF_i_1 n) 1) 2)))
+      (a!4 (and (> UF_i_3 n) (> 2 n) (<= 1 n) (= Ret (+ (UF_x_2 1 UF_i_1 n) 1))))
+      (a!5 (= Ret (* (* (UF_x_2 1 UF_i_1 n) 2) 2)))
+      (a!7 (and (and (> (UF_i_4 UF_i_3) n) (<= UF_i_3 n))
+                (> 1 n)
+                (= Ret (* (UF_x_2 1 UF_i_1 n) 2)))))
+(let ((a!3 (and (and (> (UF_i_4 UF_i_3) n) (<= UF_i_3 n)) (> 2 n) (<= 1 n) a!2))
+      (a!6 (and (> (UF_i_4 (UF_i_4 UF_i_3)) n)
+                (<= (UF_i_4 UF_i_3) n)
+                (<= UF_i_3 n)
+                (> 1 n)
+                a!5)))
+  (or (and (> UF_i_3 n) (> 3 n) (<= 2 n) (<= 1 n) a!1)
+      a!3
+      a!4
+      a!6
+      a!7
+      (and (> UF_i_3 n) (> 1 n) (= Ret (UF_x_2 1 UF_i_1 n))))))
+-----------------------------------------------------------------------------------------------
+
+-------------------The final Z3 formula for constraint solving -------------------------
+(declare-fun UF_i_3 () Int)
+(declare-fun n () Int)
+(declare-fun Ret () Int)
+(declare-fun UF_i_1 () Int)
+(declare-fun UF_x_2 (Int Int Int ) Int)
+(declare-fun UF_i_4 (Int ) Int)
+(let ((a!1 (and (> UF_i_3 n) (> 2 n) (<= 1 n)))
+      (a!3 (and (and (> (UF_i_4 UF_i_3) n) (<= UF_i_3 n)) (> 1 n)))
+      (a!5 (and (> (UF_i_4 (UF_i_4 UF_i_3)) n)
+                (<= (UF_i_4 UF_i_3) n)
+                (<= UF_i_3 n)))
+      (a!6 (= Ret (* (* (UF_x_2 1 UF_i_1 n) 2) 2)))
+      (a!7 (and (and (> (UF_i_4 UF_i_3) n) (<= UF_i_3 n))
+                (> 0 n)
+                (= Ret (* (UF_x_2 1 UF_i_1 n) 2))))
+      (a!9 (= Ret (+ (+ (UF_x_2 1 UF_i_1 n) 1) 2)))
+      (a!10 (= Ret (* (+ (UF_x_2 1 UF_i_1 n) 1) 2))))
+(let ((a!2 (and a!1 (<= 0 n) (= Ret (+ (UF_x_2 1 UF_i_1 n) 1))))
+      (a!4 (and a!3 (<= 0 n) (= Ret (* (UF_x_2 1 UF_i_1 n) 2))))
+      (a!11 (and (and (> (UF_i_4 UF_i_3) n) (<= UF_i_3 n))
+                 (> 2 n)
+                 (<= 1 n)
+                 a!10))
+      (a!12 (and a!1 (= Ret (+ (UF_x_2 1 UF_i_1 n) 1))))
+      (a!13 (and a!3 (= Ret (* (UF_x_2 1 UF_i_1 n) 2)))))
+(let ((a!8 (or a!2
+               a!4
+               (and (and (> UF_i_3 n) (> 1 n))
+                    (<= 0 n)
+                    (= Ret (UF_x_2 1 UF_i_1 n)))
+               (and a!5 (> 0 n) a!6)
+               a!7
+               (and (> UF_i_3 n) (> 0 n) (= Ret (UF_x_2 1 UF_i_1 n)))))
+      (a!14 (or (and (> UF_i_3 n) (> 3 n) (<= 2 n) (<= 1 n) a!9)
+                a!11
+                a!12
+                (and a!5 (> 1 n) a!6)
+                a!13
+                (and (and (> UF_i_3 n) (> 1 n)) (= Ret (UF_x_2 1 UF_i_1 n))))))
+  (not (= a!8 a!14)))))
+-----------------------------------------------------------------------------------------------

@@ -1,0 +1,14 @@
+-----------------------Iteration : 0 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 19.48131 ms
+  -Def-use and uninterpreted functions : 916.786956 ms
+  -Symbolic execution  : 3689.371973 ms
+  -Creating Z3 expressions  : 81.231757 ms
+  -Constraint solving : 0.0 ms
+Output : UNKNOWN 
+Reason: Error while running JPF-symbc : java.lang.RuntimeException: ## Error : Array constraints only handled by z3. Try specifying a z3 instance as symbolic.dp (refer to JPFError.txt)
+------------------------------NOTHING To REFINE---------------------------------------
+
+------------------------------END Of REFINEMENT----------------------------------------
+
+------------------------------END----------------------------------------

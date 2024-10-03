@@ -1,0 +1,1271 @@
+
+
+----------------------------------------------------Model (the counterexample in z3 smt2 format): ---------------------------------
+(model 
+  (define-fun Own_Tracked_Alt () Int
+    19)
+  (define-fun Own_Tracked_Alt_Rate () Int
+    5)
+  (define-fun UF_NO_INTENT_1 () Int
+    11)
+  (define-fun UF_intent_not_known_1 () Int
+    4)
+  (define-fun Ret () Int
+    15)
+  (define-fun High_Confidence () Int
+    7)
+  (define-fun Other_RAC () Int
+    10)
+  (define-fun Climb_Inhibit () Int
+    16)
+  (define-fun Down_Separation () Int
+    18)
+  (define-fun UF_TCAS_TA_1 () Int
+    2)
+  (define-fun Other_Tracked_Alt () Int
+    20)
+  (define-fun need_upward_RA () Int
+    22)
+  (define-fun UF_OLEV_1 () Int
+    9)
+  (define-fun UF_UNRESOLVED_1 () Int
+    13)
+  (define-fun Other_Capability () Int
+    3)
+  (define-fun Two_of_Three_Reports_Valid () Int
+    12)
+  (define-fun need_downward_RA () Int
+    23)
+  (define-fun Up_Separation () Int
+    21)
+  (define-fun UF_MAXALTDIFF_1 () Int
+    6)
+  (define-fun UF_alt_sep_1 () Int
+    14)
+  (define-fun UF_UPWARD_RA_1 () Int
+    27)
+  (define-fun Alt_Layer_Value () Int
+    17)
+  (define-fun UF_DOWNWARD_RA_1 () Int
+    26)
+  (define-fun Cur_Vertical_Sep () Int
+    8)
+  (define-fun AF_checkCond1 ((x!0 Int) (x!1 Int) (x!2 Int)) Int
+    30)
+  (define-fun UF_alt_sep_4 ((x!0 Int) (x!1 Int)) Int
+    15)
+  (define-fun AF_checkCond2 ((x!0 Int) (x!1 Int)) Int
+    31)
+  (define-fun UF_need_upward_RA_5 ((x!0 Int)
+   (x!1 Int)
+   (x!2 Int)
+   (x!3 Int)
+   (x!4 Int)
+   (x!5 Int)
+   (x!6 Int)
+   (x!7 Int)
+   (x!8 Int)
+   (x!9 Int)
+   (x!10 Int)
+   (x!11 Int)
+   (x!12 Int)
+   (x!13 Int)) Int
+    24)
+  (define-fun UF_need_downward_RA_5 ((x!0 Int)
+   (x!1 Int)
+   (x!2 Int)
+   (x!3 Int)
+   (x!4 Int)
+   (x!5 Int)
+   (x!6 Int)
+   (x!7 Int)
+   (x!8 Int)
+   (x!9 Int)
+   (x!10 Int)
+   (x!11 Int)
+   (x!12 Int)
+   (x!13 Int)) Int
+    25)
+  (define-fun UF_tcas_equipped_1 ((x!0 Int) (x!1 Int)) Int
+    1)
+  (define-fun UF_alt_sep_7 ((x!0 Int) (x!1 Int) (x!2 Int) (x!3 Int) (x!4 Int)) Int
+    28)
+  (define-fun UF_enabled_1 ((x!0 Int) (x!1 Int) (x!2 Int) (x!3 Int) (x!4 Int)) Int
+    1)
+  (define-fun UF_intent_not_known_2 ((x!0 Int)) Int
+    1)
+  (define-fun UF_intent_not_known_3 ((x!0 Int)) Int
+    29)
+  (define-fun log ((x!0 Real)) Real
+    0.0)
+)
+
+-----------------------------------------------------------------------------------------------
+-------------------The Z3 formula for the old method (z3 smt format) -------------------------
+(let ((a!1 (and (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0))
+                (not (= (UF_intent_not_known_2 UF_intent_not_known_1) 1))
+                (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                 UF_MAXALTDIFF_1
+                                 High_Confidence
+                                 Cur_Vertical_Sep
+                                 UF_OLEV_1)
+                   1)
+                (= Other_RAC UF_NO_INTENT_1)
+                (= Two_of_Three_Reports_Valid 1)
+                (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1))))
+      (a!2 (UF_need_upward_RA_5
+             High_Confidence
+             Climb_Inhibit
+             Cur_Vertical_Sep
+             Alt_Layer_Value
+             Down_Separation
+             Own_Tracked_Alt_Rate
+             Own_Tracked_Alt
+             Other_Tracked_Alt
+             Other_Capability
+             Up_Separation
+             need_upward_RA
+             Other_RAC
+             need_downward_RA
+             Two_of_Three_Reports_Valid))
+      (a!8 (and (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0))
+                (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1))
+                (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                 UF_MAXALTDIFF_1
+                                 High_Confidence
+                                 Cur_Vertical_Sep
+                                 UF_OLEV_1)
+                   1)))
+      (a!9 (and (not (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                      UF_MAXALTDIFF_1
+                                      High_Confidence
+                                      Cur_Vertical_Sep
+                                      UF_OLEV_1)
+                        1))
+                (= Other_RAC UF_NO_INTENT_1)
+                (= Two_of_Three_Reports_Valid 1)
+                (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1))))
+      (a!10 (and (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0))
+                 (not (= (UF_intent_not_known_3 UF_intent_not_known_1) 1))
+                 (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                 (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                  UF_MAXALTDIFF_1
+                                  High_Confidence
+                                  Cur_Vertical_Sep
+                                  UF_OLEV_1)
+                    1)))
+      (a!14 (and (not (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                       UF_MAXALTDIFF_1
+                                       High_Confidence
+                                       Cur_Vertical_Sep
+                                       UF_OLEV_1)
+                         1))
+                 (not (= Other_RAC UF_NO_INTENT_1))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1))))
+      (a!15 (and (not (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                       UF_MAXALTDIFF_1
+                                       High_Confidence
+                                       Cur_Vertical_Sep
+                                       UF_OLEV_1)
+                         1))
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))))
+(let ((a!3 (UF_need_downward_RA_5
+             High_Confidence
+             Climb_Inhibit
+             Cur_Vertical_Sep
+             Alt_Layer_Value
+             Down_Separation
+             Own_Tracked_Alt_Rate
+             Own_Tracked_Alt
+             Other_Tracked_Alt
+             Other_Capability
+             Up_Separation
+             a!2
+             Other_RAC
+             need_downward_RA
+             Two_of_Three_Reports_Valid))
+      (a!7 (and (not (= a!2 1))
+                (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0)
+                (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1))
+                (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                 UF_MAXALTDIFF_1
+                                 High_Confidence
+                                 Cur_Vertical_Sep
+                                 UF_OLEV_1)
+                   1)))
+      (a!13 (and (not (= a!2 1))
+                 (= (UF_intent_not_known_3 UF_intent_not_known_1) 1)
+                 (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                 (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                  UF_MAXALTDIFF_1
+                                  High_Confidence
+                                  Cur_Vertical_Sep
+                                  UF_OLEV_1)
+                    1))))
+(let ((a!4 (and (and (not (= a!3 1)) (= a!2 1))
+                (= (UF_intent_not_known_2 UF_intent_not_known_1) 1)
+                (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                 UF_MAXALTDIFF_1
+                                 High_Confidence
+                                 Cur_Vertical_Sep
+                                 UF_OLEV_1)
+                   1)
+                (= Other_RAC UF_NO_INTENT_1)
+                (= Two_of_Three_Reports_Valid 1)
+                (= Ret
+                   (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                 UF_UPWARD_RA_1
+                                 a!2
+                                 UF_UNRESOLVED_1
+                                 a!3))))
+      (a!5 (and (and (= a!3 1) (= a!2 1))
+                (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0)
+                (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1))
+                (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                 UF_MAXALTDIFF_1
+                                 High_Confidence
+                                 Cur_Vertical_Sep
+                                 UF_OLEV_1)
+                   1)))
+      (a!6 (and (and (not (= a!3 1)) (= a!2 1))
+                (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0)
+                (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1))
+                (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                 UF_MAXALTDIFF_1
+                                 High_Confidence
+                                 Cur_Vertical_Sep
+                                 UF_OLEV_1)
+                   1)))
+      (a!11 (and (and (= a!3 1) (= a!2 1))
+                 (= (UF_intent_not_known_3 UF_intent_not_known_1) 1)
+                 (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                 (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                  UF_MAXALTDIFF_1
+                                  High_Confidence
+                                  Cur_Vertical_Sep
+                                  UF_OLEV_1)
+                    1)))
+      (a!12 (and (and (not (= a!3 1)) (= a!2 1))
+                 (= (UF_intent_not_known_3 UF_intent_not_known_1) 1)
+                 (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                 (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                  UF_MAXALTDIFF_1
+                                  High_Confidence
+                                  Cur_Vertical_Sep
+                                  UF_OLEV_1)
+                    1))))
+  (or a!1
+      (and (and (= a!3 1) (= a!2 1))
+           (= (UF_intent_not_known_2 UF_intent_not_known_1) 1)
+           (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+           (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                            UF_MAXALTDIFF_1
+                            High_Confidence
+                            Cur_Vertical_Sep
+                            UF_OLEV_1)
+              1)
+           (= Other_RAC UF_NO_INTENT_1)
+           (= Two_of_Three_Reports_Valid 1)
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      a!4
+      (and (not (= a!2 1))
+           (= (UF_intent_not_known_2 UF_intent_not_known_1) 1)
+           (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+           (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                            UF_MAXALTDIFF_1
+                            High_Confidence
+                            Cur_Vertical_Sep
+                            UF_OLEV_1)
+              1)
+           (= Other_RAC UF_NO_INTENT_1)
+           (= Two_of_Three_Reports_Valid 1)
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!5
+           (= Other_RAC UF_NO_INTENT_1)
+           (= Two_of_Three_Reports_Valid 1)
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!6
+           (= Other_RAC UF_NO_INTENT_1)
+           (= Two_of_Three_Reports_Valid 1)
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!7
+           (= Other_RAC UF_NO_INTENT_1)
+           (= Two_of_Three_Reports_Valid 1)
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!8
+           (= Other_RAC UF_NO_INTENT_1)
+           (= Two_of_Three_Reports_Valid 1)
+           (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))
+      a!9
+      (and a!10
+           (not (= Other_RAC UF_NO_INTENT_1))
+           (= Two_of_Three_Reports_Valid 1)
+           (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))
+      (and a!11
+           (not (= Other_RAC UF_NO_INTENT_1))
+           (= Two_of_Three_Reports_Valid 1)
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!12
+           (not (= Other_RAC UF_NO_INTENT_1))
+           (= Two_of_Three_Reports_Valid 1)
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!13
+           (not (= Other_RAC UF_NO_INTENT_1))
+           (= Two_of_Three_Reports_Valid 1)
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!5
+           (not (= Other_RAC UF_NO_INTENT_1))
+           (= Two_of_Three_Reports_Valid 1)
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!6
+           (not (= Other_RAC UF_NO_INTENT_1))
+           (= Two_of_Three_Reports_Valid 1)
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!7
+           (not (= Other_RAC UF_NO_INTENT_1))
+           (= Two_of_Three_Reports_Valid 1)
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!8
+           (not (= Other_RAC UF_NO_INTENT_1))
+           (= Two_of_Three_Reports_Valid 1)
+           (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))
+      a!14
+      (and a!10
+           (not (= Two_of_Three_Reports_Valid 1))
+           (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))
+      (and a!11
+           (not (= Two_of_Three_Reports_Valid 1))
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!12
+           (not (= Two_of_Three_Reports_Valid 1))
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!13
+           (not (= Two_of_Three_Reports_Valid 1))
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!5
+           (not (= Two_of_Three_Reports_Valid 1))
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!6
+           (not (= Two_of_Three_Reports_Valid 1))
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!7
+           (not (= Two_of_Three_Reports_Valid 1))
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!8
+           (not (= Two_of_Three_Reports_Valid 1))
+           (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))
+      a!15))))
+-----------------------------------------------------------------------------------------------
+
+-------------------The Z3 formula for the new method ------------------------------------------
+(let ((a!1 (and (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0))
+                (not (= (UF_intent_not_known_2 UF_intent_not_known_1) 1))
+                (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                 UF_MAXALTDIFF_1
+                                 High_Confidence
+                                 Cur_Vertical_Sep
+                                 UF_OLEV_1)
+                   1)
+                (not (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                       Other_RAC
+                                       UF_NO_INTENT_1)
+                        0))
+                (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1))))
+      (a!2 (UF_need_upward_RA_5
+             High_Confidence
+             Climb_Inhibit
+             Cur_Vertical_Sep
+             Alt_Layer_Value
+             Down_Separation
+             Own_Tracked_Alt_Rate
+             Own_Tracked_Alt
+             Other_Tracked_Alt
+             Other_Capability
+             Up_Separation
+             need_upward_RA
+             Other_RAC
+             need_downward_RA
+             Two_of_Three_Reports_Valid))
+      (a!10 (and (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0))
+                 (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1))
+                 (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                  UF_MAXALTDIFF_1
+                                  High_Confidence
+                                  Cur_Vertical_Sep
+                                  UF_OLEV_1)
+                    1)))
+      (a!12 (and (not (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                       UF_MAXALTDIFF_1
+                                       High_Confidence
+                                       Cur_Vertical_Sep
+                                       UF_OLEV_1)
+                         1))
+                 (not (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                        Other_RAC
+                                        UF_NO_INTENT_1)
+                         0))
+                 (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1))))
+      (a!13 (and (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0))
+                 (not (= (UF_intent_not_known_3 UF_intent_not_known_1) 1))
+                 (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                 (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                  UF_MAXALTDIFF_1
+                                  High_Confidence
+                                  Cur_Vertical_Sep
+                                  UF_OLEV_1)
+                    1)
+                 (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                   Other_RAC
+                                   UF_NO_INTENT_1)
+                    0)
+                 (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1))))
+      (a!15 (and (not (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                       UF_MAXALTDIFF_1
+                                       High_Confidence
+                                       Cur_Vertical_Sep
+                                       UF_OLEV_1)
+                         1))
+                 (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                   Other_RAC
+                                   UF_NO_INTENT_1)
+                    0)
+                 (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))))
+(let ((a!3 (UF_need_downward_RA_5
+             High_Confidence
+             Climb_Inhibit
+             Cur_Vertical_Sep
+             Alt_Layer_Value
+             Down_Separation
+             Own_Tracked_Alt_Rate
+             Own_Tracked_Alt
+             Other_Tracked_Alt
+             Other_Capability
+             Up_Separation
+             a!2
+             Other_RAC
+             need_downward_RA
+             Two_of_Three_Reports_Valid))
+      (a!11 (and a!10
+                 (not (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                        Other_RAC
+                                        UF_NO_INTENT_1)
+                         0))
+                 (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))))
+(let ((a!4 (and (not (= (AF_checkCond2 a!2 a!3) 0))
+                (= (UF_intent_not_known_2 UF_intent_not_known_1) 1)
+                (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                 UF_MAXALTDIFF_1
+                                 High_Confidence
+                                 Cur_Vertical_Sep
+                                 UF_OLEV_1)
+                   1)
+                (not (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                       Other_RAC
+                                       UF_NO_INTENT_1)
+                        0))
+                (= Ret
+                   (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                 UF_UPWARD_RA_1
+                                 a!2
+                                 UF_UNRESOLVED_1
+                                 a!3))))
+      (a!5 (and (= (AF_checkCond2 a!2 a!3) 0)
+                (= (UF_intent_not_known_2 UF_intent_not_known_1) 1)
+                (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                 UF_MAXALTDIFF_1
+                                 High_Confidence
+                                 Cur_Vertical_Sep
+                                 UF_OLEV_1)
+                   1)
+                (not (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                       Other_RAC
+                                       UF_NO_INTENT_1)
+                        0))
+                (= Ret
+                   (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                 UF_UPWARD_RA_1
+                                 a!2
+                                 UF_UNRESOLVED_1
+                                 a!3))))
+      (a!6 (and (not (= (AF_checkCond2 a!2 a!3) 0))
+                (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0)
+                (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1))
+                (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                 UF_MAXALTDIFF_1
+                                 High_Confidence
+                                 Cur_Vertical_Sep
+                                 UF_OLEV_1)
+                   1)))
+      (a!8 (and (= (AF_checkCond2 a!2 a!3) 0)
+                (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0)
+                (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1))
+                (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                 UF_MAXALTDIFF_1
+                                 High_Confidence
+                                 Cur_Vertical_Sep
+                                 UF_OLEV_1)
+                   1)))
+      (a!14 (and (not (= (AF_checkCond2 a!2 a!3) 0))
+                 (= (UF_intent_not_known_3 UF_intent_not_known_1) 1)
+                 (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                 (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                  UF_MAXALTDIFF_1
+                                  High_Confidence
+                                  Cur_Vertical_Sep
+                                  UF_OLEV_1)
+                    1)
+                 (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                   Other_RAC
+                                   UF_NO_INTENT_1)
+                    0)
+                 (= Ret
+                    (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                  UF_UPWARD_RA_1
+                                  a!2
+                                  UF_UNRESOLVED_1
+                                  a!3)))))
+(let ((a!7 (and a!6
+                (not (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                       Other_RAC
+                                       UF_NO_INTENT_1)
+                        0))
+                (= Ret
+                   (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                 UF_UPWARD_RA_1
+                                 a!2
+                                 UF_UNRESOLVED_1
+                                 a!3))))
+      (a!9 (and a!8
+                (not (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                       Other_RAC
+                                       UF_NO_INTENT_1)
+                        0))
+                (= Ret
+                   (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                 UF_UPWARD_RA_1
+                                 a!2
+                                 UF_UNRESOLVED_1
+                                 a!3)))))
+  (or a!1
+      a!4
+      a!5
+      a!7
+      a!9
+      a!11
+      a!12
+      a!13
+      a!14
+      (and (= (AF_checkCond2 a!2 a!3) 0)
+           (= (UF_intent_not_known_3 UF_intent_not_known_1) 1)
+           (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+           (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                            UF_MAXALTDIFF_1
+                            High_Confidence
+                            Cur_Vertical_Sep
+                            UF_OLEV_1)
+              1)
+           (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                             Other_RAC
+                             UF_NO_INTENT_1)
+              0)
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!6
+           (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                             Other_RAC
+                             UF_NO_INTENT_1)
+              0)
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!8
+           (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                             Other_RAC
+                             UF_NO_INTENT_1)
+              0)
+           (= Ret
+              (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                            UF_UPWARD_RA_1
+                            a!2
+                            UF_UNRESOLVED_1
+                            a!3)))
+      (and a!10
+           (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                             Other_RAC
+                             UF_NO_INTENT_1)
+              0)
+           (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))
+      a!15)))))
+-----------------------------------------------------------------------------------------------
+
+-------------------The final Z3 formula for constraint solving -------------------------
+(declare-fun UF_TCAS_TA_1 () Int)
+(declare-fun Other_Capability () Int)
+(declare-fun UF_tcas_equipped_1 (Int Int ) Int)
+(declare-fun UF_intent_not_known_1 () Int)
+(declare-fun UF_intent_not_known_2 (Int ) Int)
+(declare-fun Own_Tracked_Alt_Rate () Int)
+(declare-fun UF_MAXALTDIFF_1 () Int)
+(declare-fun High_Confidence () Int)
+(declare-fun Cur_Vertical_Sep () Int)
+(declare-fun UF_OLEV_1 () Int)
+(declare-fun UF_enabled_1 (Int Int Int Int Int ) Int)
+(declare-fun Other_RAC () Int)
+(declare-fun UF_NO_INTENT_1 () Int)
+(declare-fun Two_of_Three_Reports_Valid () Int)
+(declare-fun Ret () Int)
+(declare-fun UF_UNRESOLVED_1 () Int)
+(declare-fun UF_alt_sep_1 () Int)
+(declare-fun UF_alt_sep_4 (Int Int ) Int)
+(declare-fun Climb_Inhibit () Int)
+(declare-fun Alt_Layer_Value () Int)
+(declare-fun Down_Separation () Int)
+(declare-fun Own_Tracked_Alt () Int)
+(declare-fun Other_Tracked_Alt () Int)
+(declare-fun Up_Separation () Int)
+(declare-fun need_upward_RA () Int)
+(declare-fun need_downward_RA () Int)
+(declare-fun UF_need_upward_RA_5 (Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Int)
+(declare-fun UF_need_downward_RA_5 (Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Int)
+(declare-fun UF_DOWNWARD_RA_1 () Int)
+(declare-fun UF_UPWARD_RA_1 () Int)
+(declare-fun UF_alt_sep_7 (Int Int Int Int Int ) Int)
+(declare-fun UF_intent_not_known_3 (Int ) Int)
+(declare-fun AF_checkCond1 (Int Int Int ) Int)
+(declare-fun AF_checkCond2 (Int Int ) Int)
+(let ((a!1 (and (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0))
+                (not (= (UF_intent_not_known_2 UF_intent_not_known_1) 1))
+                (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                 UF_MAXALTDIFF_1
+                                 High_Confidence
+                                 Cur_Vertical_Sep
+                                 UF_OLEV_1)
+                   1)))
+      (a!2 (UF_need_upward_RA_5
+             High_Confidence
+             Climb_Inhibit
+             Cur_Vertical_Sep
+             Alt_Layer_Value
+             Down_Separation
+             Own_Tracked_Alt_Rate
+             Own_Tracked_Alt
+             Other_Tracked_Alt
+             Other_Capability
+             Up_Separation
+             need_upward_RA
+             Other_RAC
+             need_downward_RA
+             Two_of_Three_Reports_Valid))
+      (a!8 (and (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0))
+                (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1))
+                (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                 UF_MAXALTDIFF_1
+                                 High_Confidence
+                                 Cur_Vertical_Sep
+                                 UF_OLEV_1)
+                   1)))
+      (a!9 (and (not (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                      UF_MAXALTDIFF_1
+                                      High_Confidence
+                                      Cur_Vertical_Sep
+                                      UF_OLEV_1)
+                        1))
+                (= Other_RAC UF_NO_INTENT_1)
+                (= Two_of_Three_Reports_Valid 1)
+                (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1))))
+      (a!10 (and (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0))
+                 (not (= (UF_intent_not_known_3 UF_intent_not_known_1) 1))
+                 (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                 (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                  UF_MAXALTDIFF_1
+                                  High_Confidence
+                                  Cur_Vertical_Sep
+                                  UF_OLEV_1)
+                    1)))
+      (a!14 (and (not (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                       UF_MAXALTDIFF_1
+                                       High_Confidence
+                                       Cur_Vertical_Sep
+                                       UF_OLEV_1)
+                         1))
+                 (not (= Other_RAC UF_NO_INTENT_1))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1))))
+      (a!15 (and (not (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                       UF_MAXALTDIFF_1
+                                       High_Confidence
+                                       Cur_Vertical_Sep
+                                       UF_OLEV_1)
+                         1))
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1))))
+      (a!25 (and (not (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                       UF_MAXALTDIFF_1
+                                       High_Confidence
+                                       Cur_Vertical_Sep
+                                       UF_OLEV_1)
+                         1))
+                 (not (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                        Other_RAC
+                                        UF_NO_INTENT_1)
+                         0))
+                 (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1))))
+      (a!27 (and (not (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                       UF_MAXALTDIFF_1
+                                       High_Confidence
+                                       Cur_Vertical_Sep
+                                       UF_OLEV_1)
+                         1))
+                 (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                   Other_RAC
+                                   UF_NO_INTENT_1)
+                    0)
+                 (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))))
+(let ((a!3 (UF_need_downward_RA_5
+             High_Confidence
+             Climb_Inhibit
+             Cur_Vertical_Sep
+             Alt_Layer_Value
+             Down_Separation
+             Own_Tracked_Alt_Rate
+             Own_Tracked_Alt
+             Other_Tracked_Alt
+             Other_Capability
+             Up_Separation
+             a!2
+             Other_RAC
+             need_downward_RA
+             Two_of_Three_Reports_Valid))
+      (a!7 (and (not (= a!2 1))
+                (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0)
+                (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1))
+                (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                 UF_MAXALTDIFF_1
+                                 High_Confidence
+                                 Cur_Vertical_Sep
+                                 UF_OLEV_1)
+                   1)))
+      (a!13 (and (not (= a!2 1))
+                 (= (UF_intent_not_known_3 UF_intent_not_known_1) 1)
+                 (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                 (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                  UF_MAXALTDIFF_1
+                                  High_Confidence
+                                  Cur_Vertical_Sep
+                                  UF_OLEV_1)
+                    1)))
+      (a!17 (and a!1
+                 (not (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                        Other_RAC
+                                        UF_NO_INTENT_1)
+                         0))
+                 (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1))))
+      (a!24 (and a!8
+                 (not (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                        Other_RAC
+                                        UF_NO_INTENT_1)
+                         0))
+                 (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))))
+(let ((a!4 (and (and (not (= a!3 1)) (= a!2 1))
+                (= (UF_intent_not_known_2 UF_intent_not_known_1) 1)
+                (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                 UF_MAXALTDIFF_1
+                                 High_Confidence
+                                 Cur_Vertical_Sep
+                                 UF_OLEV_1)
+                   1)
+                (= Other_RAC UF_NO_INTENT_1)
+                (= Two_of_Three_Reports_Valid 1)
+                (= Ret
+                   (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                 UF_UPWARD_RA_1
+                                 a!2
+                                 UF_UNRESOLVED_1
+                                 a!3))))
+      (a!5 (and (and (= a!3 1) (= a!2 1))
+                (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0)
+                (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1))
+                (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                 UF_MAXALTDIFF_1
+                                 High_Confidence
+                                 Cur_Vertical_Sep
+                                 UF_OLEV_1)
+                   1)))
+      (a!6 (and (and (not (= a!3 1)) (= a!2 1))
+                (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0)
+                (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1))
+                (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                 UF_MAXALTDIFF_1
+                                 High_Confidence
+                                 Cur_Vertical_Sep
+                                 UF_OLEV_1)
+                   1)))
+      (a!11 (and (and (= a!3 1) (= a!2 1))
+                 (= (UF_intent_not_known_3 UF_intent_not_known_1) 1)
+                 (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                 (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                  UF_MAXALTDIFF_1
+                                  High_Confidence
+                                  Cur_Vertical_Sep
+                                  UF_OLEV_1)
+                    1)))
+      (a!12 (and (and (not (= a!3 1)) (= a!2 1))
+                 (= (UF_intent_not_known_3 UF_intent_not_known_1) 1)
+                 (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                 (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                  UF_MAXALTDIFF_1
+                                  High_Confidence
+                                  Cur_Vertical_Sep
+                                  UF_OLEV_1)
+                    1)))
+      (a!18 (and (not (= (AF_checkCond2 a!2 a!3) 0))
+                 (= (UF_intent_not_known_2 UF_intent_not_known_1) 1)
+                 (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                 (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                  UF_MAXALTDIFF_1
+                                  High_Confidence
+                                  Cur_Vertical_Sep
+                                  UF_OLEV_1)
+                    1)
+                 (not (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                        Other_RAC
+                                        UF_NO_INTENT_1)
+                         0))
+                 (= Ret
+                    (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                  UF_UPWARD_RA_1
+                                  a!2
+                                  UF_UNRESOLVED_1
+                                  a!3))))
+      (a!19 (and (= (AF_checkCond2 a!2 a!3) 0)
+                 (= (UF_intent_not_known_2 UF_intent_not_known_1) 1)
+                 (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                 (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                  UF_MAXALTDIFF_1
+                                  High_Confidence
+                                  Cur_Vertical_Sep
+                                  UF_OLEV_1)
+                    1)
+                 (not (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                        Other_RAC
+                                        UF_NO_INTENT_1)
+                         0))
+                 (= Ret
+                    (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                  UF_UPWARD_RA_1
+                                  a!2
+                                  UF_UNRESOLVED_1
+                                  a!3))))
+      (a!20 (and (not (= (AF_checkCond2 a!2 a!3) 0))
+                 (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0)
+                 (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1))
+                 (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                  UF_MAXALTDIFF_1
+                                  High_Confidence
+                                  Cur_Vertical_Sep
+                                  UF_OLEV_1)
+                    1)))
+      (a!22 (and (= (AF_checkCond2 a!2 a!3) 0)
+                 (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 0)
+                 (not (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1))
+                 (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                  UF_MAXALTDIFF_1
+                                  High_Confidence
+                                  Cur_Vertical_Sep
+                                  UF_OLEV_1)
+                    1)))
+      (a!26 (and (not (= (AF_checkCond2 a!2 a!3) 0))
+                 (= (UF_intent_not_known_3 UF_intent_not_known_1) 1)
+                 (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                 (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                  UF_MAXALTDIFF_1
+                                  High_Confidence
+                                  Cur_Vertical_Sep
+                                  UF_OLEV_1)
+                    1)
+                 (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                   Other_RAC
+                                   UF_NO_INTENT_1)
+                    0)
+                 (= Ret
+                    (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                  UF_UPWARD_RA_1
+                                  a!2
+                                  UF_UNRESOLVED_1
+                                  a!3)))))
+(let ((a!16 (or (and a!1
+                     (= Other_RAC UF_NO_INTENT_1)
+                     (= Two_of_Three_Reports_Valid 1)
+                     (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))
+                (and (and (= a!3 1) (= a!2 1))
+                     (= (UF_intent_not_known_2 UF_intent_not_known_1) 1)
+                     (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                     (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                      UF_MAXALTDIFF_1
+                                      High_Confidence
+                                      Cur_Vertical_Sep
+                                      UF_OLEV_1)
+                        1)
+                     (= Other_RAC UF_NO_INTENT_1)
+                     (= Two_of_Three_Reports_Valid 1)
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                a!4
+                (and (not (= a!2 1))
+                     (= (UF_intent_not_known_2 UF_intent_not_known_1) 1)
+                     (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                     (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                      UF_MAXALTDIFF_1
+                                      High_Confidence
+                                      Cur_Vertical_Sep
+                                      UF_OLEV_1)
+                        1)
+                     (= Other_RAC UF_NO_INTENT_1)
+                     (= Two_of_Three_Reports_Valid 1)
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!5
+                     (= Other_RAC UF_NO_INTENT_1)
+                     (= Two_of_Three_Reports_Valid 1)
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!6
+                     (= Other_RAC UF_NO_INTENT_1)
+                     (= Two_of_Three_Reports_Valid 1)
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!7
+                     (= Other_RAC UF_NO_INTENT_1)
+                     (= Two_of_Three_Reports_Valid 1)
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!8
+                     (= Other_RAC UF_NO_INTENT_1)
+                     (= Two_of_Three_Reports_Valid 1)
+                     (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))
+                a!9
+                (and a!10
+                     (not (= Other_RAC UF_NO_INTENT_1))
+                     (= Two_of_Three_Reports_Valid 1)
+                     (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))
+                (and a!11
+                     (not (= Other_RAC UF_NO_INTENT_1))
+                     (= Two_of_Three_Reports_Valid 1)
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!12
+                     (not (= Other_RAC UF_NO_INTENT_1))
+                     (= Two_of_Three_Reports_Valid 1)
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!13
+                     (not (= Other_RAC UF_NO_INTENT_1))
+                     (= Two_of_Three_Reports_Valid 1)
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!5
+                     (not (= Other_RAC UF_NO_INTENT_1))
+                     (= Two_of_Three_Reports_Valid 1)
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!6
+                     (not (= Other_RAC UF_NO_INTENT_1))
+                     (= Two_of_Three_Reports_Valid 1)
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!7
+                     (not (= Other_RAC UF_NO_INTENT_1))
+                     (= Two_of_Three_Reports_Valid 1)
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!8
+                     (not (= Other_RAC UF_NO_INTENT_1))
+                     (= Two_of_Three_Reports_Valid 1)
+                     (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))
+                a!14
+                (and a!10
+                     (not (= Two_of_Three_Reports_Valid 1))
+                     (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))
+                (and a!11
+                     (not (= Two_of_Three_Reports_Valid 1))
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!12
+                     (not (= Two_of_Three_Reports_Valid 1))
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!13
+                     (not (= Two_of_Three_Reports_Valid 1))
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!5
+                     (not (= Two_of_Three_Reports_Valid 1))
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!6
+                     (not (= Two_of_Three_Reports_Valid 1))
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!7
+                     (not (= Two_of_Three_Reports_Valid 1))
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!8
+                     (not (= Two_of_Three_Reports_Valid 1))
+                     (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))
+                a!15))
+      (a!21 (and a!20
+                 (not (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                        Other_RAC
+                                        UF_NO_INTENT_1)
+                         0))
+                 (= Ret
+                    (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                  UF_UPWARD_RA_1
+                                  a!2
+                                  UF_UNRESOLVED_1
+                                  a!3))))
+      (a!23 (and a!22
+                 (not (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                        Other_RAC
+                                        UF_NO_INTENT_1)
+                         0))
+                 (= Ret
+                    (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                  UF_UPWARD_RA_1
+                                  a!2
+                                  UF_UNRESOLVED_1
+                                  a!3)))))
+(let ((a!28 (or a!17
+                a!18
+                a!19
+                a!21
+                a!23
+                a!24
+                a!25
+                (and a!10
+                     (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                       Other_RAC
+                                       UF_NO_INTENT_1)
+                        0)
+                     (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))
+                a!26
+                (and (= (AF_checkCond2 a!2 a!3) 0)
+                     (= (UF_intent_not_known_3 UF_intent_not_known_1) 1)
+                     (= (UF_tcas_equipped_1 UF_TCAS_TA_1 Other_Capability) 1)
+                     (= (UF_enabled_1 Own_Tracked_Alt_Rate
+                                      UF_MAXALTDIFF_1
+                                      High_Confidence
+                                      Cur_Vertical_Sep
+                                      UF_OLEV_1)
+                        1)
+                     (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                       Other_RAC
+                                       UF_NO_INTENT_1)
+                        0)
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!20
+                     (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                       Other_RAC
+                                       UF_NO_INTENT_1)
+                        0)
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!22
+                     (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                       Other_RAC
+                                       UF_NO_INTENT_1)
+                        0)
+                     (= Ret
+                        (UF_alt_sep_7 UF_DOWNWARD_RA_1
+                                      UF_UPWARD_RA_1
+                                      a!2
+                                      UF_UNRESOLVED_1
+                                      a!3)))
+                (and a!8
+                     (= (AF_checkCond1 Two_of_Three_Reports_Valid
+                                       Other_RAC
+                                       UF_NO_INTENT_1)
+                        0)
+                     (= Ret (UF_alt_sep_4 UF_UNRESOLVED_1 UF_alt_sep_1)))
+                a!27)))
+  (not (= a!16 a!28)))))))
+-----------------------------------------------------------------------------------------------

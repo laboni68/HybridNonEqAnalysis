@@ -1,0 +1,76 @@
+
+
+----------------------------------------------------Model (the counterexample in z3 smt2 format): ---------------------------------
+(model 
+  (define-fun UF_i_1 () Int
+    (- 1))
+  (define-fun Ret () Int
+    4)
+  (define-fun n () Int
+    3)
+  (define-fun UF_j_3 ((x!0 Int)) Int
+    (ite (= x!0 4) 5
+    (ite (= x!0 2) 6
+    (ite (= x!0 6) 7
+      4))))
+  (define-fun UF_i_3 ((x!0 Int)) Int
+    (ite (= x!0 1) (- 1)
+      1))
+  (define-fun UF_n_2 ((x!0 Int)) Int
+    0)
+  (define-fun log ((x!0 Real)) Real
+    0.0)
+)
+
+-----------------------------------------------------------------------------------------------
+-------------------The Z3 formula for the old method (z3 smt format) -------------------------
+(let ((a!1 (and (> (UF_i_3 (UF_i_3 UF_i_1)) (UF_n_2 n))
+                (<= (UF_i_3 UF_i_1) (UF_n_2 n))
+                (<= UF_i_1 (UF_n_2 n))
+                (= Ret (UF_j_3 (UF_j_3 0))))))
+  (or a!1
+      (and (> (UF_i_3 UF_i_1) (UF_n_2 n))
+           (<= UF_i_1 (UF_n_2 n))
+           (= Ret (UF_j_3 0)))
+      (and (> UF_i_1 (UF_n_2 n)) (= Ret 0))))
+-----------------------------------------------------------------------------------------------
+
+-------------------The Z3 formula for the new method ------------------------------------------
+(let ((a!1 (and (>= (UF_i_3 (UF_i_3 UF_i_1)) (UF_n_2 n))
+                (< (UF_i_3 UF_i_1) (UF_n_2 n))
+                (< UF_i_1 (UF_n_2 n))
+                (= Ret (UF_j_3 (UF_j_3 2))))))
+  (or a!1
+      (and (>= (UF_i_3 UF_i_1) (UF_n_2 n))
+           (< UF_i_1 (UF_n_2 n))
+           (= Ret (UF_j_3 2)))
+      (and (>= UF_i_1 (UF_n_2 n)) (= Ret 2))))
+-----------------------------------------------------------------------------------------------
+
+-------------------The final Z3 formula for constraint solving -------------------------
+(declare-fun UF_i_1 () Int)
+(declare-fun UF_i_3 (Int ) Int)
+(declare-fun n () Int)
+(declare-fun UF_n_2 (Int ) Int)
+(declare-fun Ret () Int)
+(declare-fun UF_j_3 (Int ) Int)
+(let ((a!1 (and (> (UF_i_3 (UF_i_3 UF_i_1)) (UF_n_2 n))
+                (<= (UF_i_3 UF_i_1) (UF_n_2 n))
+                (<= UF_i_1 (UF_n_2 n))
+                (= Ret (UF_j_3 (UF_j_3 0)))))
+      (a!3 (and (>= (UF_i_3 (UF_i_3 UF_i_1)) (UF_n_2 n))
+                (< (UF_i_3 UF_i_1) (UF_n_2 n))
+                (< UF_i_1 (UF_n_2 n))
+                (= Ret (UF_j_3 (UF_j_3 2))))))
+(let ((a!2 (or a!1
+               (and (> (UF_i_3 UF_i_1) (UF_n_2 n))
+                    (<= UF_i_1 (UF_n_2 n))
+                    (= Ret (UF_j_3 0)))
+               (and (> UF_i_1 (UF_n_2 n)) (= Ret 0))))
+      (a!4 (or a!3
+               (and (>= (UF_i_3 UF_i_1) (UF_n_2 n))
+                    (< UF_i_1 (UF_n_2 n))
+                    (= Ret (UF_j_3 2)))
+               (and (>= UF_i_1 (UF_n_2 n)) (= Ret 2)))))
+  (not (= a!2 a!4))))
+-----------------------------------------------------------------------------------------------

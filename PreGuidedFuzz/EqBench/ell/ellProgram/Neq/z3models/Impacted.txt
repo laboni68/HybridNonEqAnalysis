@@ -1,0 +1,31 @@
+-------------------The Z3 formula for the old method (z3 smt format) -------------------------
+(let ((a!1 (* (- 1.0 (* (sin phi) ak)) (+ (* (sin phi) ak) 1.0))))
+(let ((a!2 (* (AF_SQR (* (sin phi) ak))
+              (AF_rd (AF_SQR (cos phi)) (to_int a!1) (to_int 1.0)))))
+(let ((a!3 (- (AF_rf (AF_SQR (cos phi)) (to_int a!1) (to_int 1.0)) (/ a!2 3.0))))
+  (= Ret (* (sin phi) a!3)))))
+-----------------------------------------------------------------------------------------------
+
+-------------------The Z3 formula for the new method ------------------------------------------
+(let ((a!1 (* (- 1.0 (* (sin phi) ak)) (+ (* (sin phi) ak) 1.0))))
+(let ((a!2 (* (AF_SQR (* (sin phi) ak))
+              (AF_rd (AF_SQR (cos phi)) (to_int a!1) (to_int 1.0)))))
+(let ((a!3 (- (AF_rf (AF_SQR (cos phi)) (to_int a!1) (to_int 1.0)) (/ a!2 3.0))))
+  (= Ret (+ (* (sin phi) a!3) 5.0)))))
+-----------------------------------------------------------------------------------------------
+
+-------------------The final Z3 formula for constraint solving -------------------------
+(declare-fun Ret () Real)
+(declare-fun phi () Real)
+(declare-fun AF_SQR (Real ) Real)
+(declare-fun ak () Real)
+(declare-fun AF_rf (Real Int Int ) Real)
+(declare-fun AF_rd (Real Int Int ) Real)
+(let ((a!1 (* (- 1.0 (* (sin phi) ak)) (+ (* (sin phi) ak) 1.0))))
+(let ((a!2 (* (AF_SQR (* (sin phi) ak))
+              (AF_rd (AF_SQR (cos phi)) (to_int a!1) (to_int 1.0)))))
+(let ((a!3 (- (AF_rf (AF_SQR (cos phi)) (to_int a!1) (to_int 1.0)) (/ a!2 3.0))))
+(let ((a!4 (= Ret (+ (* (sin phi) a!3) 5.0))))
+(let ((a!5 (= (= Ret (* (sin phi) a!3)) a!4)))
+  (not a!5))))))
+-----------------------------------------------------------------------------------------------

@@ -1,0 +1,14 @@
+-----------------------Iteration : 0 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 24.003945 ms
+  -Def-use and uninterpreted functions : 885.422654 ms
+  -Symbolic execution  : 2934.485918 ms
+  -Creating Z3 expressions  : 45.508599 ms
+  -Constraint solving : 0.0 ms
+Output : UNKNOWN 
+Reason: Error while running JPF-symbc : java.lang.RuntimeException: the type not handled :int[] (refer to JPFError.txt)
+------------------------------NOTHING To REFINE---------------------------------------
+
+------------------------------END Of REFINEMENT----------------------------------------
+
+------------------------------END----------------------------------------

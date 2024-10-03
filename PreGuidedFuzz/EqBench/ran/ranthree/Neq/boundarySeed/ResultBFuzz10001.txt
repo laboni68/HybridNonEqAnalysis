@@ -1,0 +1,5 @@
+getInputValues: 1
+-36
+110
+../EqBench/ran/ranthree/Neq/instrumented [110] 2 -> NEQ
+Execution time in milliseconds: 530 ms, fuzztime 1000 ms

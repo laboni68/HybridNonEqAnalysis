@@ -1,0 +1,50 @@
+-----------------------Iteration : 0 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 24.392851 ms
+  -Def-use and uninterpreted functions : 933.175398 ms
+  -Symbolic execution  : 3629.473382 ms
+  -Creating Z3 expressions  : 121.654337 ms
+  -Constraint solving : 0.876417 ms
+Output : UNKNOWN 
+Reason: ("smt tactic failed to show goal to be sat/unsat (incomplete (theory arithmetic))")
+------------------------------To be continued (REFINING)----------------------------------------
+
+------------------------------To be continued (REFINING)----------------------------------------
+-----------------------Iteration : 1 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 5.069611 ms
+  -Def-use and uninterpreted functions : 305.522193 ms
+  -Symbolic execution  : 3952.407193 ms
+  -Creating Z3 expressions  : 29.224955 ms
+  -Constraint solving : 10.357747 ms
+Output : UNKNOWN 
+Reason: ("smt tactic failed to show goal to be sat/unsat (incomplete (theory arithmetic))")
+------------------------------To be continued (REFINING)----------------------------------------
+
+------------------------------To be continued (REFINING)----------------------------------------
+-----------------------Iteration : 2 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 0.498982 ms
+  -Def-use and uninterpreted functions : 361.697379 ms
+  -Symbolic execution  : 7226.095431 ms
+  -Creating Z3 expressions  : 47.394202 ms
+  -Constraint solving : 5.714385 ms
+Output : UNKNOWN 
+Reason: ("smt tactic failed to show goal to be sat/unsat (incomplete (theory arithmetic))")
+------------------------------To be continued (REFINING)----------------------------------------
+
+------------------------------To be continued (REFINING)----------------------------------------
+-----------------------Iteration : 3 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 0.98859 ms
+  -Def-use and uninterpreted functions : 314.005692 ms
+  -Symbolic execution  : 6052.421784 ms
+  -Creating Z3 expressions  : 58.593734 ms
+  -Constraint solving : 1.188797 ms
+Output : UNKNOWN 
+Reason: ("smt tactic failed to show goal to be sat/unsat (incomplete (theory arithmetic))")
+------------------------------NOTHING To REFINE---------------------------------------
+
+------------------------------END Of REFINEMENT----------------------------------------
+
+------------------------------END----------------------------------------

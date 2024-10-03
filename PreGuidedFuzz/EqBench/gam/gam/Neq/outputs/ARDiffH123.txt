@@ -1,0 +1,38 @@
+-----------------------Iteration : 0 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 43.054925 ms
+  -Def-use and uninterpreted functions : 1287.001539 ms
+  -Symbolic execution  : 7594.322503 ms
+  -Creating Z3 expressions  : 224.923132 ms
+  -Constraint solving : 1.57227 ms
+Output : UNKNOWN 
+Reason: ("smt tactic failed to show goal to be sat/unsat (incomplete (theory arithmetic))")
+------------------------------To be continued (REFINING)----------------------------------------
+
+------------------------------To be continued (REFINING)----------------------------------------
+-----------------------Iteration : 1 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 4.839766 ms
+  -Def-use and uninterpreted functions : 409.307086 ms
+  -Symbolic execution  : 6057.486028 ms
+  -Creating Z3 expressions  : 50.215647 ms
+  -Constraint solving : 5.630866 ms
+Output : UNKNOWN 
+Reason: ("smt tactic failed to show goal to be sat/unsat (incomplete (theory arithmetic))")
+------------------------------To be continued (REFINING)----------------------------------------
+
+------------------------------To be continued (REFINING)----------------------------------------
+-----------------------Iteration : 2 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 0.770508 ms
+  -Def-use and uninterpreted functions : 409.461906 ms
+  -Symbolic execution  : 7806.431193 ms
+  -Creating Z3 expressions  : 64.30724 ms
+  -Constraint solving : 17.155903 ms
+Output : UNKNOWN 
+Reason: ("smt tactic failed to show goal to be sat/unsat (incomplete (theory arithmetic))")
+------------------------------NOTHING To REFINE---------------------------------------
+
+------------------------------END Of REFINEMENT----------------------------------------
+
+------------------------------END----------------------------------------

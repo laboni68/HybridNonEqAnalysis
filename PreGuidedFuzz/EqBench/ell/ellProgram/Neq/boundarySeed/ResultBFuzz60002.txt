@@ -1,0 +1,5 @@
+getInputValues: 2
+-23.155398858270196
+106.63569266829103
+../EqBench/ell/ellProgram/Neq/instrumented [-23.155398858270196, 106.63569266829103] 1 -> NEQ
+Execution time in milliseconds: 600 ms, fuzztime 6000 ms

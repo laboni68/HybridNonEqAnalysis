@@ -1,0 +1,48 @@
+
+
+----------------------------------------------------Model (the counterexample in z3 smt2 format): ---------------------------------
+(model 
+  (define-fun phi () Real
+    0.0)
+  (define-fun Ret () Real
+    5.0)
+  (define-fun ak () Real
+    3.0)
+  (define-fun UF_ans_1 ((x!0 Real) (x!1 Real) (x!2 Real) (x!3 Real) (x!4 Real)) Real
+    5.0)
+  (define-fun UF_q_1 ((x!0 Real) (x!1 Real)) Real
+    4.0)
+  (define-fun UF_cc_1 ((x!0 Real)) Real
+    1.0)
+  (define-fun UF_s_1 ((x!0 Real)) Real
+    2.0)
+  (define-fun log ((x!0 Real)) Real
+    0.0)
+)
+
+-----------------------------------------------------------------------------------------------
+-------------------The Z3 formula for the old method (z3 smt format) -------------------------
+(= Ret (UF_ans_1 (UF_cc_1 phi) phi (UF_q_1 (UF_s_1 phi) ak) (UF_s_1 phi) ak))
+-----------------------------------------------------------------------------------------------
+
+-------------------The Z3 formula for the new method ------------------------------------------
+(let ((a!1 (+ (UF_ans_1 (UF_cc_1 phi)
+                        phi
+                        (UF_q_1 (UF_s_1 phi) ak)
+                        (UF_s_1 phi)
+                        ak)
+              5.0)))
+  (= Ret a!1))
+-----------------------------------------------------------------------------------------------
+
+-------------------The final Z3 formula for constraint solving -------------------------
+(declare-fun Ret () Real)
+(declare-fun phi () Real)
+(declare-fun UF_cc_1 (Real ) Real)
+(declare-fun UF_s_1 (Real ) Real)
+(declare-fun ak () Real)
+(declare-fun UF_q_1 (Real Real ) Real)
+(declare-fun UF_ans_1 (Real Real Real Real Real ) Real)
+(let ((a!1 (UF_ans_1 (UF_cc_1 phi) phi (UF_q_1 (UF_s_1 phi) ak) (UF_s_1 phi) ak)))
+  (not (= (= Ret a!1) (= Ret (+ a!1 5.0)))))
+-----------------------------------------------------------------------------------------------

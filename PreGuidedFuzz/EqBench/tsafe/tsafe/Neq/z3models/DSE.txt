@@ -1,0 +1,209 @@
+
+
+----------------------------------------------------Model (the counterexample in z3 smt2 format): ---------------------------------
+(model 
+  (define-fun xC0 () Real
+    11.0)
+  (define-fun psi1 () Real
+    2.0)
+  (define-fun vA () Real
+    7.0)
+  (define-fun Ret () Real
+    25.0)
+  (define-fun g () Real
+    6.0)
+  (define-fun bank_ang () Real
+    5.0)
+  (define-fun UF_dmst_1 () Real
+    21.0)
+  (define-fun psiC () Real
+    14.0)
+  (define-fun UF_signC_1 () Real
+    10.0)
+  (define-fun degToRad () Real
+    1.0)
+  (define-fun yC0 () Real
+    18.0)
+  (define-fun UF_dmin_1 () Real
+    0.0)
+  (define-fun vC () Real
+    9.0)
+  (define-fun UF_yd1_1 ((x!0 Real) (x!1 Real)) Real
+    20.0)
+  (define-fun UF_yC_1 ((x!0 Real) (x!1 Real) (x!2 Real) (x!3 Real) (x!4 Real)) Real
+    19.0)
+  (define-fun UF_xC_1 ((x!0 Real) (x!1 Real) (x!2 Real) (x!3 Real) (x!4 Real)) Real
+    15.0)
+  (define-fun UF_t1_1 ((x!0 Real) (x!1 Real) (x!2 Real)) Real
+    12.0)
+  (define-fun UF_yA_1 ((x!0 Real) (x!1 Real) (x!2 Real)) Real
+    17.0)
+  (define-fun UF_dmin_2 ((x!0 Real)) Real
+    24.0)
+  (define-fun UF_signA_1 ((x!0 Real)) Real
+    4.0)
+  (define-fun UF_rA_1 ((x!0 Real) (x!1 Real) (x!2 Real) (x!3 Real)) Real
+    1236.0)
+  (define-fun UF_xA_1 ((x!0 Real) (x!1 Real) (x!2 Real)) Real
+    8.0)
+  (define-fun UF_psiA_1 ((x!0 Real) (x!1 Real)) Real
+    3.0)
+  (define-fun UF_minsep_3 ((x!0 Real) (x!1 Real)) Real
+    (ite (and (= x!0 24.0) (= x!1 21.0)) 25.0
+      22.0))
+  (define-fun UF_d_1 ((x!0 Real) (x!1 Real)) Real
+    (- 1.0))
+  (define-fun UF_rC_1 ((x!0 Real) (x!1 Real) (x!2 Real) (x!3 Real)) Real
+    1237.0)
+  (define-fun UF_dpsiC_1 ((x!0 Real) (x!1 Real) (x!2 Real) (x!3 Real)) Real
+    13.0)
+  (define-fun UF_xd1_1 ((x!0 Real) (x!1 Real)) Real
+    16.0)
+  (define-fun log ((x!0 Real)) Real
+    0.0)
+)
+
+-----------------------------------------------------------------------------------------------
+-------------------The Z3 formula for the old method (z3 smt format) -------------------------
+(let ((a!1 (UF_dpsiC_1 (UF_rC_1 bank_ang degToRad g vC)
+                       UF_signC_1
+                       (UF_t1_1 vA
+                                (UF_psiA_1 degToRad psi1)
+                                (UF_rA_1 bank_ang degToRad g vA))
+                       vC)))
+(let ((a!2 (UF_xd1_1 (UF_xA_1 (UF_signA_1 (UF_psiA_1 degToRad psi1))
+                              (UF_psiA_1 degToRad psi1)
+                              (UF_rA_1 bank_ang degToRad g vA))
+                     (UF_xC_1 (UF_rC_1 bank_ang degToRad g vC)
+                              UF_signC_1
+                              xC0
+                              a!1
+                              psiC)))
+      (a!3 (UF_yd1_1 (UF_yA_1 (UF_signA_1 (UF_psiA_1 degToRad psi1))
+                              (UF_psiA_1 degToRad psi1)
+                              (UF_rA_1 bank_ang degToRad g vA))
+                     (UF_yC_1 (UF_rC_1 bank_ang degToRad g vC)
+                              UF_signC_1
+                              a!1
+                              yC0
+                              psiC))))
+(let ((a!4 (= Ret (UF_minsep_3 (UF_dmin_2 (UF_d_1 a!2 a!3)) UF_dmst_1))))
+  (or (and (< (UF_d_1 a!2 a!3) UF_dmin_1) a!4)
+      (and (= UF_dmin_1 (UF_d_1 a!2 a!3))
+           (= Ret (UF_minsep_3 UF_dmin_1 UF_dmst_1)))
+      (and (> (UF_d_1 a!2 a!3) UF_dmin_1)
+           (= Ret (UF_minsep_3 UF_dmin_1 UF_dmst_1)))))))
+-----------------------------------------------------------------------------------------------
+
+-------------------The Z3 formula for the new method ------------------------------------------
+(let ((a!1 (UF_dpsiC_1 (UF_rC_1 bank_ang degToRad g vC)
+                       UF_signC_1
+                       (UF_t1_1 vA
+                                (UF_psiA_1 degToRad psi1)
+                                (UF_rA_1 bank_ang degToRad g vA))
+                       vC)))
+(let ((a!2 (UF_xd1_1 (UF_xA_1 (UF_signA_1 (UF_psiA_1 degToRad psi1))
+                              (UF_psiA_1 degToRad psi1)
+                              (UF_rA_1 bank_ang degToRad g vA))
+                     (UF_xC_1 (UF_rC_1 bank_ang degToRad g vC)
+                              UF_signC_1
+                              xC0
+                              a!1
+                              psiC)))
+      (a!3 (UF_yd1_1 (UF_yA_1 (UF_signA_1 (UF_psiA_1 degToRad psi1))
+                              (UF_psiA_1 degToRad psi1)
+                              (UF_rA_1 bank_ang degToRad g vA))
+                     (UF_yC_1 (UF_rC_1 bank_ang degToRad g vC)
+                              UF_signC_1
+                              a!1
+                              yC0
+                              psiC))))
+(let ((a!4 (= Ret (UF_minsep_3 (UF_dmin_2 (UF_d_1 a!2 a!3)) UF_dmst_1))))
+  (or (and (< (UF_rA_1 bank_ang degToRad g vA) (UF_rC_1 bank_ang degToRad g vC))
+           (< (UF_d_1 a!2 a!3) UF_dmin_1)
+           (= Ret (UF_minsep_3 UF_dmin_1 UF_dmst_1)))
+      (and (= (UF_rC_1 bank_ang degToRad g vC) (UF_rA_1 bank_ang degToRad g vA))
+           (< (UF_d_1 a!2 a!3) UF_dmin_1)
+           (= Ret (UF_minsep_3 UF_dmin_1 UF_dmst_1)))
+      (and (> (UF_rA_1 bank_ang degToRad g vA) (UF_rC_1 bank_ang degToRad g vC))
+           (< (UF_d_1 a!2 a!3) UF_dmin_1)
+           a!4)
+      (and (= UF_dmin_1 (UF_d_1 a!2 a!3))
+           (= Ret (UF_minsep_3 UF_dmin_1 UF_dmst_1)))
+      (and (> (UF_d_1 a!2 a!3) UF_dmin_1)
+           (= Ret (UF_minsep_3 UF_dmin_1 UF_dmst_1)))))))
+-----------------------------------------------------------------------------------------------
+
+-------------------The final Z3 formula for constraint solving -------------------------
+(declare-fun degToRad () Real)
+(declare-fun psi1 () Real)
+(declare-fun UF_psiA_1 (Real Real ) Real)
+(declare-fun UF_signA_1 (Real ) Real)
+(declare-fun bank_ang () Real)
+(declare-fun g () Real)
+(declare-fun vA () Real)
+(declare-fun UF_rA_1 (Real Real Real Real ) Real)
+(declare-fun UF_xA_1 (Real Real Real ) Real)
+(declare-fun vC () Real)
+(declare-fun UF_rC_1 (Real Real Real Real ) Real)
+(declare-fun UF_signC_1 () Real)
+(declare-fun xC0 () Real)
+(declare-fun UF_t1_1 (Real Real Real ) Real)
+(declare-fun UF_dpsiC_1 (Real Real Real Real ) Real)
+(declare-fun psiC () Real)
+(declare-fun UF_xC_1 (Real Real Real Real Real ) Real)
+(declare-fun UF_xd1_1 (Real Real ) Real)
+(declare-fun UF_yA_1 (Real Real Real ) Real)
+(declare-fun yC0 () Real)
+(declare-fun UF_yC_1 (Real Real Real Real Real ) Real)
+(declare-fun UF_yd1_1 (Real Real ) Real)
+(declare-fun UF_d_1 (Real Real ) Real)
+(declare-fun UF_dmin_1 () Real)
+(declare-fun Ret () Real)
+(declare-fun UF_dmin_2 (Real ) Real)
+(declare-fun UF_dmst_1 () Real)
+(declare-fun UF_minsep_3 (Real Real ) Real)
+(let ((a!1 (UF_dpsiC_1 (UF_rC_1 bank_ang degToRad g vC)
+                       UF_signC_1
+                       (UF_t1_1 vA
+                                (UF_psiA_1 degToRad psi1)
+                                (UF_rA_1 bank_ang degToRad g vA))
+                       vC)))
+(let ((a!2 (UF_xd1_1 (UF_xA_1 (UF_signA_1 (UF_psiA_1 degToRad psi1))
+                              (UF_psiA_1 degToRad psi1)
+                              (UF_rA_1 bank_ang degToRad g vA))
+                     (UF_xC_1 (UF_rC_1 bank_ang degToRad g vC)
+                              UF_signC_1
+                              xC0
+                              a!1
+                              psiC)))
+      (a!3 (UF_yd1_1 (UF_yA_1 (UF_signA_1 (UF_psiA_1 degToRad psi1))
+                              (UF_psiA_1 degToRad psi1)
+                              (UF_rA_1 bank_ang degToRad g vA))
+                     (UF_yC_1 (UF_rC_1 bank_ang degToRad g vC)
+                              UF_signC_1
+                              a!1
+                              yC0
+                              psiC))))
+(let ((a!4 (= Ret (UF_minsep_3 (UF_dmin_2 (UF_d_1 a!2 a!3)) UF_dmst_1)))
+      (a!5 (and (= UF_dmin_1 (UF_d_1 a!2 a!3))
+                (= Ret (UF_minsep_3 UF_dmin_1 UF_dmst_1))))
+      (a!6 (and (> (UF_d_1 a!2 a!3) UF_dmin_1)
+                (= Ret (UF_minsep_3 UF_dmin_1 UF_dmst_1)))))
+(let ((a!7 (or (and (< (UF_d_1 a!2 a!3) UF_dmin_1) a!4) a!5 a!6))
+      (a!8 (or (and (< (UF_rA_1 bank_ang degToRad g vA)
+                       (UF_rC_1 bank_ang degToRad g vC))
+                    (< (UF_d_1 a!2 a!3) UF_dmin_1)
+                    (= Ret (UF_minsep_3 UF_dmin_1 UF_dmst_1)))
+               (and (= (UF_rC_1 bank_ang degToRad g vC)
+                       (UF_rA_1 bank_ang degToRad g vA))
+                    (< (UF_d_1 a!2 a!3) UF_dmin_1)
+                    (= Ret (UF_minsep_3 UF_dmin_1 UF_dmst_1)))
+               (and (> (UF_rA_1 bank_ang degToRad g vA)
+                       (UF_rC_1 bank_ang degToRad g vC))
+                    (< (UF_d_1 a!2 a!3) UF_dmin_1)
+                    a!4)
+               a!5
+               a!6)))
+  (not (= a!7 a!8))))))
+-----------------------------------------------------------------------------------------------

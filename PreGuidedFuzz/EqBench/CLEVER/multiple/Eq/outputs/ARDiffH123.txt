@@ -1,0 +1,14 @@
+-----------------------Iteration : 0 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 22.173668 ms
+  -Def-use and uninterpreted functions : 704.487295 ms
+  -Symbolic execution  : 2258.063359 ms
+  -Creating Z3 expressions  : 37.388789 ms
+  -Constraint solving : 0.0 ms
+Output : UNKNOWN 
+Reason: Error while running JPF-symbc : java.lang.RuntimeException: ## Error: BinaryNonLinearSolution solution: l -9223372036854775808 op  %  r 5 (refer to JPFError.txt)
+------------------------------NOTHING To REFINE---------------------------------------
+
+------------------------------END Of REFINEMENT----------------------------------------
+
+------------------------------END----------------------------------------

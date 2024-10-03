@@ -1,0 +1,51 @@
+-------------------The Z3 formula for the old method (z3 smt format) -------------------------
+(let ((a!1 (= Ret (+ (+ (- g 2) 1) 1)))
+      (a!3 (and (>= (UF_i_2 UF_i_1) x)
+                (>= x (UF_i_2 UF_i_1))
+                (< UF_i_1 x)
+                (= Ret (+ (- g 2) 1)))))
+(let ((a!2 (and (>= (UF_i_2 UF_i_1) (- (+ x 2) 1))
+                (>= (- (+ x 2) 1) (UF_i_2 UF_i_1))
+                (< x (UF_i_2 UF_i_1))
+                (< UF_i_1 x)
+                a!1)))
+  (or a!2 a!3 (and (>= UF_i_1 x) (= Ret g)))))
+-----------------------------------------------------------------------------------------------
+
+-------------------The Z3 formula for the new method ------------------------------------------
+(let ((a!1 (and (>= (UF_i_2 UF_i_1) (+ x 1))
+                (>= (+ x 1) (UF_i_2 UF_i_1))
+                (< x (UF_i_2 UF_i_1))
+                (< UF_i_1 x)
+                (= Ret (+ (- g 1) 1)))))
+  (or a!1
+      (and (>= (UF_i_2 UF_i_1) x)
+           (>= x (UF_i_2 UF_i_1))
+           (< UF_i_1 x)
+           (= Ret (- g 1)))
+      (and (>= UF_i_1 x) (= Ret g))))
+-----------------------------------------------------------------------------------------------
+
+-------------------The final Z3 formula for constraint solving -------------------------
+(declare-fun UF_i_1 () Int)
+(declare-fun UF_i_2 (Int ) Int)
+(declare-fun x () Int)
+(declare-fun Ret () Int)
+(declare-fun g () Int)
+(let ((a!1 (= Ret (+ (+ (- g 2) 1) 1)))
+      (a!3 (and (>= (UF_i_2 UF_i_1) x) (>= x (UF_i_2 UF_i_1)) (< UF_i_1 x)))
+      (a!5 (and (>= (UF_i_2 UF_i_1) (+ x 1))
+                (>= (+ x 1) (UF_i_2 UF_i_1))
+                (< x (UF_i_2 UF_i_1))
+                (< UF_i_1 x)
+                (= Ret (+ (- g 1) 1)))))
+(let ((a!2 (and (>= (UF_i_2 UF_i_1) (- (+ x 2) 1))
+                (>= (- (+ x 2) 1) (UF_i_2 UF_i_1))
+                (< x (UF_i_2 UF_i_1))
+                (< UF_i_1 x)
+                a!1))
+      (a!4 (and a!3 (= Ret (+ (- g 2) 1))))
+      (a!6 (or a!5 (and a!3 (= Ret (- g 1))) (and (>= UF_i_1 x) (= Ret g)))))
+(let ((a!7 (= (or a!2 a!4 (and (>= UF_i_1 x) (= Ret g))) a!6)))
+  (not a!7))))
+-----------------------------------------------------------------------------------------------

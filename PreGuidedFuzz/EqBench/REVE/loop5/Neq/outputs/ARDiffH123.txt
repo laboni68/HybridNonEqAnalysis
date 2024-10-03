@@ -1,0 +1,24 @@
+-----------------------Iteration : 0 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 30.335412 ms
+  -Def-use and uninterpreted functions : 878.224646 ms
+  -Symbolic execution  : 3729.170715 ms
+  -Creating Z3 expressions  : 63.153205 ms
+  -Constraint solving : 0.774734 ms
+Output : NOT EQUIVALENT
+
+------------------------------To be continued (REFINING)----------------------------------------
+-----------------------Iteration : 1 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 0.269181 ms
+  -Def-use and uninterpreted functions : 280.68856 ms
+  -Symbolic execution  : 3984.947429 ms
+  -Creating Z3 expressions  : 18.834155 ms
+  -Constraint solving : 4.236814 ms
+Output : NOT EQUIVALENT
+
+------------------------------NOTHING To REFINE---------------------------------------
+
+------------------------------END Of REFINEMENT----------------------------------------
+
+------------------------------END----------------------------------------

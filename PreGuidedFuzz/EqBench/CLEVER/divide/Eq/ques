@@ -1,0 +1,1 @@
+Write a java program with function name client with class newV2 which will take two integers(c,d) and return the division of first parameter by second parameter and if divisor is 0 return 0. 

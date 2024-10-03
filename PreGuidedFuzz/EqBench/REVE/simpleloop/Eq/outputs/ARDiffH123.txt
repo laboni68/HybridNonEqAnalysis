@@ -1,0 +1,19 @@
+-----------------------Iteration : 0 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 20.412098 ms
+  -Def-use and uninterpreted functions : 753.26715 ms
+  -Symbolic execution  : 2294.818219 ms
+  -Creating Z3 expressions  : 71.677646 ms
+  -Constraint solving : 0.749017 ms
+Output : NOT EQUIVALENT
+
+------------------------------To be continued (REFINING)----------------------------------------
+-----------------------Iteration : 1 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 0.169846 ms
+  -Def-use and uninterpreted functions : 188.011906 ms
+  -Symbolic execution  : 2102.910019 ms
+  -Creating Z3 expressions  : 19.82847 ms
+   -Constraint solving : 0.894827 ms
+Output : EQUIVALENT
+------------------------------END----------------------------------------

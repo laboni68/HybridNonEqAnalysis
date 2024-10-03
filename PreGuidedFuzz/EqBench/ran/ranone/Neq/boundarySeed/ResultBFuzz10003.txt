@@ -1,0 +1,4 @@
+getInputValues: 1
+-36
+../EqBench/ran/ranone/Neq/instrumented [-36] 1 -> NEQ
+Execution time in milliseconds: 673 ms, fuzztime 1000 ms

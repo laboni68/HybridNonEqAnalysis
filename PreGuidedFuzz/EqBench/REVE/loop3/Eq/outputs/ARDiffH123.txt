@@ -1,0 +1,49 @@
+-----------------------Iteration : 0 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 28.148535 ms
+  -Def-use and uninterpreted functions : 952.452515 ms
+  -Symbolic execution  : 2969.210554 ms
+  -Creating Z3 expressions  : 58.327816 ms
+  -Constraint solving : 0.788751 ms
+Output : NOT EQUIVALENT
+
+------------------------------To be continued (REFINING)----------------------------------------
+-----------------------Iteration : 1 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 0.301953 ms
+  -Def-use and uninterpreted functions : 231.454182 ms
+  -Symbolic execution  : 3463.927643 ms
+  -Creating Z3 expressions  : 23.588168 ms
+  -Constraint solving : 2.520687 ms
+Output : NOT EQUIVALENT
+
+------------------------------To be continued (REFINING)----------------------------------------
+-----------------------Iteration : 2 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 0.246886 ms
+  -Def-use and uninterpreted functions : 163.845065 ms
+  -Symbolic execution  : 3416.199906 ms
+  -Creating Z3 expressions  : 21.31743 ms
+  -Constraint solving : 0.837537 ms
+Output : NOT EQUIVALENT
+
+------------------------------To be continued (REFINING)----------------------------------------
+-----------------------Iteration : 3 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 0.33841 ms
+  -Def-use and uninterpreted functions : 165.584364 ms
+  -Symbolic execution  : 3722.000158 ms
+  -Creating Z3 expressions  : 23.167802 ms
+  -Constraint solving : 0.778012 ms
+Output : NOT EQUIVALENT
+
+------------------------------To be continued (REFINING)----------------------------------------
+-----------------------Iteration : 4 -------------------------------------------
+-----------------------Results-------------------------------------------
+  -Initialization : 0.325273 ms
+  -Def-use and uninterpreted functions : 131.84593 ms
+  -Symbolic execution  : 3929.798908 ms
+  -Creating Z3 expressions  : 29.271441 ms
+   -Constraint solving : 0.805396 ms
+Output : EQUIVALENT
+------------------------------END----------------------------------------

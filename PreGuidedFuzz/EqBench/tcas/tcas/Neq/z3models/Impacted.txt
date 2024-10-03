@@ -1,0 +1,1239 @@
+
+
+----------------------------------------------------Model (the counterexample in z3 smt2 format): ---------------------------------
+(model 
+  (define-fun Own_Tracked_Alt () Int
+    6)
+  (define-fun need_downward_RA () Int
+    7)
+  (define-fun Own_Tracked_Alt_Rate () Int
+    562)
+  (define-fun Ret () Int
+    0)
+  (define-fun High_Confidence () Int
+    1)
+  (define-fun Other_RAC () Int
+    8)
+  (define-fun Climb_Inhibit () Int
+    3)
+  (define-fun Down_Separation () Int
+    10)
+  (define-fun need_upward_RA () Int
+    14)
+  (define-fun Other_Tracked_Alt () Int
+    5)
+  (define-fun Other_Capability () Int
+    9)
+  (define-fun Two_of_Three_Reports_Valid () Int
+    1)
+  (define-fun Up_Separation () Int
+    11)
+  (define-fun Alt_Layer_Value () Int
+    4)
+  (define-fun Cur_Vertical_Sep () Int
+    601)
+  (define-fun AF_Non_Crossing_Biased_Descend ((x!0 Int)
+   (x!1 Int)
+   (x!2 Int)
+   (x!3 Int)
+   (x!4 Int)
+   (x!5 Int)
+   (x!6 Int)
+   (x!7 Int)
+   (x!8 Int)
+   (x!9 Int)
+   (x!10 Int)
+   (x!11 Int)
+   (x!12 Int)
+   (x!13 Int)) Int
+    (ite (and (= x!0 3)
+              (= x!1 4)
+              (= x!2 5)
+              (= x!3 6)
+              (= x!4 1)
+              (= x!5 0)
+              (= x!6 7)
+              (= x!7 8)
+              (= x!8 1)
+              (= x!9 562)
+              (= x!10 601)
+              (= x!11 9)
+              (= x!12 10)
+              (= x!13 11))
+      18
+      13))
+  (define-fun AF_Own_Below_Threat ((x!0 Int)
+   (x!1 Int)
+   (x!2 Int)
+   (x!3 Int)
+   (x!4 Int)
+   (x!5 Int)
+   (x!6 Int)
+   (x!7 Int)
+   (x!8 Int)
+   (x!9 Int)
+   (x!10 Int)
+   (x!11 Int)
+   (x!12 Int)
+   (x!13 Int)) Int
+    15)
+  (define-fun AF_Own_Above_Threat ((x!0 Int)
+   (x!1 Int)
+   (x!2 Int)
+   (x!3 Int)
+   (x!4 Int)
+   (x!5 Int)
+   (x!6 Int)
+   (x!7 Int)
+   (x!8 Int)
+   (x!9 Int)
+   (x!10 Int)
+   (x!11 Int)
+   (x!12 Int)
+   (x!13 Int)) Int
+    (ite (and (= x!0 3)
+              (= x!1 4)
+              (= x!2 5)
+              (= x!3 6)
+              (= x!4 1)
+              (= x!5 0)
+              (= x!6 7)
+              (= x!7 8)
+              (= x!8 1)
+              (= x!9 562)
+              (= x!10 601)
+              (= x!11 9)
+              (= x!12 10)
+              (= x!13 11))
+      17
+      12))
+  (define-fun AF_Non_Crossing_Biased_Climb ((x!0 Int)
+   (x!1 Int)
+   (x!2 Int)
+   (x!3 Int)
+   (x!4 Int)
+   (x!5 Int)
+   (x!6 Int)
+   (x!7 Int)
+   (x!8 Int)
+   (x!9 Int)
+   (x!10 Int)
+   (x!11 Int)
+   (x!12 Int)
+   (x!13 Int)) Int
+    16)
+  (define-fun log ((x!0 Real)) Real
+    0.0)
+)
+
+-----------------------------------------------------------------------------------------------
+-------------------The Z3 formula for the old method (z3 smt format) -------------------------
+(let ((a!1 (= (AF_Own_Above_Threat
+                Climb_Inhibit
+                Alt_Layer_Value
+                Other_Tracked_Alt
+                Own_Tracked_Alt
+                Two_of_Three_Reports_Valid
+                1
+                need_downward_RA
+                Other_RAC
+                High_Confidence
+                Own_Tracked_Alt_Rate
+                Cur_Vertical_Sep
+                Other_Capability
+                Down_Separation
+                Up_Separation)
+              1))
+      (a!2 (= (AF_Non_Crossing_Biased_Descend
+                Climb_Inhibit
+                Alt_Layer_Value
+                Other_Tracked_Alt
+                Own_Tracked_Alt
+                Two_of_Three_Reports_Valid
+                1
+                need_downward_RA
+                Other_RAC
+                High_Confidence
+                Own_Tracked_Alt_Rate
+                Cur_Vertical_Sep
+                Other_Capability
+                Down_Separation
+                Up_Separation)
+              1))
+      (a!3 (= (AF_Own_Below_Threat
+                Climb_Inhibit
+                Alt_Layer_Value
+                Other_Tracked_Alt
+                Own_Tracked_Alt
+                Two_of_Three_Reports_Valid
+                need_upward_RA
+                need_downward_RA
+                Other_RAC
+                High_Confidence
+                Own_Tracked_Alt_Rate
+                Cur_Vertical_Sep
+                Other_Capability
+                Down_Separation
+                Up_Separation)
+              1))
+      (a!4 (= (AF_Non_Crossing_Biased_Climb
+                Climb_Inhibit
+                Alt_Layer_Value
+                Other_Tracked_Alt
+                Own_Tracked_Alt
+                Two_of_Three_Reports_Valid
+                need_upward_RA
+                need_downward_RA
+                Other_RAC
+                High_Confidence
+                Own_Tracked_Alt_Rate
+                Cur_Vertical_Sep
+                Other_Capability
+                Down_Separation
+                Up_Separation)
+              1))
+      (a!8 (= (AF_Own_Above_Threat
+                Climb_Inhibit
+                Alt_Layer_Value
+                Other_Tracked_Alt
+                Own_Tracked_Alt
+                Two_of_Three_Reports_Valid
+                0
+                need_downward_RA
+                Other_RAC
+                High_Confidence
+                Own_Tracked_Alt_Rate
+                Cur_Vertical_Sep
+                Other_Capability
+                Down_Separation
+                Up_Separation)
+              1))
+      (a!9 (= (AF_Non_Crossing_Biased_Descend
+                Climb_Inhibit
+                Alt_Layer_Value
+                Other_Tracked_Alt
+                Own_Tracked_Alt
+                Two_of_Three_Reports_Valid
+                0
+                need_downward_RA
+                Other_RAC
+                High_Confidence
+                Own_Tracked_Alt_Rate
+                Cur_Vertical_Sep
+                Other_Capability
+                Down_Separation
+                Up_Separation)
+              1))
+      (a!16 (and (and (not (= Other_RAC 0)) (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= High_Confidence 1)
+                 (= Ret 0)))
+      (a!21 (and (and (= Other_RAC 0) (= Two_of_Three_Reports_Valid 1))
+                 (<= Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= High_Confidence 1)
+                 (= Ret 0)))
+      (a!22 (and (and (not (= Other_RAC 0)) (= Two_of_Three_Reports_Valid 1))
+                 (<= Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= High_Confidence 1)
+                 (= Ret 0)))
+      (a!23 (and (not (= Two_of_Three_Reports_Valid 1))
+                 (<= Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= High_Confidence 1)
+                 (= Ret 0)))
+      (a!24 (and (and (= Other_RAC 0) (= Two_of_Three_Reports_Valid 1))
+                 (> Own_Tracked_Alt_Rate 600)
+                 (= High_Confidence 1)
+                 (= Ret 0)))
+      (a!25 (and (and (not (= Other_RAC 0)) (= Two_of_Three_Reports_Valid 1))
+                 (> Own_Tracked_Alt_Rate 600)
+                 (= High_Confidence 1)
+                 (= Ret 0)))
+      (a!26 (and (not (= Two_of_Three_Reports_Valid 1))
+                 (> Own_Tracked_Alt_Rate 600)
+                 (= High_Confidence 1)
+                 (= Ret 0)))
+      (a!27 (and (and (= Other_RAC 0) (= Two_of_Three_Reports_Valid 1))
+                 (not (= High_Confidence 1))
+                 (= Ret 0)))
+      (a!28 (and (and (not (= Other_RAC 0)) (= Two_of_Three_Reports_Valid 1))
+                 (not (= High_Confidence 1))
+                 (= Ret 0)))
+      (a!29 (and (not (= Two_of_Three_Reports_Valid 1))
+                 (not (= High_Confidence 1))
+                 (= Ret 0))))
+(let ((a!5 (and (and a!1 a!2 a!3 a!4)
+                (= Other_RAC 0)
+                (= Two_of_Three_Reports_Valid 1)
+                (> Cur_Vertical_Sep 600)
+                (<= Own_Tracked_Alt_Rate 600)
+                (= High_Confidence 1)
+                (= Ret 0)))
+      (a!6 (and (and (not a!1) a!2 a!3 a!4)
+                (= Other_RAC 0)
+                (= Two_of_Three_Reports_Valid 1)
+                (> Cur_Vertical_Sep 600)
+                (<= Own_Tracked_Alt_Rate 600)
+                (= High_Confidence 1)
+                (= Ret 1)))
+      (a!7 (and (and (not a!2) a!3 a!4)
+                (= Other_RAC 0)
+                (= Two_of_Three_Reports_Valid 1)
+                (> Cur_Vertical_Sep 600)
+                (<= Own_Tracked_Alt_Rate 600)
+                (= High_Confidence 1)
+                (= Ret 1)))
+      (a!10 (and (and (and a!8 a!9) (not a!3) a!4)
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= High_Confidence 1)
+                 (= Ret 2)))
+      (a!11 (and (and (and (not a!8) a!9) (not a!3) a!4)
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= High_Confidence 1)
+                 (= Ret 0)))
+      (a!12 (and (and (not a!9) (not a!3) a!4)
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= High_Confidence 1)
+                 (= Ret 0)))
+      (a!13 (and (and (and a!8 a!9) (not a!4))
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= High_Confidence 1)
+                 (= Ret 2)))
+      (a!14 (and (and (and (not a!8) a!9) (not a!4))
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= High_Confidence 1)
+                 (= Ret 0)))
+      (a!15 (and (and (not a!9) (not a!4))
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= High_Confidence 1)
+                 (= Ret 0)))
+      (a!17 (and (and (and (not a!8) a!9) (not a!3) a!4)
+                 (not (= Other_RAC 0))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= High_Confidence 1)
+                 (= Ret 0)))
+      (a!18 (and (and (and (not a!8) a!9) (not a!4))
+                 (not (= Other_RAC 0))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= High_Confidence 1)
+                 (= Ret 0)))
+      (a!19 (and (and (and (not a!8) a!9) (not a!3) a!4)
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= High_Confidence 1)
+                 (= Ret 0)))
+      (a!20 (and (and (and (not a!8) a!9) (not a!4))
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= High_Confidence 1)
+                 (= Ret 0))))
+  (or a!5
+      a!6
+      a!7
+      a!10
+      a!11
+      a!12
+      a!13
+      a!14
+      a!15
+      a!16
+      (and (not (= Two_of_Three_Reports_Valid 1))
+           (> Cur_Vertical_Sep 600)
+           (<= Own_Tracked_Alt_Rate 600)
+           (= High_Confidence 1)
+           (= Ret 0))
+      a!5
+      a!6
+      a!7
+      a!10
+      a!11
+      a!12
+      a!13
+      a!14
+      a!15
+      (and (and a!1 a!2 a!3 a!4)
+           (not (= Other_RAC 0))
+           (= Two_of_Three_Reports_Valid 1)
+           (> Cur_Vertical_Sep 600)
+           (<= Own_Tracked_Alt_Rate 600)
+           (= High_Confidence 1)
+           (= Ret 0))
+      (and (and (not a!1) a!2 a!3 a!4)
+           (not (= Other_RAC 0))
+           (= Two_of_Three_Reports_Valid 1)
+           (> Cur_Vertical_Sep 600)
+           (<= Own_Tracked_Alt_Rate 600)
+           (= High_Confidence 1)
+           (= Ret 1))
+      (and (and (not a!2) a!3 a!4)
+           (not (= Other_RAC 0))
+           (= Two_of_Three_Reports_Valid 1)
+           (> Cur_Vertical_Sep 600)
+           (<= Own_Tracked_Alt_Rate 600)
+           (= High_Confidence 1)
+           (= Ret 1))
+      (and (and (and a!8 a!9) (not a!3) a!4)
+           (not (= Other_RAC 0))
+           (= Two_of_Three_Reports_Valid 1)
+           (> Cur_Vertical_Sep 600)
+           (<= Own_Tracked_Alt_Rate 600)
+           (= High_Confidence 1)
+           (= Ret 2))
+      a!17
+      (and (and (not a!9) (not a!3) a!4)
+           (not (= Other_RAC 0))
+           (= Two_of_Three_Reports_Valid 1)
+           (> Cur_Vertical_Sep 600)
+           (<= Own_Tracked_Alt_Rate 600)
+           (= High_Confidence 1)
+           (= Ret 0))
+      (and (and (and a!8 a!9) (not a!4))
+           (not (= Other_RAC 0))
+           (= Two_of_Three_Reports_Valid 1)
+           (> Cur_Vertical_Sep 600)
+           (<= Own_Tracked_Alt_Rate 600)
+           (= High_Confidence 1)
+           (= Ret 2))
+      a!18
+      (and (and (not a!9) (not a!4))
+           (not (= Other_RAC 0))
+           (= Two_of_Three_Reports_Valid 1)
+           (> Cur_Vertical_Sep 600)
+           (<= Own_Tracked_Alt_Rate 600)
+           (= High_Confidence 1)
+           (= Ret 0))
+      (and (and a!1 a!2 a!3 a!4)
+           (not (= Two_of_Three_Reports_Valid 1))
+           (> Cur_Vertical_Sep 600)
+           (<= Own_Tracked_Alt_Rate 600)
+           (= High_Confidence 1)
+           (= Ret 0))
+      (and (and (not a!1) a!2 a!3 a!4)
+           (not (= Two_of_Three_Reports_Valid 1))
+           (> Cur_Vertical_Sep 600)
+           (<= Own_Tracked_Alt_Rate 600)
+           (= High_Confidence 1)
+           (= Ret 1))
+      (and (and (not a!2) a!3 a!4)
+           (not (= Two_of_Three_Reports_Valid 1))
+           (> Cur_Vertical_Sep 600)
+           (<= Own_Tracked_Alt_Rate 600)
+           (= High_Confidence 1)
+           (= Ret 1))
+      (and (and (and a!8 a!9) (not a!3) a!4)
+           (not (= Two_of_Three_Reports_Valid 1))
+           (> Cur_Vertical_Sep 600)
+           (<= Own_Tracked_Alt_Rate 600)
+           (= High_Confidence 1)
+           (= Ret 2))
+      a!19
+      (and (and (not a!9) (not a!3) a!4)
+           (not (= Two_of_Three_Reports_Valid 1))
+           (> Cur_Vertical_Sep 600)
+           (<= Own_Tracked_Alt_Rate 600)
+           (= High_Confidence 1)
+           (= Ret 0))
+      (and (and (and a!8 a!9) (not a!4))
+           (not (= Two_of_Three_Reports_Valid 1))
+           (> Cur_Vertical_Sep 600)
+           (<= Own_Tracked_Alt_Rate 600)
+           (= High_Confidence 1)
+           (= Ret 2))
+      a!20
+      (and (and (not a!9) (not a!4))
+           (not (= Two_of_Three_Reports_Valid 1))
+           (> Cur_Vertical_Sep 600)
+           (<= Own_Tracked_Alt_Rate 600)
+           (= High_Confidence 1)
+           (= Ret 0))
+      a!21
+      a!22
+      a!23
+      a!21
+      a!22
+      a!23
+      a!24
+      a!25
+      a!26
+      a!24
+      a!25
+      a!26
+      a!27
+      a!28
+      a!29
+      a!27
+      a!28
+      a!29)))
+-----------------------------------------------------------------------------------------------
+
+-------------------The Z3 formula for the new method ------------------------------------------
+(let ((a!1 (= (AF_Own_Above_Threat
+                Climb_Inhibit
+                Alt_Layer_Value
+                Other_Tracked_Alt
+                Own_Tracked_Alt
+                Two_of_Three_Reports_Valid
+                1
+                need_downward_RA
+                Other_RAC
+                High_Confidence
+                Own_Tracked_Alt_Rate
+                Cur_Vertical_Sep
+                Other_Capability
+                Down_Separation
+                Up_Separation)
+              1))
+      (a!2 (= (AF_Non_Crossing_Biased_Descend
+                Climb_Inhibit
+                Alt_Layer_Value
+                Other_Tracked_Alt
+                Own_Tracked_Alt
+                Two_of_Three_Reports_Valid
+                1
+                need_downward_RA
+                Other_RAC
+                High_Confidence
+                Own_Tracked_Alt_Rate
+                Cur_Vertical_Sep
+                Other_Capability
+                Down_Separation
+                Up_Separation)
+              1))
+      (a!3 (= (AF_Own_Below_Threat
+                Climb_Inhibit
+                Alt_Layer_Value
+                Other_Tracked_Alt
+                Own_Tracked_Alt
+                Two_of_Three_Reports_Valid
+                need_upward_RA
+                need_downward_RA
+                Other_RAC
+                High_Confidence
+                Own_Tracked_Alt_Rate
+                Cur_Vertical_Sep
+                Other_Capability
+                Down_Separation
+                Up_Separation)
+              1))
+      (a!4 (= (AF_Non_Crossing_Biased_Climb
+                Climb_Inhibit
+                Alt_Layer_Value
+                Other_Tracked_Alt
+                Own_Tracked_Alt
+                Two_of_Three_Reports_Valid
+                need_upward_RA
+                need_downward_RA
+                Other_RAC
+                High_Confidence
+                Own_Tracked_Alt_Rate
+                Cur_Vertical_Sep
+                Other_Capability
+                Down_Separation
+                Up_Separation)
+              1))
+      (a!8 (= (AF_Own_Above_Threat
+                Climb_Inhibit
+                Alt_Layer_Value
+                Other_Tracked_Alt
+                Own_Tracked_Alt
+                Two_of_Three_Reports_Valid
+                0
+                need_downward_RA
+                Other_RAC
+                High_Confidence
+                Own_Tracked_Alt_Rate
+                Cur_Vertical_Sep
+                Other_Capability
+                Down_Separation
+                Up_Separation)
+              1))
+      (a!9 (= (AF_Non_Crossing_Biased_Descend
+                Climb_Inhibit
+                Alt_Layer_Value
+                Other_Tracked_Alt
+                Own_Tracked_Alt
+                Two_of_Three_Reports_Valid
+                0
+                need_downward_RA
+                Other_RAC
+                High_Confidence
+                Own_Tracked_Alt_Rate
+                Cur_Vertical_Sep
+                Other_Capability
+                Down_Separation
+                Up_Separation)
+              1))
+      (a!34 (and (and (not (= Other_RAC 0)) (= Two_of_Three_Reports_Valid 1))
+                 (<= Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 0)))
+      (a!35 (and (and (= Other_RAC 0) (= Two_of_Three_Reports_Valid 1))
+                 (<= Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 0)))
+      (a!36 (and (not (= Two_of_Three_Reports_Valid 1))
+                 (<= Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 0)))
+      (a!37 (and (and (not (= Other_RAC 0)) (= Two_of_Three_Reports_Valid 1))
+                 (> Own_Tracked_Alt_Rate 600)
+                 (= Ret 0)))
+      (a!38 (and (and (= Other_RAC 0) (= Two_of_Three_Reports_Valid 1))
+                 (> Own_Tracked_Alt_Rate 600)
+                 (= Ret 0)))
+      (a!39 (and (not (= Two_of_Three_Reports_Valid 1))
+                 (> Own_Tracked_Alt_Rate 600)
+                 (= Ret 0))))
+(let ((a!5 (and (and a!1 a!2 a!3 a!4)
+                (not (= Other_RAC 0))
+                (= Two_of_Three_Reports_Valid 1)
+                (> Cur_Vertical_Sep 600)
+                (<= Own_Tracked_Alt_Rate 600)
+                (= Ret 0)))
+      (a!6 (and (and (not a!1) a!2 a!3 a!4)
+                (not (= Other_RAC 0))
+                (= Two_of_Three_Reports_Valid 1)
+                (> Cur_Vertical_Sep 600)
+                (<= Own_Tracked_Alt_Rate 600)
+                (= Ret 1)))
+      (a!7 (and (and (not a!2) a!3 a!4)
+                (not (= Other_RAC 0))
+                (= Two_of_Three_Reports_Valid 1)
+                (> Cur_Vertical_Sep 600)
+                (<= Own_Tracked_Alt_Rate 600)
+                (= Ret 1)))
+      (a!10 (and (and (and a!8 a!9) (not a!3) a!4)
+                 (not (= Other_RAC 0))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 0)))
+      (a!11 (and (and (and (not a!8) a!9) (not a!3) a!4)
+                 (not (= Other_RAC 0))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 2)))
+      (a!12 (and (and (not a!9) (not a!3) a!4)
+                 (not (= Other_RAC 0))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 2)))
+      (a!13 (and (and (and a!8 a!9) (not a!4))
+                 (not (= Other_RAC 0))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 0)))
+      (a!14 (and (and (and (not a!8) a!9) (not a!4))
+                 (not (= Other_RAC 0))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 2)))
+      (a!15 (and (and (not a!9) (not a!4))
+                 (not (= Other_RAC 0))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 2)))
+      (a!16 (and (and a!1 a!2 a!3 a!4)
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 0)))
+      (a!17 (and (and (not a!1) a!2 a!3 a!4)
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 1)))
+      (a!18 (and (and (not a!2) a!3 a!4)
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 1)))
+      (a!19 (and (and (and a!8 a!9) (not a!3) a!4)
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 0)))
+      (a!20 (and (and (and (not a!8) a!9) (not a!3) a!4)
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 2)))
+      (a!21 (and (and (not a!9) (not a!3) a!4)
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 2)))
+      (a!22 (and (and (and a!8 a!9) (not a!4))
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 0)))
+      (a!23 (and (and (and (not a!8) a!9) (not a!4))
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 2)))
+      (a!24 (and (and (not a!9) (not a!4))
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 2)))
+      (a!25 (and (and a!1 a!2 a!3 a!4)
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 0)))
+      (a!26 (and (and (not a!1) a!2 a!3 a!4)
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 1)))
+      (a!27 (and (and (not a!2) a!3 a!4)
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 1)))
+      (a!28 (and (and (and a!8 a!9) (not a!3) a!4)
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 0)))
+      (a!29 (and (and (and (not a!8) a!9) (not a!3) a!4)
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 2)))
+      (a!30 (and (and (not a!9) (not a!3) a!4)
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 2)))
+      (a!31 (and (and (and a!8 a!9) (not a!4))
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 0)))
+      (a!32 (and (and (and (not a!8) a!9) (not a!4))
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 2)))
+      (a!33 (and (and (not a!9) (not a!4))
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= Ret 2))))
+  (or a!5
+      a!6
+      a!7
+      a!10
+      a!11
+      a!12
+      a!13
+      a!14
+      a!15
+      a!16
+      a!17
+      a!18
+      a!19
+      a!20
+      a!21
+      a!22
+      a!23
+      a!24
+      a!25
+      a!26
+      a!27
+      a!28
+      a!29
+      a!30
+      a!31
+      a!32
+      a!33
+      a!5
+      a!6
+      a!7
+      a!10
+      a!11
+      a!12
+      a!13
+      a!14
+      a!15
+      a!16
+      a!17
+      a!18
+      a!19
+      a!20
+      a!21
+      a!22
+      a!23
+      a!24
+      a!25
+      a!26
+      a!27
+      a!28
+      a!29
+      a!30
+      a!31
+      a!32
+      a!33
+      a!34
+      a!35
+      a!36
+      a!34
+      a!35
+      a!36
+      a!37
+      a!38
+      a!39
+      a!37
+      a!38
+      a!39)))
+-----------------------------------------------------------------------------------------------
+
+-------------------The final Z3 formula for constraint solving -------------------------
+(declare-fun Climb_Inhibit () Int)
+(declare-fun Alt_Layer_Value () Int)
+(declare-fun Other_Tracked_Alt () Int)
+(declare-fun Own_Tracked_Alt () Int)
+(declare-fun Two_of_Three_Reports_Valid () Int)
+(declare-fun need_downward_RA () Int)
+(declare-fun Other_RAC () Int)
+(declare-fun High_Confidence () Int)
+(declare-fun Own_Tracked_Alt_Rate () Int)
+(declare-fun Cur_Vertical_Sep () Int)
+(declare-fun Other_Capability () Int)
+(declare-fun Down_Separation () Int)
+(declare-fun Up_Separation () Int)
+(declare-fun AF_Own_Above_Threat (Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Int)
+(declare-fun AF_Non_Crossing_Biased_Descend (Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Int)
+(declare-fun need_upward_RA () Int)
+(declare-fun AF_Own_Below_Threat (Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Int)
+(declare-fun AF_Non_Crossing_Biased_Climb (Int Int Int Int Int Int Int Int Int Int Int Int Int Int ) Int)
+(declare-fun Ret () Int)
+(let ((a!1 (= (AF_Own_Above_Threat
+                Climb_Inhibit
+                Alt_Layer_Value
+                Other_Tracked_Alt
+                Own_Tracked_Alt
+                Two_of_Three_Reports_Valid
+                1
+                need_downward_RA
+                Other_RAC
+                High_Confidence
+                Own_Tracked_Alt_Rate
+                Cur_Vertical_Sep
+                Other_Capability
+                Down_Separation
+                Up_Separation)
+              1))
+      (a!2 (= (AF_Non_Crossing_Biased_Descend
+                Climb_Inhibit
+                Alt_Layer_Value
+                Other_Tracked_Alt
+                Own_Tracked_Alt
+                Two_of_Three_Reports_Valid
+                1
+                need_downward_RA
+                Other_RAC
+                High_Confidence
+                Own_Tracked_Alt_Rate
+                Cur_Vertical_Sep
+                Other_Capability
+                Down_Separation
+                Up_Separation)
+              1))
+      (a!3 (= (AF_Own_Below_Threat
+                Climb_Inhibit
+                Alt_Layer_Value
+                Other_Tracked_Alt
+                Own_Tracked_Alt
+                Two_of_Three_Reports_Valid
+                need_upward_RA
+                need_downward_RA
+                Other_RAC
+                High_Confidence
+                Own_Tracked_Alt_Rate
+                Cur_Vertical_Sep
+                Other_Capability
+                Down_Separation
+                Up_Separation)
+              1))
+      (a!4 (= (AF_Non_Crossing_Biased_Climb
+                Climb_Inhibit
+                Alt_Layer_Value
+                Other_Tracked_Alt
+                Own_Tracked_Alt
+                Two_of_Three_Reports_Valid
+                need_upward_RA
+                need_downward_RA
+                Other_RAC
+                High_Confidence
+                Own_Tracked_Alt_Rate
+                Cur_Vertical_Sep
+                Other_Capability
+                Down_Separation
+                Up_Separation)
+              1))
+      (a!8 (= (AF_Own_Above_Threat
+                Climb_Inhibit
+                Alt_Layer_Value
+                Other_Tracked_Alt
+                Own_Tracked_Alt
+                Two_of_Three_Reports_Valid
+                0
+                need_downward_RA
+                Other_RAC
+                High_Confidence
+                Own_Tracked_Alt_Rate
+                Cur_Vertical_Sep
+                Other_Capability
+                Down_Separation
+                Up_Separation)
+              1))
+      (a!9 (= (AF_Non_Crossing_Biased_Descend
+                Climb_Inhibit
+                Alt_Layer_Value
+                Other_Tracked_Alt
+                Own_Tracked_Alt
+                Two_of_Three_Reports_Valid
+                0
+                need_downward_RA
+                Other_RAC
+                High_Confidence
+                Own_Tracked_Alt_Rate
+                Cur_Vertical_Sep
+                Other_Capability
+                Down_Separation
+                Up_Separation)
+              1))
+      (a!16 (and (and (not (= Other_RAC 0)) (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)
+                 (= High_Confidence 1)
+                 (= Ret 0)))
+      (a!35 (and (and (= Other_RAC 0) (= Two_of_Three_Reports_Valid 1))
+                 (<= Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!36 (and (and (not (= Other_RAC 0)) (= Two_of_Three_Reports_Valid 1))
+                 (<= Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!37 (and (not (= Two_of_Three_Reports_Valid 1))
+                 (<= Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!38 (and (and (= Other_RAC 0) (= Two_of_Three_Reports_Valid 1))
+                 (> Own_Tracked_Alt_Rate 600)))
+      (a!39 (and (and (not (= Other_RAC 0)) (= Two_of_Three_Reports_Valid 1))
+                 (> Own_Tracked_Alt_Rate 600)))
+      (a!40 (and (and (not (= Two_of_Three_Reports_Valid 1))
+                      (> Own_Tracked_Alt_Rate 600))
+                 (= High_Confidence 1)
+                 (= Ret 0)))
+      (a!41 (and (and (= Other_RAC 0) (= Two_of_Three_Reports_Valid 1))
+                 (not (= High_Confidence 1))
+                 (= Ret 0)))
+      (a!42 (and (and (not (= Other_RAC 0)) (= Two_of_Three_Reports_Valid 1))
+                 (not (= High_Confidence 1))
+                 (= Ret 0)))
+      (a!43 (and (not (= Two_of_Three_Reports_Valid 1))
+                 (not (= High_Confidence 1))
+                 (= Ret 0)))
+      (a!45 (and (and (not (= Two_of_Three_Reports_Valid 1))
+                      (> Own_Tracked_Alt_Rate 600))
+                 (= Ret 0))))
+(let ((a!5 (and (and a!1 a!2 a!3 a!4)
+                (= Other_RAC 0)
+                (= Two_of_Three_Reports_Valid 1)
+                (> Cur_Vertical_Sep 600)
+                (<= Own_Tracked_Alt_Rate 600)))
+      (a!6 (and (and (not a!1) a!2 a!3 a!4)
+                (= Other_RAC 0)
+                (= Two_of_Three_Reports_Valid 1)
+                (> Cur_Vertical_Sep 600)
+                (<= Own_Tracked_Alt_Rate 600)))
+      (a!7 (and (and (not a!2) a!3 a!4)
+                (= Other_RAC 0)
+                (= Two_of_Three_Reports_Valid 1)
+                (> Cur_Vertical_Sep 600)
+                (<= Own_Tracked_Alt_Rate 600)))
+      (a!10 (and (and (and a!8 a!9) (not a!3) a!4)
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!11 (and (and (and (not a!8) a!9) (not a!3) a!4)
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!12 (and (and (not a!9) (not a!3) a!4)
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!13 (and (and (and a!8 a!9) (not a!4))
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!14 (and (and (and (not a!8) a!9) (not a!4))
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!15 (and (and (not a!9) (not a!4))
+                 (= Other_RAC 0)
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!17 (and (and a!1 a!2 a!3 a!4)
+                 (not (= Other_RAC 0))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!18 (and (and (not a!1) a!2 a!3 a!4)
+                 (not (= Other_RAC 0))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!19 (and (and (not a!2) a!3 a!4)
+                 (not (= Other_RAC 0))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!20 (and (and (and a!8 a!9) (not a!3) a!4)
+                 (not (= Other_RAC 0))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!21 (and (and (and (not a!8) a!9) (not a!3) a!4)
+                 (not (= Other_RAC 0))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!22 (and (and (not a!9) (not a!3) a!4)
+                 (not (= Other_RAC 0))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!23 (and (and (and a!8 a!9) (not a!4))
+                 (not (= Other_RAC 0))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!24 (and (and (and (not a!8) a!9) (not a!4))
+                 (not (= Other_RAC 0))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!25 (and (and (not a!9) (not a!4))
+                 (not (= Other_RAC 0))
+                 (= Two_of_Three_Reports_Valid 1)
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!26 (and (and a!1 a!2 a!3 a!4)
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!27 (and (and (not a!1) a!2 a!3 a!4)
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!28 (and (and (not a!2) a!3 a!4)
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!29 (and (and (and a!8 a!9) (not a!3) a!4)
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!30 (and (and (and (not a!8) a!9) (not a!3) a!4)
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!31 (and (and (not a!9) (not a!3) a!4)
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!32 (and (and (and a!8 a!9) (not a!4))
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!33 (and (and (and (not a!8) a!9) (not a!4))
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600)))
+      (a!34 (and (and (not a!9) (not a!4))
+                 (not (= Two_of_Three_Reports_Valid 1))
+                 (> Cur_Vertical_Sep 600)
+                 (<= Own_Tracked_Alt_Rate 600))))
+(let ((a!44 (or (and a!5 (= High_Confidence 1) (= Ret 0))
+                (and a!6 (= High_Confidence 1) (= Ret 1))
+                (and a!7 (= High_Confidence 1) (= Ret 1))
+                (and a!10 (= High_Confidence 1) (= Ret 2))
+                (and a!11 (= High_Confidence 1) (= Ret 0))
+                (and a!12 (= High_Confidence 1) (= Ret 0))
+                (and a!13 (= High_Confidence 1) (= Ret 2))
+                (and a!14 (= High_Confidence 1) (= Ret 0))
+                (and a!15 (= High_Confidence 1) (= Ret 0))
+                a!16
+                (and (not (= Two_of_Three_Reports_Valid 1))
+                     (> Cur_Vertical_Sep 600)
+                     (<= Own_Tracked_Alt_Rate 600)
+                     (= High_Confidence 1)
+                     (= Ret 0))
+                (and a!5 (= High_Confidence 1) (= Ret 0))
+                (and a!6 (= High_Confidence 1) (= Ret 1))
+                (and a!7 (= High_Confidence 1) (= Ret 1))
+                (and a!10 (= High_Confidence 1) (= Ret 2))
+                (and a!11 (= High_Confidence 1) (= Ret 0))
+                (and a!12 (= High_Confidence 1) (= Ret 0))
+                (and a!13 (= High_Confidence 1) (= Ret 2))
+                (and a!14 (= High_Confidence 1) (= Ret 0))
+                (and a!15 (= High_Confidence 1) (= Ret 0))
+                (and a!17 (= High_Confidence 1) (= Ret 0))
+                (and a!18 (= High_Confidence 1) (= Ret 1))
+                (and a!19 (= High_Confidence 1) (= Ret 1))
+                (and a!20 (= High_Confidence 1) (= Ret 2))
+                (and a!21 (= High_Confidence 1) (= Ret 0))
+                (and a!22 (= High_Confidence 1) (= Ret 0))
+                (and a!23 (= High_Confidence 1) (= Ret 2))
+                (and a!24 (= High_Confidence 1) (= Ret 0))
+                (and a!25 (= High_Confidence 1) (= Ret 0))
+                (and a!26 (= High_Confidence 1) (= Ret 0))
+                (and a!27 (= High_Confidence 1) (= Ret 1))
+                (and a!28 (= High_Confidence 1) (= Ret 1))
+                (and a!29 (= High_Confidence 1) (= Ret 2))
+                (and a!30 (= High_Confidence 1) (= Ret 0))
+                (and a!31 (= High_Confidence 1) (= Ret 0))
+                (and a!32 (= High_Confidence 1) (= Ret 2))
+                (and a!33 (= High_Confidence 1) (= Ret 0))
+                (and a!34 (= High_Confidence 1) (= Ret 0))
+                (and a!35 (= High_Confidence 1) (= Ret 0))
+                (and a!36 (= High_Confidence 1) (= Ret 0))
+                (and a!37 (= High_Confidence 1) (= Ret 0))
+                (and a!35 (= High_Confidence 1) (= Ret 0))
+                (and a!36 (= High_Confidence 1) (= Ret 0))
+                (and a!37 (= High_Confidence 1) (= Ret 0))
+                (and a!38 (= High_Confidence 1) (= Ret 0))
+                (and a!39 (= High_Confidence 1) (= Ret 0))
+                a!40
+                (and a!38 (= High_Confidence 1) (= Ret 0))
+                (and a!39 (= High_Confidence 1) (= Ret 0))
+                a!40
+                a!41
+                a!42
+                a!43
+                a!41
+                a!42
+                a!43)))
+(let ((a!46 (= a!44
+               (or (and a!17 (= Ret 0))
+                   (and a!18 (= Ret 1))
+                   (and a!19 (= Ret 1))
+                   (and a!20 (= Ret 0))
+                   (and a!21 (= Ret 2))
+                   (and a!22 (= Ret 2))
+                   (and a!23 (= Ret 0))
+                   (and a!24 (= Ret 2))
+                   (and a!25 (= Ret 2))
+                   (and a!5 (= Ret 0))
+                   (and a!6 (= Ret 1))
+                   (and a!7 (= Ret 1))
+                   (and a!10 (= Ret 0))
+                   (and a!11 (= Ret 2))
+                   (and a!12 (= Ret 2))
+                   (and a!13 (= Ret 0))
+                   (and a!14 (= Ret 2))
+                   (and a!15 (= Ret 2))
+                   (and a!26 (= Ret 0))
+                   (and a!27 (= Ret 1))
+                   (and a!28 (= Ret 1))
+                   (and a!29 (= Ret 0))
+                   (and a!30 (= Ret 2))
+                   (and a!31 (= Ret 2))
+                   (and a!32 (= Ret 0))
+                   (and a!33 (= Ret 2))
+                   (and a!34 (= Ret 2))
+                   (and a!17 (= Ret 0))
+                   (and a!18 (= Ret 1))
+                   (and a!19 (= Ret 1))
+                   (and a!20 (= Ret 0))
+                   (and a!21 (= Ret 2))
+                   (and a!22 (= Ret 2))
+                   (and a!23 (= Ret 0))
+                   (and a!24 (= Ret 2))
+                   (and a!25 (= Ret 2))
+                   (and a!5 (= Ret 0))
+                   (and a!6 (= Ret 1))
+                   (and a!7 (= Ret 1))
+                   (and a!10 (= Ret 0))
+                   (and a!11 (= Ret 2))
+                   (and a!12 (= Ret 2))
+                   (and a!13 (= Ret 0))
+                   (and a!14 (= Ret 2))
+                   (and a!15 (= Ret 2))
+                   (and a!26 (= Ret 0))
+                   (and a!27 (= Ret 1))
+                   (and a!28 (= Ret 1))
+                   (and a!29 (= Ret 0))
+                   (and a!30 (= Ret 2))
+                   (and a!31 (= Ret 2))
+                   (and a!32 (= Ret 0))
+                   (and a!33 (= Ret 2))
+                   (and a!34 (= Ret 2))
+                   (and a!36 (= Ret 0))
+                   (and a!35 (= Ret 0))
+                   (and a!37 (= Ret 0))
+                   (and a!36 (= Ret 0))
+                   (and a!35 (= Ret 0))
+                   (and a!37 (= Ret 0))
+                   (and a!39 (= Ret 0))
+                   (and a!38 (= Ret 0))
+                   a!45
+                   (and a!39 (= Ret 0))
+                   (and a!38 (= Ret 0))
+                   a!45))))
+  (not a!46)))))
+-----------------------------------------------------------------------------------------------

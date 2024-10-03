@@ -1,0 +1,1 @@
+INFO: The return statements are not impacted or the summaries are empty, thus the programs are equivalent
