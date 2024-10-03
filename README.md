@@ -1,4 +1,4 @@
-# HybridNonEqTesting
+# HybridEq/NonEqTesting
 
 ## Required java version
 java version "1.8.0_202"
