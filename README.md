@@ -38,6 +38,15 @@ java version "1.8.0_202"
 - Threshold-based symbolic execution will be computed for post and pre-post fuzzing
 
 
+## To cite the paper
+@inproceedings{sarker2025hybrid,
+</br> title={Hybrid Equivalence/Non-Equivalence Testing},
+</br>  author={Sarker, Laboni and Bultan, Tevfik},
+</br> booktitle={2025 IEEE Conference on Software Testing, Verification and Validation (ICST)},
+</br>  pages={36--46},
+</br>  year={2025},
+</br>  organization={IEEE}
+</br>}
 
 
 
